@@ -5,7 +5,7 @@
 import Foundation
 
 class BrowserPresenter: BrowserPresenterProtocol,
-                            BrowserOutputViewProtocol,
+                        BrowserOutputViewProtocol,
                         BrowserOutputInteractorProtocol {
     
     // MARK: - BrowserPresenterProtocol
@@ -18,7 +18,33 @@ class BrowserPresenter: BrowserPresenterProtocol,
     
     // MARK: - BrowserOutputViewProtocol
     
-    // Implement protocol.
+    func didSelectNewScene() {
+        // TODO: -
+    }
+    
+    func didSelectImport() {
+        // TODO: -
+    }
+    
+    func didSelectRename() {
+        // TODO: -
+    }
+    
+    func didSelectDuplicate() {
+        // TODO: -
+    }
+    
+    func didSelectDelete() {
+        // TODO: -
+    }
+    
+    func didSelectExport() {
+        // TODO: -
+    }
+    
+    func didSelectDocument() {
+        // TODO: -
+    }
     
     // MARK: - BrowserOutputInteractorProtocol
     

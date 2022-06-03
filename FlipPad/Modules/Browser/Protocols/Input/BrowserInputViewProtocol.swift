@@ -6,5 +6,5 @@ import Foundation
 
 protocol BrowserInputViewProtocol: AnyObject {
     
-    // Add input functions.
+    var selectedIndexSet: IndexSet { get }
 }

@@ -26,6 +26,9 @@
 		C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */; };
 		C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66F4E284A048600E4A858 /* BrowserView.storyboard */; };
 		C7B66F53284A05C200E4A858 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = C7B66F52284A05C200E4A858 /* Core */; };
+		C7B66F57284A306300E4A858 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F56284A306300E4A858 /* XibView.swift */; };
+		C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5D284A3A1300E4A858 /* BlurView.swift */; };
+		C7B66F60284A44B900E4A858 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5F284A44B900E4A858 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Common.swift"; sourceTree = "<group>"; };
 		C7B66F4E284A048600E4A858 /* BrowserView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserView.storyboard; sourceTree = "<group>"; };
 		C7B66F50284A057300E4A858 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		C7B66F56284A306300E4A858 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		C7B66F5D284A3A1300E4A858 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		C7B66F5F284A44B900E4A858 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				C7B66ED92849F83200E4A858 /* AppDelegate.swift */,
+				C7B66F5F284A44B900E4A858 /* Constants.swift */,
 				C7B66EE22849F83400E4A858 /* Assets.xcassets */,
 				C7B66F30284A01F600E4A858 /* Extensions */,
 				C7B66EEF284A011B00E4A858 /* Modules */,
 				C7B66F31284A022000E4A858 /* Others */,
 				C7B66F32284A029900E4A858 /* Storyboards */,
+				C7B66F54284A301C00E4A858 /* Views */,
 			);
 			path = FlipPad;
 			sourceTree = "<group>";
@@ -181,6 +189,23 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		C7B66F54284A301C00E4A858 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F5D284A3A1300E4A858 /* BlurView.swift */,
+				C7B66F55284A303A00E4A858 /* XibViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7B66F55284A303A00E4A858 /* XibViews */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F56284A306300E4A858 /* XibView.swift */,
+			);
+			path = XibViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
+				C7B66F57284A306300E4A858 /* XibView.swift in Sources */,
 				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
 				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,
+				C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */,
 				C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */,
 				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
 				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
@@ -270,6 +297,7 @@
 				C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */,
 				C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */,
 				C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */,
+				C7B66F60284A44B900E4A858 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,5 +6,17 @@ import Foundation
 
 protocol BrowserOutputViewProtocol: AnyObject {
     
-    // Add output functions.
+    func didSelectNewScene()
+    
+    func didSelectImport()
+    
+    func didSelectRename()
+    
+    func didSelectDuplicate()
+    
+    func didSelectDelete()
+    
+    func didSelectExport()
+    
+    func didSelectDocument()
 }

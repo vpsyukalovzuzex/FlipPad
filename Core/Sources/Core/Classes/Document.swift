@@ -1,10 +1,10 @@
 //
-// Core.swift
+// Document.swift
 //
 
 import Foundation
 
-public class Core {
+public final class Document {
     
     // MARK: -
 }
