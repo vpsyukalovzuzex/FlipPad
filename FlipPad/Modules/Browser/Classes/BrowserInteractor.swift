@@ -1,0 +1,72 @@
+//
+// BrowserInteractor.swift
+//
+
+import Foundation
+import Core
+
+class BrowserInteractor: BrowserInteractorProtocol,
+                         BrowserInputInteractorProtocol {
+    
+    // MARK: -
+    
+    var documents = [Document]()
+    
+    // MARK: - BrowserInteractorProtocol
+    
+    weak var presenter: BrowserOutputInteractorProtocol?
+    
+    // MARK: - BrowserInputInteractorProtocol
+    
+    func start() {
+        update()
+    }
+    
+    func renameDocument(at index: Int, with name: String) throws {
+        guard let document = documents[safe: index] else {
+            return
+        }
+        try URLManager.renameFile(at: document.url, with: name)
+        update()
+    }
+    
+    func duplicateDocument(at index: Int) throws {
+        guard let document = documents[safe: index] else {
+            return
+        }
+        try URLManager.duplicateFile(at: document.url)
+        update()
+    }
+    
+    func deleteDocument(at index: Int) throws {
+        guard let document = documents[safe: index] else {
+            return
+        }
+        try URLManager.deleteFiles(at: [document.url])
+        update()
+    }
+    
+    func exportDocument(at index: Int) throws {
+        // TODO: -
+    }
+    
+    func newDocument() throws {
+        // TODO: -
+        update()
+    }
+    
+    // MARK: -
+    
+    private func update() {
+        documents = URLManager.documentsUrls.compactMap { try? Document(url: $0) }
+        for document in documents {
+            document.generateThumbnail { [weak self] _ in
+                guard let self = self else {
+                    return
+                }
+                self.presenter?.didUpdateDocuments(self.documents)
+            }
+        }
+        presenter?.didUpdateDocuments(documents)
+    }
+}

@@ -7,18 +7,288 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */; };
+		C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */; };
+		C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */; };
+		C74AF1B4284E0B5100FF6C31 /* NewSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */; };
+		C74AF1B5284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */; };
+		C74AF1B6284E0B5100FF6C31 /* NewSceneViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */; };
+		C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */; };
+		C74AF1B8284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */; };
+		C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */; };
+		C74AF1BA284E0B5100FF6C31 /* NewScenePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */; };
+		C74AF1BB284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */; };
+		C74AF1BC284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */; };
+		C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */; };
+		C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */; };
+		C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */; };
+		C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */ = {isa = PBXBuildFile; productRef = C74AF1CA284E2D9100FF6C31 /* Support */; };
+		C7679E9528A127D300B1DB90 /* ColorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8528A127D300B1DB90 /* ColorsPresenter.swift */; };
+		C7679E9628A127D300B1DB90 /* ColorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8628A127D300B1DB90 /* ColorsInteractor.swift */; };
+		C7679E9728A127D300B1DB90 /* ColorsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8728A127D300B1DB90 /* ColorsRouter.swift */; };
+		C7679E9828A127D300B1DB90 /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8828A127D300B1DB90 /* ColorsView.swift */; };
+		C7679E9928A127D300B1DB90 /* ColorsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8A28A127D300B1DB90 /* ColorsRouterProtocol.swift */; };
+		C7679E9A28A127D300B1DB90 /* ColorsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8C28A127D300B1DB90 /* ColorsInputViewProtocol.swift */; };
+		C7679E9B28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8D28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift */; };
+		C7679E9C28A127D300B1DB90 /* ColorsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E8E28A127D300B1DB90 /* ColorsInputRouterProtocol.swift */; };
+		C7679E9D28A127D300B1DB90 /* ColorsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E9028A127D300B1DB90 /* ColorsOutputViewProtocol.swift */; };
+		C7679E9E28A127D300B1DB90 /* ColorsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E9128A127D300B1DB90 /* ColorsOutputInteractorProtocol.swift */; };
+		C7679E9F28A127D300B1DB90 /* ColorsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E9228A127D300B1DB90 /* ColorsInteractorProtocol.swift */; };
+		C7679EA028A127D300B1DB90 /* ColorsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E9328A127D300B1DB90 /* ColorsPresenterProtocol.swift */; };
+		C7679EA128A127D300B1DB90 /* ColorsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679E9428A127D300B1DB90 /* ColorsViewProtocol.swift */; };
+		C7679EA428A127FD00B1DB90 /* ColorsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7679EA328A127FD00B1DB90 /* ColorsView.storyboard */; };
+		C7679EA628A128A100B1DB90 /* ColorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EA528A128A100B1DB90 /* ColorsCollectionViewCell.swift */; };
+		C7679EA828A12CD000B1DB90 /* UICollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EA728A12CD000B1DB90 /* UICollectionViewProtocol.swift */; };
+		C7679EBD28A1488100B1DB90 /* PalletesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EAD28A1488100B1DB90 /* PalletesRouter.swift */; };
+		C7679EBE28A1488100B1DB90 /* PalletesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EAE28A1488100B1DB90 /* PalletesView.swift */; };
+		C7679EBF28A1488100B1DB90 /* PalletesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EAF28A1488100B1DB90 /* PalletesInteractor.swift */; };
+		C7679EC028A1488100B1DB90 /* PalletesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB028A1488100B1DB90 /* PalletesPresenter.swift */; };
+		C7679EC128A1488100B1DB90 /* PalletesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB228A1488100B1DB90 /* PalletesViewProtocol.swift */; };
+		C7679EC228A1488100B1DB90 /* PalletesInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB428A1488100B1DB90 /* PalletesInputViewProtocol.swift */; };
+		C7679EC328A1488100B1DB90 /* PalletesInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB528A1488100B1DB90 /* PalletesInputInteractorProtocol.swift */; };
+		C7679EC428A1488100B1DB90 /* PalletesInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB628A1488100B1DB90 /* PalletesInputRouterProtocol.swift */; };
+		C7679EC528A1488100B1DB90 /* PalletesOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB828A1488100B1DB90 /* PalletesOutputViewProtocol.swift */; };
+		C7679EC628A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EB928A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift */; };
+		C7679EC728A1488100B1DB90 /* PalletesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EBA28A1488100B1DB90 /* PalletesPresenterProtocol.swift */; };
+		C7679EC828A1488100B1DB90 /* PalletesInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EBB28A1488100B1DB90 /* PalletesInteractorProtocol.swift */; };
+		C7679EC928A1488100B1DB90 /* PalletesRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679EBC28A1488100B1DB90 /* PalletesRouterProtocol.swift */; };
+		C7679ECB28A148C600B1DB90 /* PalletesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7679ECA28A148C600B1DB90 /* PalletesView.storyboard */; };
+		C7679ECE28A148F200B1DB90 /* PalletesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7679ECD28A148F200B1DB90 /* PalletesCollectionViewCell.swift */; };
+		C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */ = {isa = PBXBuildFile; fileRef = C7A353E2284F7660002ABB64 /* How To.dcfb */; };
+		C7A353E5284F7661002ABB64 /* Animation Tutorial.dcfb in Resources */ = {isa = PBXBuildFile; fileRef = C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */; };
+		C7A3EC8828A2681400558940 /* Default.dgcplt in Resources */ = {isa = PBXBuildFile; fileRef = C7A3EC8628A2681300558940 /* Default.dgcplt */; };
+		C7A3EC8928A2681400558940 /* Empty.dgcplt in Resources */ = {isa = PBXBuildFile; fileRef = C7A3EC8728A2681400558940 /* Empty.dgcplt */; };
+		C7A3EC9E28A273F400558940 /* ColorSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC8E28A273F400558940 /* ColorSelectionInteractor.swift */; };
+		C7A3EC9F28A273F400558940 /* ColorSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC8F28A273F400558940 /* ColorSelectionPresenter.swift */; };
+		C7A3ECA028A273F400558940 /* ColorSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9028A273F400558940 /* ColorSelectionView.swift */; };
+		C7A3ECA128A273F400558940 /* ColorSelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9128A273F400558940 /* ColorSelectionRouter.swift */; };
+		C7A3ECA228A273F400558940 /* ColorSelectionInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9428A273F400558940 /* ColorSelectionInputViewProtocol.swift */; };
+		C7A3ECA328A273F400558940 /* ColorSelectionInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9528A273F400558940 /* ColorSelectionInputRouterProtocol.swift */; };
+		C7A3ECA428A273F400558940 /* ColorSelectionInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9628A273F400558940 /* ColorSelectionInputInteractorProtocol.swift */; };
+		C7A3ECA528A273F400558940 /* ColorSelectionOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9828A273F400558940 /* ColorSelectionOutputInteractorProtocol.swift */; };
+		C7A3ECA628A273F400558940 /* ColorSelectionOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9928A273F400558940 /* ColorSelectionOutputViewProtocol.swift */; };
+		C7A3ECA728A273F400558940 /* ColorSelectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9A28A273F400558940 /* ColorSelectionViewProtocol.swift */; };
+		C7A3ECA828A273F400558940 /* ColorSelectionInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9B28A273F400558940 /* ColorSelectionInteractorProtocol.swift */; };
+		C7A3ECA928A273F400558940 /* ColorSelectionRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9C28A273F400558940 /* ColorSelectionRouterProtocol.swift */; };
+		C7A3ECAA28A273F400558940 /* ColorSelectionPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3EC9D28A273F400558940 /* ColorSelectionPresenterProtocol.swift */; };
+		C7A3ECAC28A2763100558940 /* ColorSelectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A3ECAB28A2763100558940 /* ColorSelectionView.storyboard */; };
+		C7A3ECFC28A2A2E400558940 /* FlexColorPicker in Frameworks */ = {isa = PBXBuildFile; productRef = C7A3ECFB28A2A2E400558940 /* FlexColorPicker */; };
+		C7A4DD8C28ABB6C0009A3B30 /* DoubleSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A4DD8B28ABB6C0009A3B30 /* DoubleSlider.xib */; };
+		C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */; };
+		C7AD416B284F4C040093C462 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD416A284F4C040093C462 /* String+Common.swift */; };
+		C7AD416E284F50F60093C462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7AD4170284F50F60093C462 /* Localizable.strings */; };
+		C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */; };
+		C7AF4EFA28AB9B4A001377BE /* LightboxSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EEA28AB9B4A001377BE /* LightboxSettingsView.swift */; };
+		C7AF4EFB28AB9B4A001377BE /* LightboxSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EEB28AB9B4A001377BE /* LightboxSettingsPresenter.swift */; };
+		C7AF4EFC28AB9B4A001377BE /* LightboxSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EEC28AB9B4A001377BE /* LightboxSettingsInteractor.swift */; };
+		C7AF4EFD28AB9B4A001377BE /* LightboxSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EED28AB9B4A001377BE /* LightboxSettingsRouter.swift */; };
+		C7AF4EFE28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EEF28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift */; };
+		C7AF4EFF28AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF128AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift */; };
+		C7AF4F0028AB9B4A001377BE /* LightboxSettingsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF228AB9B4A001377BE /* LightboxSettingsInputRouterProtocol.swift */; };
+		C7AF4F0128AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF328AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift */; };
+		C7AF4F0228AB9B4A001377BE /* LightboxSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF428AB9B4A001377BE /* LightboxSettingsPresenterProtocol.swift */; };
+		C7AF4F0328AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF628AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift */; };
+		C7AF4F0428AB9B4A001377BE /* LightboxSettingsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF728AB9B4A001377BE /* LightboxSettingsOutputInteractorProtocol.swift */; };
+		C7AF4F0528AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF828AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift */; };
+		C7AF4F0628AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4EF928AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift */; };
+		C7AF4F0828AB9B6C001377BE /* LightboxSettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AF4F0728AB9B6C001377BE /* LightboxSettingsView.storyboard */; };
+		C7AF4F1028ABACE7001377BE /* DoubleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF4F0F28ABACE7001377BE /* DoubleSlider.swift */; };
+		C7B4D05E288A87C200021D17 /* UIAlertControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */; };
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
+		C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */; };
+		C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F14284A01AB00E4A858 /* BrowserView.swift */; };
+		C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */; };
+		C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */; };
+		C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */; };
+		C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */; };
+		C7B66F29284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */; };
+		C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */; };
+		C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */; };
+		C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */; };
+		C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */; };
+		C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */; };
+		C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */; };
+		C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */; };
+		C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66F4E284A048600E4A858 /* BrowserView.storyboard */; };
+		C7B66F53284A05C200E4A858 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = C7B66F52284A05C200E4A858 /* Core */; };
+		C7B66F57284A306300E4A858 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F56284A306300E4A858 /* XibView.swift */; };
+		C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5D284A3A1300E4A858 /* BlurView.swift */; };
+		C7B66F60284A44B900E4A858 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5F284A44B900E4A858 /* Constants.swift */; };
+		C7BCFF7E284DEA82000A7061 /* BrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */; };
+		C7C6D157284DF5A100A3DB95 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7C6D156284DF5A100A3DB95 /* DifferenceKit */; };
+		C7D36E0F28AA7458004B6799 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36DFF28AA7458004B6799 /* SettingsView.swift */; };
+		C7D36E1028AA7458004B6799 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0028AA7458004B6799 /* SettingsRouter.swift */; };
+		C7D36E1128AA7458004B6799 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0128AA7458004B6799 /* SettingsInteractor.swift */; };
+		C7D36E1228AA7458004B6799 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0228AA7458004B6799 /* SettingsPresenter.swift */; };
+		C7D36E1328AA7458004B6799 /* SettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0428AA7458004B6799 /* SettingsInteractorProtocol.swift */; };
+		C7D36E1428AA7458004B6799 /* SettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0528AA7458004B6799 /* SettingsPresenterProtocol.swift */; };
+		C7D36E1528AA7458004B6799 /* SettingsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0728AA7458004B6799 /* SettingsInputViewProtocol.swift */; };
+		C7D36E1628AA7458004B6799 /* SettingsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0828AA7458004B6799 /* SettingsInputRouterProtocol.swift */; };
+		C7D36E1728AA7458004B6799 /* SettingsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0928AA7458004B6799 /* SettingsInputInteractorProtocol.swift */; };
+		C7D36E1828AA7458004B6799 /* SettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0A28AA7458004B6799 /* SettingsRouterProtocol.swift */; };
+		C7D36E1928AA7458004B6799 /* SettingsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0C28AA7458004B6799 /* SettingsOutputInteractorProtocol.swift */; };
+		C7D36E1A28AA7458004B6799 /* SettingsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0D28AA7458004B6799 /* SettingsOutputViewProtocol.swift */; };
+		C7D36E1B28AA7458004B6799 /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E0E28AA7458004B6799 /* SettingsViewProtocol.swift */; };
+		C7D36E1D28AA7465004B6799 /* SettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D36E1C28AA7465004B6799 /* SettingsView.storyboard */; };
+		C7D36E3228AA892C004B6799 /* DocumentSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2228AA892C004B6799 /* DocumentSettingsInteractor.swift */; };
+		C7D36E3328AA892C004B6799 /* DocumentSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2328AA892C004B6799 /* DocumentSettingsPresenter.swift */; };
+		C7D36E3428AA892C004B6799 /* DocumentSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2428AA892C004B6799 /* DocumentSettingsView.swift */; };
+		C7D36E3528AA892C004B6799 /* DocumentSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2528AA892C004B6799 /* DocumentSettingsRouter.swift */; };
+		C7D36E3628AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2828AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift */; };
+		C7D36E3728AA892C004B6799 /* DocumentSettingsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2928AA892C004B6799 /* DocumentSettingsInputRouterProtocol.swift */; };
+		C7D36E3828AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2A28AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift */; };
+		C7D36E3928AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2B28AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift */; };
+		C7D36E3A28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2D28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift */; };
+		C7D36E3B28AA892C004B6799 /* DocumentSettingsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2E28AA892C004B6799 /* DocumentSettingsOutputInteractorProtocol.swift */; };
+		C7D36E3C28AA892C004B6799 /* DocumentSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E2F28AA892C004B6799 /* DocumentSettingsInteractorProtocol.swift */; };
+		C7D36E3D28AA892C004B6799 /* DocumentSettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E3028AA892C004B6799 /* DocumentSettingsViewProtocol.swift */; };
+		C7D36E3E28AA892C004B6799 /* DocumentSettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36E3128AA892C004B6799 /* DocumentSettingsRouterProtocol.swift */; };
+		C7D36E4028AA898A004B6799 /* DocumentSettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D36E3F28AA898A004B6799 /* DocumentSettingsView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneView.swift; sourceTree = "<group>"; };
+		C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneRouter.swift; sourceTree = "<group>"; };
+		C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScenePresenter.swift; sourceTree = "<group>"; };
+		C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInteractor.swift; sourceTree = "<group>"; };
+		C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScenePresenterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneRouterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewSceneView.storyboard; sourceTree = "<group>"; };
+		C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSceneCollectionCell.swift; sourceTree = "<group>"; };
+		C74AF1C8284E2B1C00FF6C31 /* Support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Support; sourceTree = "<group>"; };
+		C7679E8528A127D300B1DB90 /* ColorsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsPresenter.swift; sourceTree = "<group>"; };
+		C7679E8628A127D300B1DB90 /* ColorsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInteractor.swift; sourceTree = "<group>"; };
+		C7679E8728A127D300B1DB90 /* ColorsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsRouter.swift; sourceTree = "<group>"; };
+		C7679E8828A127D300B1DB90 /* ColorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
+		C7679E8A28A127D300B1DB90 /* ColorsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7679E8C28A127D300B1DB90 /* ColorsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7679E8D28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679E8E28A127D300B1DB90 /* ColorsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7679E9028A127D300B1DB90 /* ColorsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7679E9128A127D300B1DB90 /* ColorsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679E9228A127D300B1DB90 /* ColorsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679E9328A127D300B1DB90 /* ColorsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7679E9428A127D300B1DB90 /* ColorsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewProtocol.swift; sourceTree = "<group>"; };
+		C7679EA328A127FD00B1DB90 /* ColorsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorsView.storyboard; sourceTree = "<group>"; };
+		C7679EA528A128A100B1DB90 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7679EA728A12CD000B1DB90 /* UICollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewProtocol.swift; sourceTree = "<group>"; };
+		C7679EAD28A1488100B1DB90 /* PalletesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesRouter.swift; sourceTree = "<group>"; };
+		C7679EAE28A1488100B1DB90 /* PalletesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesView.swift; sourceTree = "<group>"; };
+		C7679EAF28A1488100B1DB90 /* PalletesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesInteractor.swift; sourceTree = "<group>"; };
+		C7679EB028A1488100B1DB90 /* PalletesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesPresenter.swift; sourceTree = "<group>"; };
+		C7679EB228A1488100B1DB90 /* PalletesViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesViewProtocol.swift; sourceTree = "<group>"; };
+		C7679EB428A1488100B1DB90 /* PalletesInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7679EB528A1488100B1DB90 /* PalletesInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679EB628A1488100B1DB90 /* PalletesInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7679EB828A1488100B1DB90 /* PalletesOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7679EB928A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679EBA28A1488100B1DB90 /* PalletesPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7679EBB28A1488100B1DB90 /* PalletesInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7679EBC28A1488100B1DB90 /* PalletesRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalletesRouterProtocol.swift; sourceTree = "<group>"; };
+		C7679ECA28A148C600B1DB90 /* PalletesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PalletesView.storyboard; sourceTree = "<group>"; };
+		C7679ECD28A148F200B1DB90 /* PalletesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7A353E2284F7660002ABB64 /* How To.dcfb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "How To.dcfb"; sourceTree = "<group>"; };
+		C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Animation Tutorial.dcfb"; sourceTree = "<group>"; };
+		C7A3EC8628A2681300558940 /* Default.dgcplt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Default.dgcplt; sourceTree = "<group>"; };
+		C7A3EC8728A2681400558940 /* Empty.dgcplt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty.dgcplt; sourceTree = "<group>"; };
+		C7A3EC8E28A273F400558940 /* ColorSelectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionInteractor.swift; sourceTree = "<group>"; };
+		C7A3EC8F28A273F400558940 /* ColorSelectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionPresenter.swift; sourceTree = "<group>"; };
+		C7A3EC9028A273F400558940 /* ColorSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionView.swift; sourceTree = "<group>"; };
+		C7A3EC9128A273F400558940 /* ColorSelectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionRouter.swift; sourceTree = "<group>"; };
+		C7A3EC9428A273F400558940 /* ColorSelectionInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9528A273F400558940 /* ColorSelectionInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9628A273F400558940 /* ColorSelectionInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9828A273F400558940 /* ColorSelectionOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9928A273F400558940 /* ColorSelectionOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9A28A273F400558940 /* ColorSelectionViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionViewProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9B28A273F400558940 /* ColorSelectionInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9C28A273F400558940 /* ColorSelectionRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionRouterProtocol.swift; sourceTree = "<group>"; };
+		C7A3EC9D28A273F400558940 /* ColorSelectionPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7A3ECAB28A2763100558940 /* ColorSelectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSelectionView.storyboard; sourceTree = "<group>"; };
+		C7A4DD8B28ABB6C0009A3B30 /* DoubleSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoubleSlider.xib; sourceTree = "<group>"; };
+		C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Common.swift"; sourceTree = "<group>"; };
+		C7AD416A284F4C040093C462 /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		C7AD416F284F50F60093C462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentPickerViewController+Common.swift"; sourceTree = "<group>"; };
+		C7AF4EEA28AB9B4A001377BE /* LightboxSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsView.swift; sourceTree = "<group>"; };
+		C7AF4EEB28AB9B4A001377BE /* LightboxSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsPresenter.swift; sourceTree = "<group>"; };
+		C7AF4EEC28AB9B4A001377BE /* LightboxSettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsInteractor.swift; sourceTree = "<group>"; };
+		C7AF4EED28AB9B4A001377BE /* LightboxSettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsRouter.swift; sourceTree = "<group>"; };
+		C7AF4EEF28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsViewProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF128AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF228AB9B4A001377BE /* LightboxSettingsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF328AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF428AB9B4A001377BE /* LightboxSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF628AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF728AB9B4A001377BE /* LightboxSettingsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF828AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7AF4EF928AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AF4F0728AB9B6C001377BE /* LightboxSettingsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LightboxSettingsView.storyboard; sourceTree = "<group>"; };
+		C7AF4F0F28ABACE7001377BE /* DoubleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSlider.swift; sourceTree = "<group>"; };
+		C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerProtocol.swift; sourceTree = "<group>"; };
 		C7B66ED62849F83200E4A858 /* FlipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B66ED92849F83200E4A858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B66EE22849F83400E4A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B66EE52849F83400E4A858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7B66EE72849F83400E4A858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipPad.entitlements; sourceTree = "<group>"; };
+		C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInteractor.swift; sourceTree = "<group>"; };
+		C7B66F14284A01AB00E4A858 /* BrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserPresenter.swift; sourceTree = "<group>"; };
+		C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserRouter.swift; sourceTree = "<group>"; };
+		C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserRouterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Common.swift"; sourceTree = "<group>"; };
+		C7B66F4E284A048600E4A858 /* BrowserView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserView.storyboard; sourceTree = "<group>"; };
+		C7B66F50284A057300E4A858 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		C7B66F56284A306300E4A858 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		C7B66F5D284A3A1300E4A858 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		C7B66F5F284A44B900E4A858 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7D36DFF28AA7458004B6799 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C7D36E0028AA7458004B6799 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		C7D36E0128AA7458004B6799 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		C7D36E0228AA7458004B6799 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		C7D36E0428AA7458004B6799 /* SettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0528AA7458004B6799 /* SettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0728AA7458004B6799 /* SettingsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0828AA7458004B6799 /* SettingsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0928AA7458004B6799 /* SettingsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0A28AA7458004B6799 /* SettingsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0C28AA7458004B6799 /* SettingsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0D28AA7458004B6799 /* SettingsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E0E28AA7458004B6799 /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E1C28AA7465004B6799 /* SettingsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsView.storyboard; sourceTree = "<group>"; };
+		C7D36E2228AA892C004B6799 /* DocumentSettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsInteractor.swift; sourceTree = "<group>"; };
+		C7D36E2328AA892C004B6799 /* DocumentSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsPresenter.swift; sourceTree = "<group>"; };
+		C7D36E2428AA892C004B6799 /* DocumentSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsView.swift; sourceTree = "<group>"; };
+		C7D36E2528AA892C004B6799 /* DocumentSettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsRouter.swift; sourceTree = "<group>"; };
+		C7D36E2828AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2928AA892C004B6799 /* DocumentSettingsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2A28AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2B28AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2D28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2E28AA892C004B6799 /* DocumentSettingsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E2F28AA892C004B6799 /* DocumentSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7D36E3028AA892C004B6799 /* DocumentSettingsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsViewProtocol.swift; sourceTree = "<group>"; };
+		C7D36E3128AA892C004B6799 /* DocumentSettingsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7D36E3F28AA898A004B6799 /* DocumentSettingsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentSettingsView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,15 +296,339 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */,
+				C7C6D157284DF5A100A3DB95 /* DifferenceKit in Frameworks */,
+				C7B66F53284A05C200E4A858 /* Core in Frameworks */,
+				C7A3ECFC28A2A2E400558940 /* FlexColorPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74AF19F284E0B5100FF6C31 /* NewScene */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */,
+				C74AF1C2284E12F200FF6C31 /* Cells */,
+				C74AF1A0284E0B5100FF6C31 /* Classes */,
+				C74AF1A5284E0B5100FF6C31 /* Protocols */,
+			);
+			path = NewScene;
+			sourceTree = "<group>";
+		};
+		C74AF1A0284E0B5100FF6C31 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */,
+				C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */,
+				C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */,
+				C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C74AF1A5284E0B5100FF6C31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */,
+				C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */,
+				C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */,
+				C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */,
+				C74AF1A8284E0B5100FF6C31 /* Input */,
+				C74AF1AD284E0B5100FF6C31 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C74AF1A8284E0B5100FF6C31 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */,
+				C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */,
+				C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C74AF1AD284E0B5100FF6C31 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */,
+				C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C74AF1C2284E12F200FF6C31 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7679E7928A1251500B1DB90 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F5D284A3A1300E4A858 /* BlurView.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C7679E8328A127D300B1DB90 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EA328A127FD00B1DB90 /* ColorsView.storyboard */,
+				C7679EA228A127F100B1DB90 /* Cells */,
+				C7679E8428A127D300B1DB90 /* Classes */,
+				C7679E8928A127D300B1DB90 /* Protocols */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C7679E8428A127D300B1DB90 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7679E8628A127D300B1DB90 /* ColorsInteractor.swift */,
+				C7679E8528A127D300B1DB90 /* ColorsPresenter.swift */,
+				C7679E8728A127D300B1DB90 /* ColorsRouter.swift */,
+				C7679E8828A127D300B1DB90 /* ColorsView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7679E8928A127D300B1DB90 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7679E9228A127D300B1DB90 /* ColorsInteractorProtocol.swift */,
+				C7679E9328A127D300B1DB90 /* ColorsPresenterProtocol.swift */,
+				C7679E8A28A127D300B1DB90 /* ColorsRouterProtocol.swift */,
+				C7679E9428A127D300B1DB90 /* ColorsViewProtocol.swift */,
+				C7679E8B28A127D300B1DB90 /* Input */,
+				C7679E8F28A127D300B1DB90 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7679E8B28A127D300B1DB90 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7679E8D28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift */,
+				C7679E8E28A127D300B1DB90 /* ColorsInputRouterProtocol.swift */,
+				C7679E8C28A127D300B1DB90 /* ColorsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7679E8F28A127D300B1DB90 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7679E9128A127D300B1DB90 /* ColorsOutputInteractorProtocol.swift */,
+				C7679E9028A127D300B1DB90 /* ColorsOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7679EA228A127F100B1DB90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EA528A128A100B1DB90 /* ColorsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7679EAB28A1488100B1DB90 /* Palletes */ = {
+			isa = PBXGroup;
+			children = (
+				C7679ECA28A148C600B1DB90 /* PalletesView.storyboard */,
+				C7679ECC28A148DE00B1DB90 /* Cells */,
+				C7679EAC28A1488100B1DB90 /* Classes */,
+				C7679EB128A1488100B1DB90 /* Protocols */,
+			);
+			path = Palletes;
+			sourceTree = "<group>";
+		};
+		C7679EAC28A1488100B1DB90 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EAF28A1488100B1DB90 /* PalletesInteractor.swift */,
+				C7679EB028A1488100B1DB90 /* PalletesPresenter.swift */,
+				C7679EAD28A1488100B1DB90 /* PalletesRouter.swift */,
+				C7679EAE28A1488100B1DB90 /* PalletesView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7679EB128A1488100B1DB90 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EBB28A1488100B1DB90 /* PalletesInteractorProtocol.swift */,
+				C7679EBA28A1488100B1DB90 /* PalletesPresenterProtocol.swift */,
+				C7679EBC28A1488100B1DB90 /* PalletesRouterProtocol.swift */,
+				C7679EB228A1488100B1DB90 /* PalletesViewProtocol.swift */,
+				C7679EB328A1488100B1DB90 /* Input */,
+				C7679EB728A1488100B1DB90 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7679EB328A1488100B1DB90 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EB528A1488100B1DB90 /* PalletesInputInteractorProtocol.swift */,
+				C7679EB628A1488100B1DB90 /* PalletesInputRouterProtocol.swift */,
+				C7679EB428A1488100B1DB90 /* PalletesInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7679EB728A1488100B1DB90 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7679EB928A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift */,
+				C7679EB828A1488100B1DB90 /* PalletesOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7679ECC28A148DE00B1DB90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C7679ECD28A148F200B1DB90 /* PalletesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7A3EC8C28A273F400558940 /* ColorSelection */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3ECAB28A2763100558940 /* ColorSelectionView.storyboard */,
+				C7A3EC8D28A273F400558940 /* Classes */,
+				C7A3EC9228A273F400558940 /* Protocols */,
+			);
+			path = ColorSelection;
+			sourceTree = "<group>";
+		};
+		C7A3EC8D28A273F400558940 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3EC8E28A273F400558940 /* ColorSelectionInteractor.swift */,
+				C7A3EC8F28A273F400558940 /* ColorSelectionPresenter.swift */,
+				C7A3EC9128A273F400558940 /* ColorSelectionRouter.swift */,
+				C7A3EC9028A273F400558940 /* ColorSelectionView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7A3EC9228A273F400558940 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3EC9B28A273F400558940 /* ColorSelectionInteractorProtocol.swift */,
+				C7A3EC9D28A273F400558940 /* ColorSelectionPresenterProtocol.swift */,
+				C7A3EC9C28A273F400558940 /* ColorSelectionRouterProtocol.swift */,
+				C7A3EC9A28A273F400558940 /* ColorSelectionViewProtocol.swift */,
+				C7A3EC9328A273F400558940 /* Input */,
+				C7A3EC9728A273F400558940 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7A3EC9328A273F400558940 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3EC9628A273F400558940 /* ColorSelectionInputInteractorProtocol.swift */,
+				C7A3EC9528A273F400558940 /* ColorSelectionInputRouterProtocol.swift */,
+				C7A3EC9428A273F400558940 /* ColorSelectionInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7A3EC9728A273F400558940 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3EC9828A273F400558940 /* ColorSelectionOutputInteractorProtocol.swift */,
+				C7A3EC9928A273F400558940 /* ColorSelectionOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7AF4EE828AB9B4A001377BE /* LightboxSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4F0728AB9B6C001377BE /* LightboxSettingsView.storyboard */,
+				C7AF4EE928AB9B4A001377BE /* Classes */,
+				C7AF4EEE28AB9B4A001377BE /* Protocols */,
+			);
+			path = LightboxSettings;
+			sourceTree = "<group>";
+		};
+		C7AF4EE928AB9B4A001377BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4EEC28AB9B4A001377BE /* LightboxSettingsInteractor.swift */,
+				C7AF4EEB28AB9B4A001377BE /* LightboxSettingsPresenter.swift */,
+				C7AF4EED28AB9B4A001377BE /* LightboxSettingsRouter.swift */,
+				C7AF4EEA28AB9B4A001377BE /* LightboxSettingsView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7AF4EEE28AB9B4A001377BE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4EF928AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift */,
+				C7AF4EF428AB9B4A001377BE /* LightboxSettingsPresenterProtocol.swift */,
+				C7AF4EF828AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift */,
+				C7AF4EEF28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift */,
+				C7AF4EF028AB9B4A001377BE /* Input */,
+				C7AF4EF528AB9B4A001377BE /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7AF4EF028AB9B4A001377BE /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4EF328AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift */,
+				C7AF4EF228AB9B4A001377BE /* LightboxSettingsInputRouterProtocol.swift */,
+				C7AF4EF128AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7AF4EF528AB9B4A001377BE /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4EF728AB9B4A001377BE /* LightboxSettingsOutputInteractorProtocol.swift */,
+				C7AF4EF628AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7AF4F0C28ABA6EC001377BE /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				C7AF4F0F28ABACE7001377BE /* DoubleSlider.swift */,
+				C7A4DD8B28ABB6C0009A3B30 /* DoubleSlider.xib */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		C7B4D05F288A87E800021D17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */,
+				C7679EA728A12CD000B1DB90 /* UICollectionViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C7B66ECD2849F83100E4A858 = {
 			isa = PBXGroup;
 			children = (
+				C7B66F50284A057300E4A858 /* Core */,
+				C74AF1C8284E2B1C00FF6C31 /* Support */,
 				C7B66ED82849F83200E4A858 /* FlipPad */,
 				C7B66ED72849F83200E4A858 /* Products */,
 			);
@@ -51,13 +645,259 @@
 		C7B66ED82849F83200E4A858 /* FlipPad */ = {
 			isa = PBXGroup;
 			children = (
-				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
-				C7B66EE72849F83400E4A858 /* Info.plist */,
 				C7B66ED92849F83200E4A858 /* AppDelegate.swift */,
+				C7B66F5F284A44B900E4A858 /* Constants.swift */,
 				C7B66EE22849F83400E4A858 /* Assets.xcassets */,
-				C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */,
+				C7B66F30284A01F600E4A858 /* Extensions */,
+				C7B66EEF284A011B00E4A858 /* Modules */,
+				C7B66F31284A022000E4A858 /* Others */,
+				C7B4D05F288A87E800021D17 /* Protocols */,
+				C7B66F32284A029900E4A858 /* Storyboards */,
+				C7B66F54284A301C00E4A858 /* Views */,
 			);
 			path = FlipPad;
+			sourceTree = "<group>";
+		};
+		C7B66EEF284A011B00E4A858 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F11284A01AB00E4A858 /* Browser */,
+				C7679E8328A127D300B1DB90 /* Colors */,
+				C7A3EC8C28A273F400558940 /* ColorSelection */,
+				C7D36E2028AA892C004B6799 /* DocumentSettings */,
+				C7AF4EE828AB9B4A001377BE /* LightboxSettings */,
+				C74AF19F284E0B5100FF6C31 /* NewScene */,
+				C7679EAB28A1488100B1DB90 /* Palletes */,
+				C7D36DFD28AA7458004B6799 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7B66F11284A01AB00E4A858 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F4E284A048600E4A858 /* BrowserView.storyboard */,
+				C7BCFF7C284DEA68000A7061 /* Cells */,
+				C7B66F12284A01AB00E4A858 /* Classes */,
+				C7B66F17284A01AB00E4A858 /* Protocols */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		C7B66F12284A01AB00E4A858 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */,
+				C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */,
+				C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */,
+				C7B66F14284A01AB00E4A858 /* BrowserView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7B66F17284A01AB00E4A858 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */,
+				C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */,
+				C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */,
+				C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */,
+				C7B66F19284A01AB00E4A858 /* Input */,
+				C7B66F1E284A01AB00E4A858 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7B66F19284A01AB00E4A858 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */,
+				C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */,
+				C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7B66F1E284A01AB00E4A858 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */,
+				C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7B66F30284A01F600E4A858 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD416A284F4C040093C462 /* String+Common.swift */,
+				C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */,
+				C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */,
+				C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7B66F31284A022000E4A858 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
+				C7B66EE72849F83400E4A858 /* Info.plist */,
+				C7C5F4CB2850A0D100BDDF38 /* DefaultFiles */,
+				C7AD4170284F50F60093C462 /* Localizable.strings */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C7B66F32284A029900E4A858 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C7B66F54284A301C00E4A858 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7679E7928A1251500B1DB90 /* Others */,
+				C7B66F55284A303A00E4A858 /* XibViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7B66F55284A303A00E4A858 /* XibViews */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F56284A306300E4A858 /* XibView.swift */,
+				C7AF4F0C28ABA6EC001377BE /* Subclasses */,
+			);
+			path = XibViews;
+			sourceTree = "<group>";
+		};
+		C7BCFF7C284DEA68000A7061 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7C5F4CB2850A0D100BDDF38 /* DefaultFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3EC8628A2681300558940 /* Default.dgcplt */,
+				C7A3EC8728A2681400558940 /* Empty.dgcplt */,
+				C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */,
+				C7A353E2284F7660002ABB64 /* How To.dcfb */,
+			);
+			path = DefaultFiles;
+			sourceTree = "<group>";
+		};
+		C7D36DFD28AA7458004B6799 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E1C28AA7465004B6799 /* SettingsView.storyboard */,
+				C7D36DFE28AA7458004B6799 /* Classes */,
+				C7D36E0328AA7458004B6799 /* Protocols */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C7D36DFE28AA7458004B6799 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E0128AA7458004B6799 /* SettingsInteractor.swift */,
+				C7D36E0228AA7458004B6799 /* SettingsPresenter.swift */,
+				C7D36E0028AA7458004B6799 /* SettingsRouter.swift */,
+				C7D36DFF28AA7458004B6799 /* SettingsView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7D36E0328AA7458004B6799 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E0428AA7458004B6799 /* SettingsInteractorProtocol.swift */,
+				C7D36E0528AA7458004B6799 /* SettingsPresenterProtocol.swift */,
+				C7D36E0A28AA7458004B6799 /* SettingsRouterProtocol.swift */,
+				C7D36E0E28AA7458004B6799 /* SettingsViewProtocol.swift */,
+				C7D36E0628AA7458004B6799 /* Input */,
+				C7D36E0B28AA7458004B6799 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7D36E0628AA7458004B6799 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E0928AA7458004B6799 /* SettingsInputInteractorProtocol.swift */,
+				C7D36E0828AA7458004B6799 /* SettingsInputRouterProtocol.swift */,
+				C7D36E0728AA7458004B6799 /* SettingsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7D36E0B28AA7458004B6799 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E0C28AA7458004B6799 /* SettingsOutputInteractorProtocol.swift */,
+				C7D36E0D28AA7458004B6799 /* SettingsOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7D36E2028AA892C004B6799 /* DocumentSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E3F28AA898A004B6799 /* DocumentSettingsView.storyboard */,
+				C7D36E2128AA892C004B6799 /* Classes */,
+				C7D36E2628AA892C004B6799 /* Protocols */,
+			);
+			path = DocumentSettings;
+			sourceTree = "<group>";
+		};
+		C7D36E2128AA892C004B6799 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E2228AA892C004B6799 /* DocumentSettingsInteractor.swift */,
+				C7D36E2328AA892C004B6799 /* DocumentSettingsPresenter.swift */,
+				C7D36E2528AA892C004B6799 /* DocumentSettingsRouter.swift */,
+				C7D36E2428AA892C004B6799 /* DocumentSettingsView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7D36E2628AA892C004B6799 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E2F28AA892C004B6799 /* DocumentSettingsInteractorProtocol.swift */,
+				C7D36E2B28AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift */,
+				C7D36E3128AA892C004B6799 /* DocumentSettingsRouterProtocol.swift */,
+				C7D36E3028AA892C004B6799 /* DocumentSettingsViewProtocol.swift */,
+				C7D36E2728AA892C004B6799 /* Input */,
+				C7D36E2C28AA892C004B6799 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7D36E2728AA892C004B6799 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E2A28AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift */,
+				C7D36E2928AA892C004B6799 /* DocumentSettingsInputRouterProtocol.swift */,
+				C7D36E2828AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7D36E2C28AA892C004B6799 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7D36E2E28AA892C004B6799 /* DocumentSettingsOutputInteractorProtocol.swift */,
+				C7D36E2D28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift */,
+			);
+			path = Output;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +916,12 @@
 			dependencies = (
 			);
 			name = FlipPad;
+			packageProductDependencies = (
+				C7B66F52284A05C200E4A858 /* Core */,
+				C7C6D156284DF5A100A3DB95 /* DifferenceKit */,
+				C74AF1CA284E2D9100FF6C31 /* Support */,
+				C7A3ECFB28A2A2E400558940 /* FlexColorPicker */,
+			);
 			productName = FlipPad;
 			productReference = C7B66ED62849F83200E4A858 /* FlipPad.app */;
 			productType = "com.apple.product-type.application";
@@ -88,7 +934,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					C7B66ED52849F83200E4A858 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -104,6 +950,10 @@
 				Base,
 			);
 			mainGroup = C7B66ECD2849F83100E4A858;
+			packageReferences = (
+				C7C6D155284DF5A100A3DB95 /* XCRemoteSwiftPackageReference "DifferenceKit" */,
+				C7A3ECFA28A2A2E400558940 /* XCRemoteSwiftPackageReference "FlexColorPicker" */,
+			);
 			productRefGroup = C7B66ED72849F83200E4A858 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -118,8 +968,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AF4F0828AB9B6C001377BE /* LightboxSettingsView.storyboard in Resources */,
+				C7AD416E284F50F60093C462 /* Localizable.strings in Resources */,
+				C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */,
+				C7679EA428A127FD00B1DB90 /* ColorsView.storyboard in Resources */,
+				C7A3EC8928A2681400558940 /* Empty.dgcplt in Resources */,
+				C7A3ECAC28A2763100558940 /* ColorSelectionView.storyboard in Resources */,
 				C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */,
 				C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */,
+				C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */,
+				C7A353E5284F7661002ABB64 /* Animation Tutorial.dcfb in Resources */,
+				C7A3EC8828A2681400558940 /* Default.dgcplt in Resources */,
+				C7679ECB28A148C600B1DB90 /* PalletesView.storyboard in Resources */,
+				C7D36E1D28AA7465004B6799 /* SettingsView.storyboard in Resources */,
+				C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */,
+				C7D36E4028AA898A004B6799 /* DocumentSettingsView.storyboard in Resources */,
+				C7A4DD8C28ABB6C0009A3B30 /* DoubleSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,12 +995,138 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
+				C7AF4F0328AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift in Sources */,
+				C7AF4EFB28AB9B4A001377BE /* LightboxSettingsPresenter.swift in Sources */,
+				C7B66F57284A306300E4A858 /* XibView.swift in Sources */,
+				C7B4D05E288A87C200021D17 /* UIAlertControllerProtocol.swift in Sources */,
+				C7679EC628A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift in Sources */,
+				C7A3ECA628A273F400558940 /* ColorSelectionOutputViewProtocol.swift in Sources */,
+				C7679EC428A1488100B1DB90 /* PalletesInputRouterProtocol.swift in Sources */,
+				C7679EA828A12CD000B1DB90 /* UICollectionViewProtocol.swift in Sources */,
+				C7D36E3E28AA892C004B6799 /* DocumentSettingsRouterProtocol.swift in Sources */,
+				C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */,
+				C7D36E3528AA892C004B6799 /* DocumentSettingsRouter.swift in Sources */,
+				C7679EC828A1488100B1DB90 /* PalletesInteractorProtocol.swift in Sources */,
+				C7D36E3A28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift in Sources */,
+				C7D36E1128AA7458004B6799 /* SettingsInteractor.swift in Sources */,
+				C7D36E1528AA7458004B6799 /* SettingsInputViewProtocol.swift in Sources */,
+				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
+				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,
+				C74AF1B8284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift in Sources */,
+				C7AF4F0128AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift in Sources */,
+				C74AF1BA284E0B5100FF6C31 /* NewScenePresenterProtocol.swift in Sources */,
+				C74AF1BC284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift in Sources */,
+				C7679E9F28A127D300B1DB90 /* ColorsInteractorProtocol.swift in Sources */,
+				C7A3ECAA28A273F400558940 /* ColorSelectionPresenterProtocol.swift in Sources */,
+				C7679EC928A1488100B1DB90 /* PalletesRouterProtocol.swift in Sources */,
+				C7679E9C28A127D300B1DB90 /* ColorsInputRouterProtocol.swift in Sources */,
+				C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */,
+				C7A3EC9E28A273F400558940 /* ColorSelectionInteractor.swift in Sources */,
+				C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */,
+				C7D36E1328AA7458004B6799 /* SettingsInteractorProtocol.swift in Sources */,
+				C7D36E3728AA892C004B6799 /* DocumentSettingsInputRouterProtocol.swift in Sources */,
+				C74AF1B5284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift in Sources */,
+				C7679E9E28A127D300B1DB90 /* ColorsOutputInteractorProtocol.swift in Sources */,
+				C7D36E3828AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift in Sources */,
+				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
+				C7A3ECA928A273F400558940 /* ColorSelectionRouterProtocol.swift in Sources */,
+				C7D36E3428AA892C004B6799 /* DocumentSettingsView.swift in Sources */,
+				C7D36E0F28AA7458004B6799 /* SettingsView.swift in Sources */,
+				C7A3ECA428A273F400558940 /* ColorSelectionInputInteractorProtocol.swift in Sources */,
+				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
+				C7679EC128A1488100B1DB90 /* PalletesViewProtocol.swift in Sources */,
+				C7AD416B284F4C040093C462 /* String+Common.swift in Sources */,
+				C7679E9628A127D300B1DB90 /* ColorsInteractor.swift in Sources */,
+				C7D36E1628AA7458004B6799 /* SettingsInputRouterProtocol.swift in Sources */,
+				C7AF4EFD28AB9B4A001377BE /* LightboxSettingsRouter.swift in Sources */,
+				C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */,
+				C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */,
+				C7679EC528A1488100B1DB90 /* PalletesOutputViewProtocol.swift in Sources */,
+				C7A3ECA728A273F400558940 /* ColorSelectionViewProtocol.swift in Sources */,
+				C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */,
+				C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */,
+				C7AF4EFC28AB9B4A001377BE /* LightboxSettingsInteractor.swift in Sources */,
+				C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */,
+				C7AF4EFF28AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift in Sources */,
+				C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */,
+				C7A3ECA028A273F400558940 /* ColorSelectionView.swift in Sources */,
+				C7D36E3928AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift in Sources */,
+				C7D36E3D28AA892C004B6799 /* DocumentSettingsViewProtocol.swift in Sources */,
+				C7D36E3328AA892C004B6799 /* DocumentSettingsPresenter.swift in Sources */,
+				C7679EC328A1488100B1DB90 /* PalletesInputInteractorProtocol.swift in Sources */,
+				C7679E9B28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift in Sources */,
+				C7D36E1828AA7458004B6799 /* SettingsRouterProtocol.swift in Sources */,
+				C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */,
+				C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */,
+				C7D36E3228AA892C004B6799 /* DocumentSettingsInteractor.swift in Sources */,
+				C7679EBE28A1488100B1DB90 /* PalletesView.swift in Sources */,
+				C7679E9A28A127D300B1DB90 /* ColorsInputViewProtocol.swift in Sources */,
+				C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */,
+				C7B66F29284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift in Sources */,
+				C7AF4EFE28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift in Sources */,
+				C7AF4F0628AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift in Sources */,
+				C7D36E3628AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift in Sources */,
+				C7A3ECA228A273F400558940 /* ColorSelectionInputViewProtocol.swift in Sources */,
+				C7679E9828A127D300B1DB90 /* ColorsView.swift in Sources */,
+				C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */,
+				C7D36E1A28AA7458004B6799 /* SettingsOutputViewProtocol.swift in Sources */,
+				C7AF4F0028AB9B4A001377BE /* LightboxSettingsInputRouterProtocol.swift in Sources */,
+				C7679EC228A1488100B1DB90 /* PalletesInputViewProtocol.swift in Sources */,
+				C74AF1B4284E0B5100FF6C31 /* NewSceneInteractor.swift in Sources */,
+				C7AF4F1028ABACE7001377BE /* DoubleSlider.swift in Sources */,
+				C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */,
+				C74AF1BB284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift in Sources */,
+				C7679EBD28A1488100B1DB90 /* PalletesRouter.swift in Sources */,
+				C7679EA128A127D300B1DB90 /* ColorsViewProtocol.swift in Sources */,
+				C7D36E1B28AA7458004B6799 /* SettingsViewProtocol.swift in Sources */,
+				C7D36E1928AA7458004B6799 /* SettingsOutputInteractorProtocol.swift in Sources */,
+				C7D36E1028AA7458004B6799 /* SettingsRouter.swift in Sources */,
+				C7679EA628A128A100B1DB90 /* ColorsCollectionViewCell.swift in Sources */,
+				C7A3ECA128A273F400558940 /* ColorSelectionRouter.swift in Sources */,
+				C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */,
+				C7679E9928A127D300B1DB90 /* ColorsRouterProtocol.swift in Sources */,
+				C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */,
+				C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */,
+				C7D36E3B28AA892C004B6799 /* DocumentSettingsOutputInteractorProtocol.swift in Sources */,
+				C7AF4EFA28AB9B4A001377BE /* LightboxSettingsView.swift in Sources */,
+				C7679EC028A1488100B1DB90 /* PalletesPresenter.swift in Sources */,
+				C7D36E1228AA7458004B6799 /* SettingsPresenter.swift in Sources */,
+				C7679E9528A127D300B1DB90 /* ColorsPresenter.swift in Sources */,
+				C7679E9D28A127D300B1DB90 /* ColorsOutputViewProtocol.swift in Sources */,
+				C7AF4F0228AB9B4A001377BE /* LightboxSettingsPresenterProtocol.swift in Sources */,
+				C7A3EC9F28A273F400558940 /* ColorSelectionPresenter.swift in Sources */,
+				C7A3ECA328A273F400558940 /* ColorSelectionInputRouterProtocol.swift in Sources */,
+				C7679EBF28A1488100B1DB90 /* PalletesInteractor.swift in Sources */,
+				C7D36E1428AA7458004B6799 /* SettingsPresenterProtocol.swift in Sources */,
+				C7679EA028A127D300B1DB90 /* ColorsPresenterProtocol.swift in Sources */,
+				C7679E9728A127D300B1DB90 /* ColorsRouter.swift in Sources */,
+				C7D36E1728AA7458004B6799 /* SettingsInputInteractorProtocol.swift in Sources */,
+				C7679ECE28A148F200B1DB90 /* PalletesCollectionViewCell.swift in Sources */,
+				C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */,
+				C7A3ECA528A273F400558940 /* ColorSelectionOutputInteractorProtocol.swift in Sources */,
+				C74AF1B6284E0B5100FF6C31 /* NewSceneViewProtocol.swift in Sources */,
+				C7AF4F0428AB9B4A001377BE /* LightboxSettingsOutputInteractorProtocol.swift in Sources */,
+				C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */,
+				C7BCFF7E284DEA82000A7061 /* BrowserCollectionViewCell.swift in Sources */,
+				C7D36E3C28AA892C004B6799 /* DocumentSettingsInteractorProtocol.swift in Sources */,
+				C7679EC728A1488100B1DB90 /* PalletesPresenterProtocol.swift in Sources */,
+				C7B66F60284A44B900E4A858 /* Constants.swift in Sources */,
+				C7A3ECA828A273F400558940 /* ColorSelectionInteractorProtocol.swift in Sources */,
+				C7AF4F0528AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C7AD4170284F50F60093C462 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7AD416F284F50F60093C462 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -267,19 +1257,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
-				CODE_SIGN_ENTITLEMENTS = FlipPad/FlipPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FlipPad/Others/FlipPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlipPad/Info.plist;
+				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,19 +1292,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
-				CODE_SIGN_ENTITLEMENTS = FlipPad/FlipPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FlipPad/Others/FlipPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlipPad/Info.plist;
+				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,6 +1344,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7A3ECFA28A2A2E400558940 /* XCRemoteSwiftPackageReference "FlexColorPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RastislavMirek/FlexColorPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.4;
+			};
+		};
+		C7C6D155284DF5A100A3DB95 /* XCRemoteSwiftPackageReference "DifferenceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ra1028/DifferenceKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74AF1CA284E2D9100FF6C31 /* Support */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Support;
+		};
+		C7A3ECFB28A2A2E400558940 /* FlexColorPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7A3ECFA28A2A2E400558940 /* XCRemoteSwiftPackageReference "FlexColorPicker" */;
+			productName = FlexColorPicker;
+		};
+		C7B66F52284A05C200E4A858 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		C7C6D156284DF5A100A3DB95 /* DifferenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7C6D155284DF5A100A3DB95 /* XCRemoteSwiftPackageReference "DifferenceKit" */;
+			productName = DifferenceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7B66ECE2849F83100E4A858 /* Project object */;
 }

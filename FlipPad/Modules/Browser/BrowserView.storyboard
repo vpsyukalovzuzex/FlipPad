@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Browser View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BrowserView" customModule="FlipPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="interactive" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGe-Q2-79e">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <color key="backgroundColor" name="BrowserBackground"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="cmy-aC-Mhv">
+                                    <size key="itemSize" width="148" height="148"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="52" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrowserCollectionViewCell" id="YfS-Qg-DaJ" customClass="BrowserCollectionViewCell" customModule="FlipPad" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="52" width="148" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oNi-Dv-9fR">
+                                            <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9c-k2-0H2">
+                                                    <rect key="frame" x="8" y="8" width="132" height="132"/>
+                                                    <color key="backgroundColor" name="BrowserSelectedCell"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-Ky-rNj">
+                                                    <rect key="frame" x="8" y="8" width="132" height="132"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-7Q-GNi">
+                                                            <rect key="frame" x="4" y="4" width="124" height="100.66666666666667"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDc-pV-B4h">
+                                                            <rect key="frame" x="44.666666666666671" y="108.66666666666667" width="42.666666666666671" height="19.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aYr-ln-bSa">
+                                                            <rect key="frame" x="56" y="44.333333333333336" width="20" height="20.000000000000007"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="hDc-pV-B4h" secondAttribute="bottom" constant="4" id="2mk-fI-TW4"/>
+                                                        <constraint firstItem="hDc-pV-B4h" firstAttribute="centerX" secondItem="ZnS-Ky-rNj" secondAttribute="centerX" id="4Nj-lx-YdP"/>
+                                                        <constraint firstItem="HjF-7Q-GNi" firstAttribute="centerX" secondItem="ZnS-Ky-rNj" secondAttribute="centerX" id="80w-7p-mMs"/>
+                                                        <constraint firstItem="aYr-ln-bSa" firstAttribute="centerX" secondItem="HjF-7Q-GNi" secondAttribute="centerX" id="LWt-Z0-mp7"/>
+                                                        <constraint firstItem="hDc-pV-B4h" firstAttribute="top" secondItem="HjF-7Q-GNi" secondAttribute="bottom" constant="4" id="U0W-zX-V3N"/>
+                                                        <constraint firstItem="hDc-pV-B4h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HjF-7Q-GNi" secondAttribute="leading" id="XUC-TO-spF"/>
+                                                        <constraint firstItem="HjF-7Q-GNi" firstAttribute="top" secondItem="ZnS-Ky-rNj" secondAttribute="top" constant="4" id="b47-gy-T4R"/>
+                                                        <constraint firstItem="aYr-ln-bSa" firstAttribute="centerY" secondItem="HjF-7Q-GNi" secondAttribute="centerY" id="hWg-By-XO6"/>
+                                                        <constraint firstItem="HjF-7Q-GNi" firstAttribute="leading" secondItem="ZnS-Ky-rNj" secondAttribute="leading" constant="4" id="lMS-dn-ue4"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="r9c-k2-0H2" firstAttribute="top" secondItem="ZnS-Ky-rNj" secondAttribute="top" id="2g0-0u-y5S"/>
+                                                <constraint firstItem="ZnS-Ky-rNj" firstAttribute="leading" secondItem="oNi-Dv-9fR" secondAttribute="leading" constant="8" id="7Vl-MB-TdO"/>
+                                                <constraint firstItem="r9c-k2-0H2" firstAttribute="centerY" secondItem="ZnS-Ky-rNj" secondAttribute="centerY" id="8bE-JJ-x7g"/>
+                                                <constraint firstItem="r9c-k2-0H2" firstAttribute="leading" secondItem="ZnS-Ky-rNj" secondAttribute="leading" id="A1C-uE-7t9"/>
+                                                <constraint firstItem="ZnS-Ky-rNj" firstAttribute="centerX" secondItem="oNi-Dv-9fR" secondAttribute="centerX" id="BkK-NZ-HVH"/>
+                                                <constraint firstItem="ZnS-Ky-rNj" firstAttribute="centerY" secondItem="oNi-Dv-9fR" secondAttribute="centerY" id="GPK-0c-KWg"/>
+                                                <constraint firstItem="ZnS-Ky-rNj" firstAttribute="top" secondItem="oNi-Dv-9fR" secondAttribute="top" constant="8" id="O0h-La-Trc"/>
+                                                <constraint firstItem="r9c-k2-0H2" firstAttribute="centerX" secondItem="ZnS-Ky-rNj" secondAttribute="centerX" id="TWU-wU-fvf"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityIndicator" destination="aYr-ln-bSa" id="Gte-Gw-4TZ"/>
+                                            <outlet property="nameLabel" destination="hDc-pV-B4h" id="4eE-FB-aAU"/>
+                                            <outlet property="selectView" destination="r9c-k2-0H2" id="W1R-Di-9gH"/>
+                                            <outlet property="thumbnailImageView" destination="HjF-7Q-GNi" id="AR7-zh-dfB"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="yOJ-7w-SzS"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="xHh-uv-iIM"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-Rz-2RS" customClass="BlurView" customModule="FlipPad" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="52"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-Bd-XTo">
+                                        <rect key="frame" x="44" y="0.0" width="724" height="52"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-7N-tr0">
+                                                <rect key="frame" x="8" y="8" width="576" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4B-XD-Jwe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="New scene">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="newSceneButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Trf-Y4-20c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vK-Rn-Wqu">
+                                                        <rect key="frame" x="105" y="0.0" width="76" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Settings">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="settingsButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="H0W-w7-5PB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zq-Fq-kqX">
+                                                        <rect key="frame" x="189" y="0.0" width="64" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Import">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="importButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pma-ni-5IC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFC-VB-XfZ">
+                                                        <rect key="frame" x="261" y="0.0" width="75" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Rename">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="renameButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JkM-Rk-BgE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tu3-DJ-4SI">
+                                                        <rect key="frame" x="344" y="0.0" width="85" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Duplicate">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="duplicateButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3YR-8D-orI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTJ-PU-Ty6">
+                                                        <rect key="frame" x="437" y="0.0" width="67" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Delete">
+                                                            <color key="titleColor" name="WarningButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="deleteButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XiJ-MB-VZ5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-Na-WLE">
+                                                        <rect key="frame" x="512" y="0.0" width="64" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Export">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="exportButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="crv-o7-Mbw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-Ub-bNW">
+                                                <rect key="frame" x="589" y="8" width="127" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-jx-yrB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Select">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7vD-C2-ed6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp0-Rq-UKp">
+                                                        <rect key="frame" x="70" y="0.0" width="57" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Done">
+                                                            <color key="titleColor" name="ButtonTint"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="doneButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x7h-FA-E7Y"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kdH-Ub-bNW" firstAttribute="centerY" secondItem="OWh-7N-tr0" secondAttribute="centerY" id="AhQ-jZ-ZUc"/>
+                                            <constraint firstAttribute="trailing" secondItem="kdH-Ub-bNW" secondAttribute="trailing" constant="8" id="FAg-Xh-ctY"/>
+                                            <constraint firstItem="OWh-7N-tr0" firstAttribute="centerY" secondItem="aDz-Bd-XTo" secondAttribute="centerY" id="GN3-VT-FmY"/>
+                                            <constraint firstItem="OWh-7N-tr0" firstAttribute="top" secondItem="aDz-Bd-XTo" secondAttribute="top" constant="8" id="MJG-GP-clf"/>
+                                            <constraint firstItem="OWh-7N-tr0" firstAttribute="leading" secondItem="aDz-Bd-XTo" secondAttribute="leading" constant="8" id="uCf-ua-iEX"/>
+                                            <constraint firstItem="kdH-Ub-bNW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OWh-7N-tr0" secondAttribute="trailing" priority="250" constant="8" id="uyc-Of-BlX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="nSd-ZO-fop"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nSd-ZO-fop" firstAttribute="trailing" secondItem="aDz-Bd-XTo" secondAttribute="trailing" id="5Xc-LM-1F6"/>
+                                    <constraint firstAttribute="bottom" secondItem="aDz-Bd-XTo" secondAttribute="bottom" id="hKL-eA-7Gk"/>
+                                    <constraint firstItem="aDz-Bd-XTo" firstAttribute="leading" secondItem="nSd-ZO-fop" secondAttribute="leading" id="y3c-B5-sXT"/>
+                                    <constraint firstItem="aDz-Bd-XTo" firstAttribute="top" secondItem="nSd-ZO-fop" secondAttribute="top" id="ycW-tF-gkX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="BrowserBackground"/>
+                        <constraints>
+                            <constraint firstItem="rGe-Q2-79e" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="EEG-x2-t3j"/>
+                            <constraint firstAttribute="trailing" secondItem="XlI-Rz-2RS" secondAttribute="trailing" id="Kyz-0E-2mi"/>
+                            <constraint firstItem="XlI-Rz-2RS" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="R07-o1-wpZ"/>
+                            <constraint firstItem="XlI-Rz-2RS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="cQr-mG-HqJ"/>
+                            <constraint firstItem="rGe-Q2-79e" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="jZa-1J-GEU"/>
+                            <constraint firstAttribute="bottom" secondItem="rGe-Q2-79e" secondAttribute="bottom" id="rG2-SP-UCM"/>
+                            <constraint firstAttribute="trailing" secondItem="rGe-Q2-79e" secondAttribute="trailing" id="wyh-ch-yza"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="XlI-Rz-2RS" id="3O2-Xo-OvB"/>
+                        <outlet property="collectionView" destination="rGe-Q2-79e" id="7Y5-Pg-ktG"/>
+                        <outlet property="deleteButton" destination="aTJ-PU-Ty6" id="2KC-xM-vaR"/>
+                        <outlet property="doneButton" destination="lp0-Rq-UKp" id="Gx2-GL-chf"/>
+                        <outlet property="duplicateButton" destination="tu3-DJ-4SI" id="fg2-Hf-Sqq"/>
+                        <outlet property="exportButton" destination="sTF-Na-WLE" id="d5u-T7-yMb"/>
+                        <outlet property="importButton" destination="1Zq-Fq-kqX" id="Unf-uh-fxh"/>
+                        <outlet property="leftStackView" destination="OWh-7N-tr0" id="Aer-aQ-DzR"/>
+                        <outlet property="newSceneButton" destination="u4B-XD-Jwe" id="wKe-DN-b6e"/>
+                        <outlet property="renameButton" destination="UFC-VB-XfZ" id="4Jk-tt-uIT"/>
+                        <outlet property="rightStackView" destination="kdH-Ub-bNW" id="CEm-Ts-FvL"/>
+                        <outlet property="selectButton" destination="c9u-jx-yrB" id="Trd-eC-1AE"/>
+                        <outlet property="settingsButon" destination="3vK-Rn-Wqu" id="m1b-eg-1jV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-1.4018691588785046"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrowserBackground">
+            <color red="0.43900001049041748" green="0.44699999690055847" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrowserSelectedCell">
+            <color red="0.33700001239776611" green="0.33700001239776611" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonTint">
+            <color red="0.0" green="0.4779999852180481" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WarningButtonTint">
+            <color red="0.99599999189376831" green="0.23499999940395355" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
