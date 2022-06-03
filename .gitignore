@@ -1,0 +1,19 @@
+
+# macOS
+.DS_Store
+
+# Thumbnails
+._*
+
+# Xcode
+xcuserdata/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Swift Package Manager
+.swiftpm
+/Packages
+/.build
+Package.resolved
