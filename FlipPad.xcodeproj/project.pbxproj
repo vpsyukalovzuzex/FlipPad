@@ -10,6 +10,21 @@
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
+		C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */; };
+		C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F14284A01AB00E4A858 /* BrowserView.swift */; };
+		C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */; };
+		C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */; };
+		C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */; };
+		C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */; };
+		C7B66F29284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */; };
+		C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */; };
+		C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */; };
+		C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */; };
+		C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */; };
+		C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */; };
+		C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */; };
+		C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */; };
+		C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66F4E284A048600E4A858 /* BrowserView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +34,21 @@
 		C7B66EE52849F83400E4A858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7B66EE72849F83400E4A858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipPad.entitlements; sourceTree = "<group>"; };
+		C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInteractor.swift; sourceTree = "<group>"; };
+		C7B66F14284A01AB00E4A858 /* BrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserPresenter.swift; sourceTree = "<group>"; };
+		C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserRouter.swift; sourceTree = "<group>"; };
+		C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserRouterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewProtocol.swift; sourceTree = "<group>"; };
+		C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Common.swift"; sourceTree = "<group>"; };
+		C7B66F4E284A048600E4A858 /* BrowserView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +81,100 @@
 		C7B66ED82849F83200E4A858 /* FlipPad */ = {
 			isa = PBXGroup;
 			children = (
-				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
-				C7B66EE72849F83400E4A858 /* Info.plist */,
 				C7B66ED92849F83200E4A858 /* AppDelegate.swift */,
 				C7B66EE22849F83400E4A858 /* Assets.xcassets */,
-				C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */,
+				C7B66F30284A01F600E4A858 /* Extensions */,
+				C7B66EEF284A011B00E4A858 /* Modules */,
+				C7B66F31284A022000E4A858 /* Others */,
+				C7B66F32284A029900E4A858 /* Storyboards */,
 			);
 			path = FlipPad;
+			sourceTree = "<group>";
+		};
+		C7B66EEF284A011B00E4A858 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F11284A01AB00E4A858 /* Browser */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7B66F11284A01AB00E4A858 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F4E284A048600E4A858 /* BrowserView.storyboard */,
+				C7B66F12284A01AB00E4A858 /* Classes */,
+				C7B66F17284A01AB00E4A858 /* Protocols */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		C7B66F12284A01AB00E4A858 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F13284A01AB00E4A858 /* BrowserInteractor.swift */,
+				C7B66F15284A01AB00E4A858 /* BrowserPresenter.swift */,
+				C7B66F16284A01AB00E4A858 /* BrowserRouter.swift */,
+				C7B66F14284A01AB00E4A858 /* BrowserView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7B66F17284A01AB00E4A858 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F1D284A01AB00E4A858 /* BrowserInteractorProtocol.swift */,
+				C7B66F22284A01AB00E4A858 /* BrowserPresenterProtocol.swift */,
+				C7B66F18284A01AB00E4A858 /* BrowserRouterProtocol.swift */,
+				C7B66F21284A01AB00E4A858 /* BrowserViewProtocol.swift */,
+				C7B66F19284A01AB00E4A858 /* Input */,
+				C7B66F1E284A01AB00E4A858 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7B66F19284A01AB00E4A858 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F1B284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift */,
+				C7B66F1A284A01AB00E4A858 /* BrowserInputRouterProtocol.swift */,
+				C7B66F1C284A01AB00E4A858 /* BrowserInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7B66F1E284A01AB00E4A858 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F20284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift */,
+				C7B66F1F284A01AB00E4A858 /* BrowserOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7B66F30284A01F600E4A858 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7B66F31284A022000E4A858 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66EE72849F83400E4A858 /* Info.plist */,
+				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C7B66F32284A029900E4A858 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +237,7 @@
 			files = (
 				C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */,
 				C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */,
+				C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +249,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
+				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
+				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,
+				C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */,
+				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
+				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
+				C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */,
+				C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */,
+				C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */,
+				C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */,
+				C7B66F29284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift in Sources */,
+				C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */,
+				C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */,
+				C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */,
+				C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +399,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
-				CODE_SIGN_ENTITLEMENTS = FlipPad/FlipPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FlipPad/Others/FlipPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlipPad/Info.plist;
+				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -300,12 +432,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
-				CODE_SIGN_ENTITLEMENTS = FlipPad/FlipPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FlipPad/Others/FlipPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlipPad/Info.plist;
+				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
