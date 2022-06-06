@@ -6,6 +6,10 @@ import Foundation
 
 protocol BrowserOutputViewProtocol: AnyObject {
     
+    // MARK: -
+    
+    func viewDidLoad()
+    
     func didSelectNewScene()
     
     func didSelectImport()
