@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */; };
+		C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */; };
+		C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */; };
+		C74AF1B4284E0B5100FF6C31 /* NewSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */; };
+		C74AF1B5284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */; };
+		C74AF1B6284E0B5100FF6C31 /* NewSceneViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */; };
+		C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */; };
+		C74AF1B8284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */; };
+		C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */; };
+		C74AF1BA284E0B5100FF6C31 /* NewScenePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */; };
+		C74AF1BB284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */; };
+		C74AF1BC284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */; };
+		C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */; };
+		C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */; };
+		C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */; };
+		C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */ = {isa = PBXBuildFile; productRef = C74AF1CA284E2D9100FF6C31 /* Support */; };
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
@@ -31,11 +47,26 @@
 		C7B66F60284A44B900E4A858 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5F284A44B900E4A858 /* Constants.swift */; };
 		C7BCFF7E284DEA82000A7061 /* BrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */; };
 		C7C6D157284DF5A100A3DB95 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7C6D156284DF5A100A3DB95 /* DifferenceKit */; };
-		C7C6D159284DF90700A3DB95 /* Array+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6D158284DF90700A3DB95 /* Array+Common.swift */; };
 		C7C6D15B284DFB4200A3DB95 /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6D15A284DFB4200A3DB95 /* UIView+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneView.swift; sourceTree = "<group>"; };
+		C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneRouter.swift; sourceTree = "<group>"; };
+		C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScenePresenter.swift; sourceTree = "<group>"; };
+		C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInteractor.swift; sourceTree = "<group>"; };
+		C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScenePresenterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneRouterProtocol.swift; sourceTree = "<group>"; };
+		C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewSceneView.storyboard; sourceTree = "<group>"; };
+		C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSceneCollectionCell.swift; sourceTree = "<group>"; };
+		C74AF1C8284E2B1C00FF6C31 /* Support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Support; sourceTree = "<group>"; };
 		C7B66ED62849F83200E4A858 /* FlipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B66ED92849F83200E4A858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B66EE22849F83400E4A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +93,6 @@
 		C7B66F5D284A3A1300E4A858 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		C7B66F5F284A44B900E4A858 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCollectionViewCell.swift; sourceTree = "<group>"; };
-		C7C6D158284DF90700A3DB95 /* Array+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Common.swift"; sourceTree = "<group>"; };
 		C7C6D15A284DFB4200A3DB95 /* UIView+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */,
 				C7C6D157284DF5A100A3DB95 /* DifferenceKit in Frameworks */,
 				C7B66F53284A05C200E4A858 /* Core in Frameworks */,
 			);
@@ -79,10 +110,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74AF19F284E0B5100FF6C31 /* NewScene */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */,
+				C74AF1C2284E12F200FF6C31 /* Cells */,
+				C74AF1A0284E0B5100FF6C31 /* Classes */,
+				C74AF1A5284E0B5100FF6C31 /* Protocols */,
+			);
+			path = NewScene;
+			sourceTree = "<group>";
+		};
+		C74AF1A0284E0B5100FF6C31 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1A4284E0B5100FF6C31 /* NewSceneInteractor.swift */,
+				C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */,
+				C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */,
+				C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C74AF1A5284E0B5100FF6C31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1A6284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift */,
+				C74AF1AC284E0B5100FF6C31 /* NewScenePresenterProtocol.swift */,
+				C74AF1B0284E0B5100FF6C31 /* NewSceneRouterProtocol.swift */,
+				C74AF1A7284E0B5100FF6C31 /* NewSceneViewProtocol.swift */,
+				C74AF1A8284E0B5100FF6C31 /* Input */,
+				C74AF1AD284E0B5100FF6C31 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C74AF1A8284E0B5100FF6C31 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1AB284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift */,
+				C74AF1AA284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift */,
+				C74AF1A9284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C74AF1AD284E0B5100FF6C31 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1AE284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift */,
+				C74AF1AF284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C74AF1C2284E12F200FF6C31 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C7B66ECD2849F83100E4A858 = {
 			isa = PBXGroup;
 			children = (
 				C7B66F50284A057300E4A858 /* Core */,
+				C74AF1C8284E2B1C00FF6C31 /* Support */,
 				C7B66ED82849F83200E4A858 /* FlipPad */,
 				C7B66ED72849F83200E4A858 /* Products */,
 			);
@@ -115,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B66F11284A01AB00E4A858 /* Browser */,
+				C74AF19F284E0B5100FF6C31 /* NewScene */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -176,7 +271,6 @@
 		C7B66F30284A01F600E4A858 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C7C6D158284DF90700A3DB95 /* Array+Common.swift */,
 				C7C6D15A284DFB4200A3DB95 /* UIView+Common.swift */,
 				C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */,
 			);
@@ -186,8 +280,8 @@
 		C7B66F31284A022000E4A858 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				C7B66EE72849F83400E4A858 /* Info.plist */,
 				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
+				C7B66EE72849F83400E4A858 /* Info.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -244,6 +338,7 @@
 			packageProductDependencies = (
 				C7B66F52284A05C200E4A858 /* Core */,
 				C7C6D156284DF5A100A3DB95 /* DifferenceKit */,
+				C74AF1CA284E2D9100FF6C31 /* Support */,
 			);
 			productName = FlipPad;
 			productReference = C7B66ED62849F83200E4A858 /* FlipPad.app */;
@@ -292,6 +387,7 @@
 			files = (
 				C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */,
 				C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */,
+				C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */,
 				C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,22 +401,35 @@
 			files = (
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
 				C7B66F57284A306300E4A858 /* XibView.swift in Sources */,
+				C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */,
 				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
 				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,
-				C7C6D159284DF90700A3DB95 /* Array+Common.swift in Sources */,
+				C74AF1B8284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift in Sources */,
+				C74AF1BA284E0B5100FF6C31 /* NewScenePresenterProtocol.swift in Sources */,
+				C74AF1BC284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift in Sources */,
 				C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */,
 				C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */,
+				C74AF1B5284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift in Sources */,
 				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
 				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
+				C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */,
+				C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */,
+				C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */,
 				C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */,
 				C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */,
 				C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */,
 				C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */,
 				C7B66F29284A01AB00E4A858 /* BrowserInputInteractorProtocol.swift in Sources */,
+				C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */,
+				C74AF1B4284E0B5100FF6C31 /* NewSceneInteractor.swift in Sources */,
 				C7C6D15B284DFB4200A3DB95 /* UIView+Common.swift in Sources */,
 				C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */,
+				C74AF1BB284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift in Sources */,
+				C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */,
+				C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */,
 				C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */,
 				C7B66F2D284A01AB00E4A858 /* BrowserOutputInteractorProtocol.swift in Sources */,
+				C74AF1B6284E0B5100FF6C31 /* NewSceneViewProtocol.swift in Sources */,
 				C7B66F2C284A01AB00E4A858 /* BrowserOutputViewProtocol.swift in Sources */,
 				C7BCFF7E284DEA82000A7061 /* BrowserCollectionViewCell.swift in Sources */,
 				C7B66F60284A44B900E4A858 /* Constants.swift in Sources */,
@@ -556,6 +665,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C74AF1CA284E2D9100FF6C31 /* Support */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Support;
+		};
 		C7B66F52284A05C200E4A858 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;

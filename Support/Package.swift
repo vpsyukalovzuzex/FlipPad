@@ -3,30 +3,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "Core",
+    name: "Support",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10)
     ],
     products: [
         .library(
-            name: "Core",
+            name: "Support",
             targets: [
-                "Core"
+                "Support"
             ]
         )
     ],
     dependencies: [
-        .package(path: "./Support")
+        // Empty.
     ],
     targets: [
         .target(
-            name: "Core",
-            dependencies: [
-                .product(
-                    name: "Support"
-                )
-            ]
+            name: "Support"
         )
     ]
 )

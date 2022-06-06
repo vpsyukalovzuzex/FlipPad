@@ -3,8 +3,8 @@
 //
 
 import UIKit
+import Support
 import DifferenceKit
-import CoreGraphics
 
 class BrowserView: UIViewController,
                    BrowserViewProtocol,
@@ -203,10 +203,10 @@ class BrowserView: UIViewController,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let reuseIdentifier = String(describing: BrowserCollectionViewCell.self)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BrowserCollectionViewCell
-        if let item = sections[safe: indexPath.section]?.elements[safe: indexPath.row] {
-            cell.thumbnail = item.thumbnail
-            cell.name = item.name
-            if item.isLoading {
+        if let element = sections[safe: indexPath.section]?.elements[safe: indexPath.row] {
+            cell.thumbnail = element.thumbnail
+            cell.name = element.name
+            if element.isLoading {
                 cell.startAnimating()
             } else {
                 cell.stopAnimating()
@@ -231,11 +231,13 @@ class BrowserView: UIViewController,
         )
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if section == 0 {
-            return CGSize(
-                width: 0.0,
-                height: .isMacCatalyst ? 0.0 : .iOSBrowserTopInset
+            return UIEdgeInsets(
+                top: .isMacCatalyst ? 0.0 : .iOSBrowserTopInset,
+                left: 0.0,
+                bottom: 0.0,
+                right: 0.0
             )
         }
         return .zero

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="BrowserView" customModule="FlipPad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="interactive" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGe-Q2-79e">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <color key="backgroundColor" name="BrowserBackground"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="cmy-aC-Mhv">
                                     <size key="itemSize" width="148" height="148"/>
-                                    <size key="headerReferenceSize" width="0.0" height="52"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="52" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrowserCollectionViewCell" id="YfS-Qg-DaJ" customClass="BrowserCollectionViewCell" customModule="FlipPad" customModuleProvider="target">
@@ -37,7 +37,7 @@
                                             <subviews>
                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9c-k2-0H2">
                                                     <rect key="frame" x="8" y="8" width="132" height="132"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" name="BrowserSelectedCell"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-Ky-rNj">
                                                     <rect key="frame" x="8" y="8" width="132" height="132"/>
@@ -55,7 +55,6 @@
                                                             <rect key="frame" x="56" y="44.333333333333336" width="20" height="20.000000000000007"/>
                                                         </activityIndicatorView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="hDc-pV-B4h" secondAttribute="bottom" constant="4" id="2mk-fI-TW4"/>
                                                         <constraint firstItem="hDc-pV-B4h" firstAttribute="centerX" secondItem="ZnS-Ky-rNj" secondAttribute="centerX" id="4Nj-lx-YdP"/>
@@ -88,20 +87,16 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gz0-OV-BGs">
-                                    <rect key="frame" x="0.0" y="0.0" width="926" height="52"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="yOJ-7w-SzS"/>
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="xHh-uv-iIM"/>
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-Rz-2RS" customClass="BlurView" customModule="FlipPad" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="52"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="52"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-Bd-XTo">
-                                        <rect key="frame" x="44" y="0.0" width="838" height="52"/>
+                                        <rect key="frame" x="44" y="0.0" width="724" height="52"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-7N-tr0">
                                                 <rect key="frame" x="8" y="8" width="492" height="36"/>
@@ -112,7 +107,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="New scene">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="newSceneButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Trf-Y4-20c"/>
@@ -124,7 +119,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Import">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="importButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pma-ni-5IC"/>
@@ -136,7 +131,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Rename">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="renameButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JkM-Rk-BgE"/>
@@ -148,7 +143,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Duplicate">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="duplicateButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3YR-8D-orI"/>
@@ -160,7 +155,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Delete">
-                                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                                            <color key="titleColor" name="WarningButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="deleteButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XiJ-MB-VZ5"/>
@@ -172,7 +167,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Export">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="exportButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="crv-o7-Mbw"/>
@@ -181,7 +176,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-Ub-bNW">
-                                                <rect key="frame" x="703" y="8" width="127" height="36"/>
+                                                <rect key="frame" x="589" y="8" width="127" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-jx-yrB">
                                                         <rect key="frame" x="0.0" y="0.0" width="62" height="36"/>
@@ -189,7 +184,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Select">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="selectButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7vD-C2-ed6"/>
@@ -201,7 +196,7 @@
                                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Done">
-                                                            <color key="titleColor" systemColor="tintColor"/>
+                                                            <color key="titleColor" name="ButtonTint"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="doneButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x7h-FA-E7Y"/>
@@ -232,7 +227,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BrowserBackground"/>
                         <constraints>
                             <constraint firstItem="rGe-Q2-79e" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="EEG-x2-t3j"/>
                             <constraint firstAttribute="trailing" secondItem="XlI-Rz-2RS" secondAttribute="trailing" id="Kyz-0E-2mi"/>
@@ -264,14 +259,17 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="BrowserBackground">
+            <color red="0.4392156862745098" green="0.44705882352941173" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrowserSelectedCell">
+            <color red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonTint">
+            <color red="0.0" green="0.47843137254901957" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WarningButtonTint">
+            <color red="0.99607843137254903" green="0.23529411764705882" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
