@@ -10,9 +10,9 @@ protocol NewSceneOutputViewProtocol: AnyObject {
     
     func viewDidLoad()
     
-    func didSelectResolution()
+    func didChangeFps(_ fps: Float)
     
-    func didChangeFps()
+    func didSelectResolution(_ resolution: Int)
     
     func didSelectContinue()
 }

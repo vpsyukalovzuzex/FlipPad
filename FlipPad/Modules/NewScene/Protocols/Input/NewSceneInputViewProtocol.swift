@@ -9,14 +9,16 @@ protocol NewSceneInputViewProtocol: AnyObject {
     
     // MARK: -
     
-    var fps: Int { get set }
-    
     var selectedIndexPaths: [IndexPath]? { get }
-    
-    var source: [NewSceneView.Element] { get set }
     
     // MARK: -
     
-    func selectIndexPath(_ indexPath: IndexPath)
-    func selectIndexPath(_ indexPath: IndexPath, animated: Bool)
+    func setFpsFloat(_ fpsFloat: Float)
+    
+    func setFpsString(_ fpsString: String?)
+    
+    func setNewSource(_ newSource: [NewSceneView.Element])
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath])
+    func setSelectIndexPaths(_ indexPaths: [IndexPath], animated: Bool)
 }

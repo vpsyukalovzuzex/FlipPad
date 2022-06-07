@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import Core
 
 class NewScenePresenter: NewScenePresenterProtocol,
                          NewSceneOutputViewProtocol,
@@ -22,12 +23,12 @@ class NewScenePresenter: NewScenePresenterProtocol,
         interactor?.start()
     }
     
-    func didSelectResolution() {
-        interactor?.resolution = view?.selectedIndexPaths?.first?.row ?? 0
+    func didChangeFps(_ fps: Float) {
+        interactor?.setFps(Int(fps))
     }
     
-    func didChangeFps() {
-        interactor?.fps = view?.fps ?? 0
+    func didSelectResolution(_ resolution: Int) {
+        interactor?.setResolution(resolution)
     }
     
     func didSelectContinue() {
@@ -36,19 +37,18 @@ class NewScenePresenter: NewScenePresenterProtocol,
     
     // MARK: - NewSceneOutputInteractorProtocol
     
-    func didUpdateFps() {
-        view?.fps = interactor?.fps ?? 0
+    func didUpdateAllResolutions(_ allResolutions: [Resolution]) {
+        let newSource = allResolutions.map { NewSceneView.Element(title: "\($0)") }
+        view?.setNewSource(newSource)
     }
     
-    func didUpdateResolution() {
-        let row = interactor?.resolution ?? 0
-        let indexPath = IndexPath(row: row, section: 0)
-        DispatchQueue.main.async { [weak self] in
-            self?.view?.selectIndexPath(indexPath, animated: true)
-        }
+    func didUpdateFps(_ fps: Int) {
+        view?.setFpsString("\(fps)")
+        view?.setFpsFloat(Float(fps))
     }
     
-    func didUpdateResolutions() {
-        view?.source = interactor?.resolutions.map { NewSceneView.Element(title: "\($0)") } ?? []
+    func didUpdateResolution(_ resolution: Int) {
+        let indexPath = IndexPath(row: resolution, section: 0)
+        view?.setSelectIndexPaths([indexPath])
     }
 }

@@ -3,14 +3,15 @@
 //
 
 import Foundation
+import Core
 
 protocol NewSceneOutputInteractorProtocol: AnyObject {
     
     // MARK: -
     
-    func didUpdateResolutions()
+    func didUpdateAllResolutions(_ allResolutions: [Resolution])
     
-    func didUpdateResolution()
+    func didUpdateFps(_ fps: Int)
     
-    func didUpdateFps()
+    func didUpdateResolution(_ resolution: Int)
 }

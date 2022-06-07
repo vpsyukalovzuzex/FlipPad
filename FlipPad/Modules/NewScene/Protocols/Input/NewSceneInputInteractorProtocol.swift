@@ -7,17 +7,11 @@ import Core
 
 protocol NewSceneInputInteractorProtocol: AnyObject {
     
-    // Add input functions.
-    
-    // MARK: -
-    
-    var fps: Int { get set }
-    
-    var resolution: Int { get set }
-    
-    var resolutions: [Resolution] { get }
-    
     // MARK: -
     
     func start()
+    
+    func setFps(_ fps: Int)
+    
+    func setResolution(_ resolution: Int)
 }

@@ -41,7 +41,7 @@ class NewSceneView: UIViewController,
     
     // MARK: -
     
-    private var elements = [Element]()
+    private var source = [Element]()
     
     // MARK: - NewSceneViewProtocol
     
@@ -56,52 +56,47 @@ class NewSceneView: UIViewController,
     
     // MARK: - NewSceneInputViewProtocol
     
-    var fps: Int {
-        get {
-            return Int(fpsSlider.value)
-        }
-        set {
-            fpsSlider.value = Float(newValue)
-            fpsLabel.text = "\(newValue)"
-        }
-    }
-    
     var selectedIndexPaths: [IndexPath]? {
         return collectionView.indexPathsForSelectedItems
     }
     
-    var source: [NewSceneView.Element] {
-        get {
-            return elements
-        }
-        set {
-            let stagedChangeset = StagedChangeset(source: elements, target: newValue)
-            collectionView.reload(using: stagedChangeset) { [weak self] elements in
-                self?.elements = elements
-            }
-        }
-    }
-    
     // MARK: -
     
-    func selectIndexPath(_ indexPath: IndexPath) {
-        selectIndexPath(indexPath, animated: true)
+    func setFpsFloat(_ fpsFloat: Float) {
+        fpsSlider.value = fpsFloat
     }
     
-    func selectIndexPath(_ indexPath: IndexPath, animated: Bool) {
-        collectionView.selectItem(at: indexPath, animated: animated, scrollPosition: .top)
+    func setFpsString(_ fpsString: String?) {
+        fpsLabel.text = fpsString
+    }
+    
+    func setNewSource(_ newSource: [Element]) {
+        let stagedChangeset = StagedChangeset(source: source, target: newSource)
+        collectionView.reload(using: stagedChangeset) { [weak self] source in
+            self?.source = source
+        }
+    }
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]) {
+        DispatchQueue.main.async { [weak self] in
+            self?.setSelectIndexPaths(indexPaths, animated: true)
+        }
+    }
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath], animated: Bool) {
+        indexPaths.forEach { collectionView.selectItem(at: $0, animated: animated, scrollPosition: .top) }
     }
     
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return elements.count
+        return source.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let reuseIdentifier = String(describing: NewSceneCollectionCell.self)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! NewSceneCollectionCell
-        if let element = elements[safe: indexPath.row] {
+        if let element = source[safe: indexPath.row] {
             cell.title = element.title
         }
         return cell
@@ -110,13 +105,13 @@ class NewSceneView: UIViewController,
     // MARK: - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.didSelectResolution()
+        presenter?.didSelectResolution(indexPath.row)
     }
     
     // MARK: -
     
     @IBAction private func fpsSliderAction(_ sender: UISlider) {
-        presenter?.didChangeFps()
+        presenter?.didChangeFps(sender.value)
     }
     
     @IBAction private func continueButtonAction(_ sender: UIButton) {

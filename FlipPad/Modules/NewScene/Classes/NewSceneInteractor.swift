@@ -14,35 +14,19 @@ class NewSceneInteractor: NewSceneInteractorProtocol,
     
     // MARK: - NewSceneInputInteractorProtocol
     
-    var fps: Int {
-        get {
-            return Settings.fps
-        }
-        set {
-            Settings.fps = newValue
-            presenter?.didUpdateFps()
-        }
-    }
-    
-    var resolution: Int {
-        get {
-            return Settings.resolution
-        }
-        set {
-            Settings.resolution = newValue
-            presenter?.didUpdateResolution()
-        }
-    }
-    
-    var resolutions: [Resolution] {
-        return Resolution.all
-    }
-    
-    // MARK: -
-    
     func start() {
-        presenter?.didUpdateResolutions()
-        presenter?.didUpdateResolution()
-        presenter?.didUpdateFps()
+        presenter?.didUpdateAllResolutions(Resolution.all)
+        presenter?.didUpdateFps(Settings.fps)
+        presenter?.didUpdateResolution(Settings.resolution)
+    }
+    
+    func setFps(_ fps: Int) {
+        Settings.fps = fps
+        presenter?.didUpdateFps(fps)
+    }
+    
+    func setResolution(_ resolution: Int) {
+        Settings.resolution = resolution
+        presenter?.didUpdateResolution(resolution)
     }
 }
