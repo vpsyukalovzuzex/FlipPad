@@ -23,6 +23,8 @@
 		C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */; };
 		C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */; };
 		C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */ = {isa = PBXBuildFile; productRef = C74AF1CA284E2D9100FF6C31 /* Support */; };
+		C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */; };
+		C7AD416B284F4C040093C462 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD416A284F4C040093C462 /* String+Common.swift */; };
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
@@ -67,6 +69,8 @@
 		C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewSceneView.storyboard; sourceTree = "<group>"; };
 		C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSceneCollectionCell.swift; sourceTree = "<group>"; };
 		C74AF1C8284E2B1C00FF6C31 /* Support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Support; sourceTree = "<group>"; };
+		C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Common.swift"; sourceTree = "<group>"; };
+		C7AD416A284F4C040093C462 /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		C7B66ED62849F83200E4A858 /* FlipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B66ED92849F83200E4A858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B66EE22849F83400E4A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 		C7B66F30284A01F600E4A858 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD416A284F4C040093C462 /* String+Common.swift */,
+				C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */,
 				C7C6D15A284DFB4200A3DB95 /* UIView+Common.swift */,
 				C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */,
 			);
@@ -412,9 +418,11 @@
 				C74AF1B5284E0B5100FF6C31 /* NewSceneInteractorProtocol.swift in Sources */,
 				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
 				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
+				C7AD416B284F4C040093C462 /* String+Common.swift in Sources */,
 				C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */,
 				C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */,
 				C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */,
+				C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */,
 				C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */,
 				C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */,
 				C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */,

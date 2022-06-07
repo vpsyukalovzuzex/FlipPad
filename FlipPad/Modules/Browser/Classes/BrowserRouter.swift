@@ -36,7 +36,6 @@ class BrowserRouter: BrowserRouterProtocol,
         newSceneViewController.preferredContentSize = .newSceneViewPreferredContentSize
         newSceneViewController.modalPresentationStyle = .popover
         let popoverPresentationController = newSceneViewController.popoverPresentationController
-        popoverPresentationController?.delegate = viewController as? UIPopoverPresentationControllerDelegate
         popoverPresentationController?.sourceView = sourceView
         popoverPresentationController?.sourceRect = sourceRect
         viewController?.present(newSceneViewController, animated: true)

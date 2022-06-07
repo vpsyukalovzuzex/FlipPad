@@ -10,8 +10,7 @@ class NewSceneView: UIViewController,
                     NewSceneViewProtocol,
                     NewSceneInputViewProtocol,
                     UICollectionViewDataSource,
-                    UICollectionViewDelegate,
-                    UIPopoverPresentationControllerDelegate {
+                    UICollectionViewDelegate {
     
     // MARK: -
     
@@ -34,15 +33,21 @@ class NewSceneView: UIViewController,
     
     // MARK: -
     
-    @IBOutlet private weak var fpsSlider: UISlider!
-    
+    @IBOutlet private weak var playbackSpeedLabel: UILabel!
+    @IBOutlet private weak var resolutionsLabel: UILabel!
     @IBOutlet private weak var fpsLabel: UILabel!
     
+    @IBOutlet private weak var fpsSlider: UISlider!
+    
     @IBOutlet private weak var collectionView: UICollectionView!
+    
+    @IBOutlet private weak var continueButton: UIButton!
     
     // MARK: -
     
     private var source = [Element]()
+    
+    private var isContinue = false
     
     // MARK: - NewSceneViewProtocol
     
@@ -52,12 +57,15 @@ class NewSceneView: UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        localize()
         presenter?.viewDidLoad()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        presenter?.didTapContinue()
+        if isContinue {
+            presenter?.didTapContinue()
+        }
     }
     
     // MARK: - NewSceneInputViewProtocol
@@ -121,10 +129,12 @@ class NewSceneView: UIViewController,
         presenter?.didTapResolution(at: indexPath)
     }
     
-    // MARK: - UIPopoverPresentationControllerDelegate
+    // MARK: -
     
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .none
+    private func localize() {
+        playbackSpeedLabel.text = "Playback speed:".localized
+        resolutionsLabel.text = "Resolutions:".localized
+        continueButton.setTitle("Continue".localized, for: .normal)
     }
     
     // MARK: -
@@ -134,6 +144,7 @@ class NewSceneView: UIViewController,
     }
     
     @IBAction private func continueButtonAction(_ sender: UIButton) {
+        isContinue = true
         dismiss(animated: true)
     }
 }

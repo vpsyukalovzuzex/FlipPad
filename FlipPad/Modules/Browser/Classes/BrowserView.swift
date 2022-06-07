@@ -397,7 +397,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(newSceneAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "New scene"
+            toolbarItem.title = "New scene".localized
             return toolbarItem
         case .import:
             let barButtonItem = UIBarButtonItem(
@@ -407,7 +407,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(importAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Import"
+            toolbarItem.title = "Import".localized
             return toolbarItem
         case .rename:
             let barButtonItem = UIBarButtonItem(
@@ -417,7 +417,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(renameAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Rename"
+            toolbarItem.title = "Rename".localized
             return toolbarItem
         case .duplicate:
             let barButtonItem = UIBarButtonItem(
@@ -427,7 +427,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(duplicateAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Duplicate"
+            toolbarItem.title = "Duplicate".localized
             return toolbarItem
         case .delete:
             let barButtonItem = UIBarButtonItem(
@@ -437,7 +437,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(deleteAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Delete"
+            toolbarItem.title = "Delete".localized
             return toolbarItem
         case .export:
             let barButtonItem = UIBarButtonItem(
@@ -447,7 +447,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(exportAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Export"
+            toolbarItem.title = "Export".localized
             return toolbarItem
         case .select:
             let barButtonItem = UIBarButtonItem(
@@ -457,7 +457,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(selectAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Select"
+            toolbarItem.title = "Select".localized
             return toolbarItem
         case .done:
             let barButtonItem = UIBarButtonItem(
@@ -467,7 +467,7 @@ extension BrowserView: NSToolbarDelegate {
                 action: #selector(doneAction)
             )
             let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier, barButtonItem: barButtonItem)
-            toolbarItem.title = "Done"
+            toolbarItem.title = "Done".localized
             return toolbarItem
         default:
             return nil

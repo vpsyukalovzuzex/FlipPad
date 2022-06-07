@@ -30,4 +30,44 @@ extension UIViewController {
     }
     
 #endif
+    
+    // MARK: -
+    
+    func showError(_ error: Error) {
+        UIAlertController.showError(with: error, for: self)
+    }
+    
+    func showError(with message: String) {
+        UIAlertController.showError(with: message, for: self)
+    }
+    
+    func showEdit(
+        title: String?,
+        message: String?,
+        text: String?,
+        placeholder: String?,
+        block: @escaping (String) -> Void
+    ) {
+        UIAlertController.showEdit(
+            title: title,
+            message: message,
+            text: text,
+            placeholder: placeholder,
+            for: self,
+            block: block
+        )
+    }
+    
+    func showDelete(
+        title: String?,
+        message: String?,
+        block: @escaping () -> Void
+    ) {
+        UIAlertController.showDelete(
+            title: title,
+            message: message,
+            for: self,
+            block: block
+        )
+    }
 }

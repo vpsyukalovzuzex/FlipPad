@@ -81,7 +81,17 @@ class BrowserPresenter: BrowserPresenterProtocol,
     }
     
     func didTapRename() {
-        // TODO: -
+        guard let row = view?.selectedIndexPaths?.first?.row else {
+            return
+        }
+        view?.showEdit(
+            title: "Rename \(row)".localized,
+            message: "Enter a new name for this scene:".localized,
+            text: nil,
+            placeholder: "New scene name".localized
+        ) { text in
+            print("-->> \(text) \(row)")
+        }
     }
     
     func didTapDuplicate() {
@@ -89,7 +99,15 @@ class BrowserPresenter: BrowserPresenterProtocol,
     }
     
     func didTapDelete() {
-        // TODO: -
+        guard let row = view?.selectedIndexPaths?.first?.row else {
+            return
+        }
+        view?.showDelete(
+            title: "Delete \(row)".localized,
+            message: "Are you sure you want to delete this scene and all of its images?".localized
+        ) {
+            print("-->> \(row)")
+        }
     }
     
     func didTapExport() {

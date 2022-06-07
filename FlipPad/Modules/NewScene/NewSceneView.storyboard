@@ -66,8 +66,8 @@
                                     <constraint firstItem="BFZ-sb-6e8" firstAttribute="top" secondItem="AUR-Ke-C4w" secondAttribute="bottom" constant="16" id="xlf-hQ-84V"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolution for new scene:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-7p-Ynz">
-                                <rect key="frame" x="59.999999999999986" y="116.66666666666667" width="211.66666666666663" height="21.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolutions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-7p-Ynz">
+                                <rect key="frame" x="59.999999999999993" y="116.66666666666667" width="101.33333333333331" height="21.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,8 +196,11 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="ElG-68-0Hp" id="oBH-xO-2bd"/>
+                        <outlet property="continueButton" destination="aK8-0d-d43" id="CKs-cp-zJJ"/>
                         <outlet property="fpsLabel" destination="ujG-ag-SYp" id="1dY-vo-iaq"/>
                         <outlet property="fpsSlider" destination="up4-sq-Tgc" id="Rx2-TN-q8U"/>
+                        <outlet property="playbackSpeedLabel" destination="AUR-Ke-C4w" id="hTQ-cQ-CcD"/>
+                        <outlet property="resolutionsLabel" destination="UJv-7p-Ynz" id="JXk-zA-Br2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
