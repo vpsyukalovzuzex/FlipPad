@@ -9,6 +9,10 @@ class NewScenePresenter: NewScenePresenterProtocol,
                          NewSceneOutputViewProtocol,
                          NewSceneOutputInteractorProtocol {
     
+    // MARK: -
+    
+    weak var delegate: NewSceneDelegate?
+    
     // MARK: - NewScenePresenterProtocol
     
     weak var view: NewSceneInputViewProtocol?
@@ -32,7 +36,7 @@ class NewScenePresenter: NewScenePresenterProtocol,
     }
     
     func didTapContinue() {
-        // TODO: -
+        delegate?.didTapContinue()
     }
     
     // MARK: - NewSceneOutputInteractorProtocol

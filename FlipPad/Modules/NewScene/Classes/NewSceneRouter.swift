@@ -4,6 +4,11 @@
 
 import UIKit
 
+protocol NewSceneDelegate: AnyObject {
+    
+    func didTapContinue()
+}
+
 class NewSceneRouter: NewSceneRouterProtocol,
                       NewSceneInputRouterProtocol {
     
@@ -13,7 +18,7 @@ class NewSceneRouter: NewSceneRouterProtocol,
     
     // MARK: - Static functions
     
-    static func create() -> NewSceneRouter {
+    static func create(with delegate: NewSceneDelegate? = nil) -> NewSceneRouter {
         let view = NewSceneView.instantiate()
         let interactor = NewSceneInteractor()
         let presenter = NewScenePresenter()
@@ -23,6 +28,7 @@ class NewSceneRouter: NewSceneRouterProtocol,
         presenter.view = view
         presenter.interactor = interactor
         presenter.router = router
+        presenter.delegate = delegate
         router.viewController = view
         return router
     }

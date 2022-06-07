@@ -41,3 +41,13 @@ extension CGFloat {
         return 158.0
     }
 }
+
+extension CGSize {
+    
+    static var newSceneViewPreferredContentSize: CGSize {
+        return CGSize(
+            width: 228.0,
+            height: 406.0
+        )
+    }
+}

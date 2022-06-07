@@ -7,7 +7,8 @@ import DifferenceKit
 
 class BrowserPresenter: BrowserPresenterProtocol,
                         BrowserOutputViewProtocol,
-                        BrowserOutputInteractorProtocol {
+                        BrowserOutputInteractorProtocol,
+                        NewSceneDelegate {
     
     // MARK: - BrowserPresenterProtocol
     
@@ -69,7 +70,10 @@ class BrowserPresenter: BrowserPresenterProtocol,
     }
     
     func didTapNewScene() {
-        // TODO: -
+        guard let view = view else {
+            return
+        }
+        router?.showNewScene(with: self, sourceView: view.sourceView, sourceRect: view.sourceRect)
     }
     
     func didTapImport() {
@@ -107,4 +111,10 @@ class BrowserPresenter: BrowserPresenterProtocol,
     // MARK: - BrowserOutputInteractorProtocol
     
     // Implement protocol.
+    
+    // MARK: - NewSceneDelegate
+    
+    func didTapContinue() {
+        // TODO: -
+    }
 }

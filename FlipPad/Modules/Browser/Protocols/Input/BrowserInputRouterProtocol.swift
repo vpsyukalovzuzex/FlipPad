@@ -2,9 +2,9 @@
 // BrowserInputRouterProtocol.swift
 //
 
-import Foundation
+import UIKit
 
 protocol BrowserInputRouterProtocol: AnyObject {
     
-    // Add input functions.
+    func showNewScene(with delegate: NewSceneDelegate?, sourceView: UIView, sourceRect: CGRect)
 }

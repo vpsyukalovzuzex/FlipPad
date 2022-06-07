@@ -10,7 +10,8 @@ class NewSceneView: UIViewController,
                     NewSceneViewProtocol,
                     NewSceneInputViewProtocol,
                     UICollectionViewDataSource,
-                    UICollectionViewDelegate {
+                    UICollectionViewDelegate,
+                    UIPopoverPresentationControllerDelegate {
     
     // MARK: -
     
@@ -54,6 +55,11 @@ class NewSceneView: UIViewController,
         presenter?.viewDidLoad()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        presenter?.didTapContinue()
+    }
+    
     // MARK: - NewSceneInputViewProtocol
     
     var selectedIndexPaths: [IndexPath]? {
@@ -82,7 +88,7 @@ class NewSceneView: UIViewController,
     }
     
     func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool) {
-        DispatchQueue.main.async { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) { [weak self] in
             guard let self = self else {
                 return
             }
@@ -115,6 +121,12 @@ class NewSceneView: UIViewController,
         presenter?.didTapResolution(at: indexPath)
     }
     
+    // MARK: - UIPopoverPresentationControllerDelegate
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
     // MARK: -
     
     @IBAction private func fpsSliderAction(_ sender: UISlider) {
@@ -122,6 +134,6 @@ class NewSceneView: UIViewController,
     }
     
     @IBAction private func continueButtonAction(_ sender: UIButton) {
-        presenter?.didTapContinue()
+        dismiss(animated: true)
     }
 }

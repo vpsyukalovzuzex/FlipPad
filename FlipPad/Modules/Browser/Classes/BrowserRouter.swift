@@ -29,5 +29,16 @@ class BrowserRouter: BrowserRouterProtocol,
     
     // MARK: - BrowserInputRouterProtocol
     
-    // Implement protocol.
+    func showNewScene(with delegate: NewSceneDelegate?, sourceView: UIView, sourceRect: CGRect) {
+        guard let newSceneViewController = NewSceneRouter.create(with: delegate).viewController else {
+            return
+        }
+        newSceneViewController.preferredContentSize = .newSceneViewPreferredContentSize
+        newSceneViewController.modalPresentationStyle = .popover
+        let popoverPresentationController = newSceneViewController.popoverPresentationController
+        popoverPresentationController?.delegate = viewController as? UIPopoverPresentationControllerDelegate
+        popoverPresentationController?.sourceView = sourceView
+        popoverPresentationController?.sourceRect = sourceRect
+        viewController?.present(newSceneViewController, animated: true)
+    }
 }

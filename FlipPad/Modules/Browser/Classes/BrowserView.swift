@@ -155,6 +155,22 @@ class BrowserView: UIViewController,
         return collectionView.indexPathsForSelectedItems
     }
     
+    var sourceView: UIView {
+        return view
+    }
+    
+    var sourceRect: CGRect {
+        if .isMacCatalyst {
+            return CGRect(
+                x: 0.0,
+                y: 0.0,
+                width: 128.0,
+                height: 64.0
+            )
+        }
+        return newSceneButton.frame
+    }
+    
     // MARK: -
     
     func setAction(_ action: BrowserView.Action) {
@@ -284,6 +300,8 @@ class BrowserView: UIViewController,
         }
     }
     
+    // MARK: -
+    
     @objc private func newSceneAction() {
         presenter?.didTapNewScene()
     }
@@ -352,6 +370,18 @@ class BrowserView: UIViewController,
 }
 
 #if targetEnvironment(macCatalyst)
+
+private extension BrowserView {
+    
+    // MARK: -
+    
+    func reloadToolbar() {
+        let toolbar = NSToolbar(identifier: "browser")
+        toolbar.delegate = self
+        toolbar.displayMode = .default
+        macCatalystToolbar = toolbar
+    }
+}
 
 extension BrowserView: NSToolbarDelegate {
     
@@ -451,28 +481,9 @@ extension BrowserView: NSToolbarDelegate {
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         return action.toolbarItemIdentifiers
     }
-    
-    // MARK: -
-    
-    private func reloadToolbar() {
-        guard
-            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-            let titlebar = scene.titlebar
-        else {
-            return
-        }
-        let toolbar = NSToolbar(identifier: "browser")
-        toolbar.delegate = self
-        toolbar.displayMode = .default
-        titlebar.toolbar = toolbar
-        titlebar.titleVisibility = .visible
-        if #available(macCatalyst 14.0, *) {
-            titlebar.toolbarStyle = .expanded
-        }
-    }
 }
 
-fileprivate extension NSToolbarItem.Identifier {
+private extension NSToolbarItem.Identifier {
     
     // MARK: -
     
@@ -509,7 +520,7 @@ fileprivate extension NSToolbarItem.Identifier {
     }
 }
 
-fileprivate extension BrowserView.Action {
+private extension BrowserView.Action {
     
     // MARK: -
     

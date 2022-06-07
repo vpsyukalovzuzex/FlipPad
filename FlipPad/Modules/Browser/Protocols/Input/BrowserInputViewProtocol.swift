@@ -2,7 +2,7 @@
 // BrowserInputViewProtocol.swift
 //
 
-import Foundation
+import UIKit
 import DifferenceKit
 
 protocol BrowserInputViewProtocol: AnyObject {
@@ -10,6 +10,10 @@ protocol BrowserInputViewProtocol: AnyObject {
     // MARK: -
     
     var selectedIndexPaths: [IndexPath]? { get }
+        
+    var sourceView: UIView { get }
+    
+    var sourceRect: CGRect { get }
     
     // MARK: -
     
