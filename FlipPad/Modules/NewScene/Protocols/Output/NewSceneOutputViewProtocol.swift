@@ -12,7 +12,7 @@ protocol NewSceneOutputViewProtocol: AnyObject {
     
     func didChangeFps(_ fps: Float)
     
-    func didSelectResolution(_ resolution: Int)
+    func didTapResolution(at indexPath: IndexPath)
     
-    func didSelectContinue()
+    func didTapContinue()
 }

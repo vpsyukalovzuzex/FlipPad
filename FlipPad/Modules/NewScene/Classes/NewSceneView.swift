@@ -77,14 +77,21 @@ class NewSceneView: UIViewController,
         }
     }
     
-    func setSelectIndexPaths(_ indexPaths: [IndexPath]) {
-        DispatchQueue.main.async { [weak self] in
-            self?.setSelectIndexPaths(indexPaths, animated: true)
-        }
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?) {
+        self.setSelectIndexPaths(indexPaths, animated: true)
     }
     
-    func setSelectIndexPaths(_ indexPaths: [IndexPath], animated: Bool) {
-        indexPaths.forEach { collectionView.selectItem(at: $0, animated: animated, scrollPosition: .top) }
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            guard let indexPaths = indexPaths else {
+                self.selectedIndexPaths?.forEach { self.collectionView.deselectItem(at: $0, animated: animated) }
+                return
+            }
+            indexPaths.forEach { self.collectionView.selectItem(at: $0, animated: animated, scrollPosition: .top) }
+        }
     }
     
     // MARK: - UICollectionViewDataSource
@@ -105,7 +112,7 @@ class NewSceneView: UIViewController,
     // MARK: - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.didSelectResolution(indexPath.row)
+        presenter?.didTapResolution(at: indexPath)
     }
     
     // MARK: -
@@ -115,6 +122,6 @@ class NewSceneView: UIViewController,
     }
     
     @IBAction private func continueButtonAction(_ sender: UIButton) {
-        presenter?.didSelectContinue()
+        presenter?.didTapContinue()
     }
 }

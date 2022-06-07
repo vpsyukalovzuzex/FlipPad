@@ -9,14 +9,15 @@ protocol BrowserInputViewProtocol: AnyObject {
     
     // MARK: -
     
-    var isSelection: Bool { get }
-    
     var selectedIndexPaths: [IndexPath]? { get }
-    
-    var source: [ArraySection<BrowserView.Section, BrowserView.Element>] { get set }
     
     // MARK: -
     
-    func deselectAllDocuments()
-    func deselectAllDocuments(animated: Bool)
+    func setAction(_ action: BrowserView.Action)
+    func setAction(_ action: BrowserView.Action, animated: Bool)
+    
+    func setNewSource(_ newSource: [ArraySection<BrowserView.Section, BrowserView.Element>])
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?)
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool)
 }

@@ -19,6 +19,6 @@ protocol NewSceneInputViewProtocol: AnyObject {
     
     func setNewSource(_ newSource: [NewSceneView.Element])
     
-    func setSelectIndexPaths(_ indexPaths: [IndexPath])
-    func setSelectIndexPaths(_ indexPaths: [IndexPath], animated: Bool)
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?)
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool)
 }

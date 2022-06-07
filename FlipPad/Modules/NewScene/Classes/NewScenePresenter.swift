@@ -27,11 +27,11 @@ class NewScenePresenter: NewScenePresenterProtocol,
         interactor?.setFps(Int(fps))
     }
     
-    func didSelectResolution(_ resolution: Int) {
-        interactor?.setResolution(resolution)
+    func didTapResolution(at indexPath: IndexPath) {
+        interactor?.setResolution(indexPath.row)
     }
     
-    func didSelectContinue() {
+    func didTapContinue() {
         // TODO: -
     }
     

@@ -10,17 +10,21 @@ protocol BrowserOutputViewProtocol: AnyObject {
     
     func viewDidLoad()
     
-    func didSelectNewScene()
+    func didTapNewScene()
     
-    func didSelectImport()
+    func didTapImport()
     
-    func didSelectRename()
+    func didTapRename()
     
-    func didSelectDuplicate()
+    func didTapDuplicate()
     
-    func didSelectDelete()
+    func didTapDelete()
     
-    func didSelectExport()
+    func didTapExport()
     
-    func didSelectDocument()
+    func didTapSelect()
+    
+    func didTapDone()
+    
+    func didTapDocument(at indexPath: IndexPath)
 }

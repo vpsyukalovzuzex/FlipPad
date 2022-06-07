@@ -15,7 +15,7 @@ class BrowserView: UIViewController,
     
     // MARK: -
     
-    fileprivate struct Action: OptionSet {
+    struct Action: OptionSet {
         
         // MARK: -
         
@@ -137,73 +137,73 @@ class BrowserView: UIViewController,
     
     // MARK: -
     
-    private var action = Action.default {
-        didSet {
-            reload()
-        }
-    }
+    private var action = Action.default
     
-    private var sections = [ArraySection<Section, Element>]()
+    private var source = [ArraySection<Section, Element>]()
     
     // MARK: -
     
     override func viewDidLoad() {
         super.viewDidLoad()
         blurView.isHidden = .isMacCatalyst
-        reload(animated: false)
         presenter?.viewDidLoad()
     }
     
     // MARK: - BrowserInputViewProtocol
     
-    var isSelection: Bool {
-        return action == .selection
-    }
-    
     var selectedIndexPaths: [IndexPath]? {
         return collectionView.indexPathsForSelectedItems
     }
     
-    var source: [ArraySection<Section, Element>] {
-        get {
-            return sections
-        }
-        set {
-            let stagedChangeset = StagedChangeset(source: sections, target: newValue)
-            collectionView.reload(using: stagedChangeset) { [weak self] sections in
-                self?.sections = sections
-            }
-        }
-    }
-    
     // MARK: -
     
-    func deselectAllDocuments() {
-        deselectAllDocuments(animated: true)
+    func setAction(_ action: BrowserView.Action) {
+        setAction(action, animated: true)
     }
     
-    func deselectAllDocuments(animated: Bool) {
-        if let indexPaths = collectionView.indexPathsForSelectedItems {
-            for indexPath in indexPaths {
-                collectionView.deselectItem(at: indexPath, animated: animated)
+    func setAction(_ action: BrowserView.Action, animated: Bool) {
+        self.action = action
+        reload(animated: animated)
+    }
+    
+    func setNewSource(_ newSource: [ArraySection<Section, Element>]) {
+        let stagedChangeset = StagedChangeset(source: source, target: newSource)
+        collectionView.reload(using: stagedChangeset) { [weak self] source in
+            self?.source = source
+        }
+    }
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?) {
+        setSelectIndexPaths(indexPaths, animated: true)
+    }
+    
+    func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {
+                return
             }
+            guard let indexPaths = indexPaths else {
+                self.selectedIndexPaths?.forEach { self.collectionView.deselectItem(at: $0, animated: animated) }
+                return
+            }
+            indexPaths.forEach { self.collectionView.selectItem(at: $0, animated: animated, scrollPosition: .top) }
         }
     }
     
     // MARK: - UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return sections.count
+        return source.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sections[section].elements.count
+        return source[section].elements.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let reuseIdentifier = String(describing: BrowserCollectionViewCell.self)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BrowserCollectionViewCell
-        if let element = sections[safe: indexPath.section]?.elements[safe: indexPath.row] {
+        if let element = source[safe: indexPath.section]?.elements[safe: indexPath.row] {
             cell.thumbnail = element.thumbnail
             cell.name = element.name
             if element.isLoading {
@@ -218,7 +218,7 @@ class BrowserView: UIViewController,
     // MARK: - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.didSelectDocument()
+        presenter?.didTapDocument(at: indexPath)
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout
@@ -285,35 +285,35 @@ class BrowserView: UIViewController,
     }
     
     @objc private func newSceneAction() {
-        presenter?.didSelectNewScene()
+        presenter?.didTapNewScene()
     }
     
     @objc private func importAction() {
-        presenter?.didSelectImport()
+        presenter?.didTapImport()
     }
     
     @objc private func renameAction() {
-        presenter?.didSelectRename()
+        presenter?.didTapRename()
     }
     
     @objc private func duplicateAction() {
-        presenter?.didSelectDuplicate()
+        presenter?.didTapDuplicate()
     }
     
     @objc private func deleteAction() {
-        presenter?.didSelectDelete()
+        presenter?.didTapDelete()
     }
     
     @objc private func exportAction() {
-        presenter?.didSelectExport()
+        presenter?.didTapExport()
     }
     
     @objc private func selectAction() {
-        action = .selection
+        presenter?.didTapSelect()
     }
     
     @objc private func doneAction() {
-        action = .default
+        presenter?.didTapDone()
     }
     
     // MARK: -

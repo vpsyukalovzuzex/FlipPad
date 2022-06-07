@@ -20,8 +20,9 @@ class BrowserPresenter: BrowserPresenterProtocol,
     // MARK: - BrowserOutputViewProtocol
     
     func viewDidLoad() {
+        view?.setAction(.default, animated: false)
         // TODO: -
-        view?.source = [
+        let newSource = [
             ArraySection(
                 model: BrowserView.Section(id: ""),
                 elements: [
@@ -64,33 +65,42 @@ class BrowserPresenter: BrowserPresenterProtocol,
                 ]
             )
         ]
+        view?.setNewSource(newSource)
     }
     
-    func didSelectNewScene() {
+    func didTapNewScene() {
         // TODO: -
     }
     
-    func didSelectImport() {
+    func didTapImport() {
         // TODO: -
     }
     
-    func didSelectRename() {
+    func didTapRename() {
         // TODO: -
     }
     
-    func didSelectDuplicate() {
+    func didTapDuplicate() {
         // TODO: -
     }
     
-    func didSelectDelete() {
+    func didTapDelete() {
         // TODO: -
     }
     
-    func didSelectExport() {
+    func didTapExport() {
         // TODO: -
     }
     
-    func didSelectDocument() {
+    func didTapSelect() {
+        view?.setAction(.selection)
+    }
+    
+    func didTapDone() {
+        view?.setAction(.default)
+    }
+    
+    func didTapDocument(at indexPath: IndexPath) {
         // TODO: -
     }
     
