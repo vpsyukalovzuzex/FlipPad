@@ -33,15 +33,15 @@ extension UIViewController {
     
     // MARK: -
     
-    func showError(_ error: Error) {
+    func showErrorAlert(with error: Error) {
         UIAlertController.showError(with: error, for: self)
     }
     
-    func showError(with message: String) {
+    func showErrorAlert(with message: String) {
         UIAlertController.showError(with: message, for: self)
     }
     
-    func showEdit(
+    func showEditAlert(
         title: String?,
         message: String?,
         text: String?,
@@ -58,7 +58,7 @@ extension UIViewController {
         )
     }
     
-    func showDelete(
+    func showDeleteAlert(
         title: String?,
         message: String?,
         block: @escaping () -> Void
@@ -68,6 +68,32 @@ extension UIViewController {
             message: message,
             for: self,
             block: block
+        )
+    }
+    
+    func showDocumentPicker(
+        with types: [String],
+        mode: UIDocumentPickerMode,
+        delegate: UIDocumentPickerDelegate?
+    ) {
+        UIDocumentPickerViewController.show(
+            with: types,
+            mode: mode,
+            delegate: delegate,
+            for: self
+        )
+    }
+    
+    func showDocumentPicker(
+        with url: URL,
+        mode: UIDocumentPickerMode,
+        delegate: UIDocumentPickerDelegate?
+    ) {
+        UIDocumentPickerViewController.show(
+            with: url,
+            mode: mode,
+            delegate: delegate,
+            for: self
         )
     }
 }

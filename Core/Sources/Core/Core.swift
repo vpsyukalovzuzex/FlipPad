@@ -1,10 +1,10 @@
 //
-// Browser.swift
+// Core.swift
 //
 
 import Foundation
 
-public final class Browser {
+public final class Core {
     
     // MARK: -
 }

@@ -3,8 +3,11 @@
 //
 
 import Foundation
+import Core
 
 protocol BrowserOutputInteractorProtocol: AnyObject {
     
-    // Add output functions.
+    // MARK: -
+    
+    func didUpdateDocuments(_ documents: [Document])
 }

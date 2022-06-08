@@ -23,8 +23,12 @@
 		C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */; };
 		C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */; };
 		C74AF1CB284E2D9100FF6C31 /* Support in Frameworks */ = {isa = PBXBuildFile; productRef = C74AF1CA284E2D9100FF6C31 /* Support */; };
+		C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */ = {isa = PBXBuildFile; fileRef = C7A353E2284F7660002ABB64 /* How To.dcfb */; };
+		C7A353E5284F7661002ABB64 /* Animation Tutorial.dcfb in Resources */ = {isa = PBXBuildFile; fileRef = C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */; };
 		C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */; };
 		C7AD416B284F4C040093C462 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD416A284F4C040093C462 /* String+Common.swift */; };
+		C7AD416E284F50F60093C462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7AD4170284F50F60093C462 /* Localizable.strings */; };
+		C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */; };
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
@@ -69,8 +73,12 @@
 		C74AF1BE284E0B6E00FF6C31 /* NewSceneView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewSceneView.storyboard; sourceTree = "<group>"; };
 		C74AF1C0284E12EE00FF6C31 /* NewSceneCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSceneCollectionCell.swift; sourceTree = "<group>"; };
 		C74AF1C8284E2B1C00FF6C31 /* Support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Support; sourceTree = "<group>"; };
+		C7A353E2284F7660002ABB64 /* How To.dcfb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "How To.dcfb"; sourceTree = "<group>"; };
+		C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Animation Tutorial.dcfb"; sourceTree = "<group>"; };
 		C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Common.swift"; sourceTree = "<group>"; };
 		C7AD416A284F4C040093C462 /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		C7AD416F284F50F60093C462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentPickerViewController+Common.swift"; sourceTree = "<group>"; };
 		C7B66ED62849F83200E4A858 /* FlipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B66ED92849F83200E4A858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B66EE22849F83400E4A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +287,7 @@
 				C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */,
 				C7C6D15A284DFB4200A3DB95 /* UIView+Common.swift */,
 				C7B66F37284A02F900E4A858 /* UIViewController+Common.swift */,
+				C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,8 +295,11 @@
 		C7B66F31284A022000E4A858 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */,
+				C7A353E2284F7660002ABB64 /* How To.dcfb */,
 				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
 				C7B66EE72849F83400E4A858 /* Info.plist */,
+				C7AD4170284F50F60093C462 /* Localizable.strings */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -391,9 +403,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AD416E284F50F60093C462 /* Localizable.strings in Resources */,
+				C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */,
 				C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */,
 				C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */,
 				C74AF1BF284E0B6E00FF6C31 /* NewSceneView.storyboard in Resources */,
+				C7A353E5284F7661002ABB64 /* Animation Tutorial.dcfb in Resources */,
 				C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +434,7 @@
 				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
 				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
 				C7AD416B284F4C040093C462 /* String+Common.swift in Sources */,
+				C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */,
 				C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */,
 				C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */,
 				C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */,
@@ -447,6 +463,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C7AD4170284F50F60093C462 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7AD416F284F50F60093C462 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -581,6 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
@@ -614,6 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68SVGWK7EA;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlipPad/Others/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";

@@ -25,9 +25,11 @@ protocol BrowserInputViewProtocol: AnyObject {
     func setSelectIndexPaths(_ indexPaths: [IndexPath]?)
     func setSelectIndexPaths(_ indexPaths: [IndexPath]?, animated: Bool)
     
-    func showError(_ error: Error)
+    func showErrorAlert(with error: Error)
     
-    func showEdit(
+    func showErrorAlert(with message: String)
+    
+    func showEditAlert(
         title: String?,
         message: String?,
         text: String?,
@@ -35,9 +37,21 @@ protocol BrowserInputViewProtocol: AnyObject {
         block: @escaping (String) -> Void
     )
     
-    func showDelete(
+    func showDeleteAlert(
         title: String?,
         message: String?,
         block: @escaping () -> Void
+    )
+    
+    func showDocumentPicker(
+        with types: [String],
+        mode: UIDocumentPickerMode,
+        delegate: UIDocumentPickerDelegate?
+    )
+    
+    func showDocumentPicker(
+        with url: URL,
+        mode: UIDocumentPickerMode,
+        delegate: UIDocumentPickerDelegate?
     )
 }

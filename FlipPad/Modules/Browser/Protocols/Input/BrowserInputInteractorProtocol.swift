@@ -3,8 +3,17 @@
 //
 
 import Foundation
+import Core
 
 protocol BrowserInputInteractorProtocol: AnyObject {
     
-    // Add input functions.
+    // MARK: -
+    
+    var documents: [Document] { get }
+    
+    // MARK: -
+    
+    func start()
+    
+    func deleteDocument(at index: Int) throws
 }

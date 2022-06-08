@@ -2,13 +2,17 @@
 // BrowserPresenter.swift
 //
 
-import Foundation
+import UIKit
 import DifferenceKit
+import Core
+import Support
 
-class BrowserPresenter: BrowserPresenterProtocol,
+class BrowserPresenter: NSObject,
+                        BrowserPresenterProtocol,
                         BrowserOutputViewProtocol,
                         BrowserOutputInteractorProtocol,
-                        NewSceneDelegate {
+                        NewSceneDelegate,
+                        UIDocumentPickerDelegate {
     
     // MARK: - BrowserPresenterProtocol
     
@@ -22,51 +26,7 @@ class BrowserPresenter: BrowserPresenterProtocol,
     
     func viewDidLoad() {
         view?.setAction(.default, animated: false)
-        // TODO: -
-        let newSource = [
-            ArraySection(
-                model: BrowserView.Section(id: ""),
-                elements: [
-                    BrowserView.Element(
-                        id: "0",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    ),
-                    BrowserView.Element(
-                        id: "1",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    ),
-                    BrowserView.Element(
-                        id: "2",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    ),
-                    BrowserView.Element(
-                        id: "3",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    ),
-                    BrowserView.Element(
-                        id: "4",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    ),
-                    BrowserView.Element(
-                        id: "5",
-                        thumbnail: #imageLiteral(resourceName: "bar_music"),
-                        name: "asdasd",
-                        isLoading: false
-                    )
-                ]
-            )
-        ]
-        view?.setNewSource(newSource)
+        interactor?.start()
     }
     
     func didTapNewScene() {
@@ -78,19 +38,21 @@ class BrowserPresenter: BrowserPresenterProtocol,
     
     func didTapImport() {
         // TODO: -
+        view?.showDocumentPicker(with: [], mode: .import, delegate: self)
     }
     
     func didTapRename() {
         guard let row = view?.selectedIndexPaths?.first?.row else {
             return
         }
-        view?.showEdit(
+        // TODO: -
+        view?.showEditAlert(
             title: "Rename \(row)".localized,
             message: "Enter a new name for this scene:".localized,
             text: nil,
             placeholder: "New scene name".localized
         ) { text in
-            print("-->> \(text) \(row)")
+            // TODO: -
         }
     }
     
@@ -99,19 +61,34 @@ class BrowserPresenter: BrowserPresenterProtocol,
     }
     
     func didTapDelete() {
-        guard let row = view?.selectedIndexPaths?.first?.row else {
+        guard
+            let row = view?.selectedIndexPaths?.first?.row,
+            let document = interactor?.documents[safe: row]
+        else {
             return
         }
-        view?.showDelete(
-            title: "Delete \(row)".localized,
+        view?.showDeleteAlert(
+            title: "Delete \"\(document.name)\"".localized,
             message: "Are you sure you want to delete this scene and all of its images?".localized
-        ) {
-            print("-->> \(row)")
+        ) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            do {
+                try self.interactor?.deleteDocument(at: row)
+            } catch let error {
+                self.view?.showErrorAlert(with: error)
+            }
         }
     }
     
     func didTapExport() {
+        guard let row = view?.selectedIndexPaths?.first?.row else {
+            return
+        }
         // TODO: -
+        let url = URL(string: "")!
+        view?.showDocumentPicker(with: url, mode: .exportToService, delegate: self)
     }
     
     func didTapSelect() {
@@ -120,6 +97,7 @@ class BrowserPresenter: BrowserPresenterProtocol,
     
     func didTapDone() {
         view?.setAction(.default)
+        view?.setSelectIndexPaths(nil)
     }
     
     func didTapDocument(at indexPath: IndexPath) {
@@ -128,11 +106,26 @@ class BrowserPresenter: BrowserPresenterProtocol,
     
     // MARK: - BrowserOutputInteractorProtocol
     
-    // Implement protocol.
+    func didUpdateDocuments(_ documents: [Document]) {
+        let elements = documents.map { _ in BrowserView.Element(id: UUID().uuidString, isLoading: false) }
+        view?.setNewSource([ArraySection(model: BrowserView.Section(id: ""), elements: elements)])
+    }
     
     // MARK: - NewSceneDelegate
     
     func didTapContinue() {
         // TODO: -
+    }
+    
+    // MARK: - UIDocumentPickerDelegate
+    
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        // TODO: -
+        controller.dismiss(animated: true)
+    }
+    
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        // TODO: -
+        controller.dismiss(animated: true)
     }
 }

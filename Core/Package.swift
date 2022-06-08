@@ -17,7 +17,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(path: "./Support")
+        .package(path: "./Support"),
+        .package(url: "https://github.com/ccgus/fmdb.git", from: .init(2, 7, 7))
     ],
     targets: [
         .target(
@@ -25,6 +26,9 @@ let package = Package(
             dependencies: [
                 .product(
                     name: "Support"
+                ),
+                .product(
+                    name: "FMDB"
                 )
             ]
         )
