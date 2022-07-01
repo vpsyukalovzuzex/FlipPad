@@ -42,12 +42,15 @@ class BrowserPresenter: NSObject,
     }
     
     func didTapRename() {
-        guard let row = view?.selectedIndexPaths?.first?.row else {
+        guard
+            let row = view?.selectedIndexPaths?.first?.row,
+            let document = interactor?.documents[safe: row]
+        else {
             return
         }
         // TODO: -
         view?.showEditAlert(
-            title: "Rename \(row)".localized,
+            title: String(format: "Rename \"%@\"".localized, document.file),
             message: "Enter a new name for this scene:".localized,
             text: nil,
             placeholder: "New scene name".localized
@@ -68,7 +71,7 @@ class BrowserPresenter: NSObject,
             return
         }
         view?.showDeleteAlert(
-            title: "Delete \"\(document.name)\"".localized,
+            title: String(format: "Delete \"%@\"?".localized, document.file),
             message: "Are you sure you want to delete this scene and all of its images?".localized
         ) { [weak self] in
             guard let self = self else {
@@ -107,7 +110,7 @@ class BrowserPresenter: NSObject,
     // MARK: - BrowserOutputInteractorProtocol
     
     func didUpdateDocuments(_ documents: [Document]) {
-        let elements = documents.map { _ in BrowserView.Element(id: UUID().uuidString, isLoading: false) }
+        let elements = documents.map { BrowserView.Element(id: $0.file, thumbnail: $0.thumbnail, name: $0.name, isLoading: false) }
         view?.setNewSource([ArraySection(model: BrowserView.Section(id: ""), elements: elements)])
     }
     

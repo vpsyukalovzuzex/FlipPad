@@ -32,8 +32,8 @@ import Core
             "How To"
         ]
         let pathExtension = PathExtension.dcfb.rawValue
-        try? UrlManager.createDefaultFolder()
-        try? UrlManager.createDefaultFiles(from: defaultFiles.compactMap { Bundle.main.url(forResource: $0, withExtension: pathExtension) })
+        try? URLManager.createDefaultFolderIfNeeded()
+        try? URLManager.createDefaultFilesIfNeeded(from: defaultFiles.compactMap { Bundle.main.url(forResource: $0, withExtension: pathExtension) })
     }
     
     private func setupUi() {

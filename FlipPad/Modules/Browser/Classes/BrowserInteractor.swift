@@ -9,7 +9,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
                          BrowserInputInteractorProtocol {
     
     // MARK: -
-    
+        
     var documents = [Document]()
     
     // MARK: - BrowserInteractorProtocol
@@ -26,14 +26,14 @@ class BrowserInteractor: BrowserInteractorProtocol,
         guard let document = documents[safe: index] else {
             return
         }
-        try UrlManager.deleteFiles(at: [document.url])
+        try URLManager.deleteFiles(at: [document.url])
         update()
     }
     
     // MARK: -
     
     private func update() {
-        documents = UrlManager.urls.map { Document(url: $0) }
+        documents = URLManager.urls.compactMap { let d = try? Document(url: $0); d?.generateThumbnail { _ in self.update() }; return d }
         presenter?.didUpdateDocuments(documents)
     }
 }

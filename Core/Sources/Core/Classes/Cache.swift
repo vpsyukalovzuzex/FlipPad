@@ -26,14 +26,14 @@ public final class Cache<Key: Equatable, Value>: CustomStringConvertible {
     
     // MARK: -
     
-    func value(for key: Key) -> Value? {
+    public func value(for key: Key) -> Value? {
         if let index = keys.firstIndex(of: key) {
             return values[index]
         }
         return nil
     }
     
-    func setValue(_ value: Value?, for key: Key) {
+    public func setValue(_ value: Value?, for key: Key) {
         if let index = keys.firstIndex(of: key) {
             keys.remove(at: index)
             values.remove(at: index)
@@ -44,7 +44,7 @@ public final class Cache<Key: Equatable, Value>: CustomStringConvertible {
         }
     }
     
-    func update(with block: (_ key: inout Key, _ value: inout Value) -> Void) {
+    public func update(with block: (_ key: inout Key, _ value: inout Value) -> Void) {
         for key in keys {
             if let index = keys.firstIndex(of: key) {
                 block(

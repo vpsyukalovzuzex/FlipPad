@@ -12,11 +12,16 @@ public extension URL {
         guard let searchPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else {
             return nil
         }
-        let result = URL(string: searchPath)
-#if targetEnvironment(macCatalyst)
-        return result?.appendingPathComponent(.appName)
-#else
-        return result
-#endif
+        return URL(string: searchPath)?
+            .appendingPathComponent(.appName)
+    }
+    
+    static var cache: URL? {
+        guard let searchPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first else {
+            return nil
+        }
+        return URL(string: searchPath)?
+            .appendingPathComponent(.appName)
+            .appendingPathComponent(.thumbnails)
     }
 }

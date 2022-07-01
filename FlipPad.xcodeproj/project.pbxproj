@@ -295,10 +295,9 @@
 		C7B66F31284A022000E4A858 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */,
-				C7A353E2284F7660002ABB64 /* How To.dcfb */,
 				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
 				C7B66EE72849F83400E4A858 /* Info.plist */,
+				C7C5F4CB2850A0D100BDDF38 /* DefaultFiles */,
 				C7AD4170284F50F60093C462 /* Localizable.strings */,
 			);
 			path = Others;
@@ -335,6 +334,15 @@
 				C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7C5F4CB2850A0D100BDDF38 /* DefaultFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7A353E3284F7661002ABB64 /* Animation Tutorial.dcfb */,
+				C7A353E2284F7660002ABB64 /* How To.dcfb */,
+			);
+			path = DefaultFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,7 +700,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ra1028/DifferenceKit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.2.0;
 			};
 		};

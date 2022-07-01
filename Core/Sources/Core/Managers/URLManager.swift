@@ -1,11 +1,11 @@
 //
-// UrlManager.swift
+// URLManager.swift
 //
 
 import Foundation
 import Support
 
-public final class UrlManager {
+public final class URLManager {
     
     // MARK: -
     
@@ -42,7 +42,7 @@ public final class UrlManager {
     
     // MARK: -
     
-    public static func createDefaultFolder() throws {
+    public static func createDefaultFolderIfNeeded() throws {
         let path = folder.path
         if fileManager.fileExists(atPath: path) {
             return
@@ -50,7 +50,7 @@ public final class UrlManager {
         try fileManager.createDirectory(atPath: path, withIntermediateDirectories: true)
     }
     
-    public static func createDefaultFiles(from urls: [URL]) throws {
+    public static func createDefaultFilesIfNeeded(from urls: [URL]) throws {
         guard self.urls.isEmpty else {
             return
         }

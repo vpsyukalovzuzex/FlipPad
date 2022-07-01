@@ -5,7 +5,7 @@
 import Foundation
 import Support
 
-public enum AccessorFactoryError: CustomNSError {
+enum FormatFactoryError: CustomNSError {
     
     // MARK: -
     
@@ -13,20 +13,20 @@ public enum AccessorFactoryError: CustomNSError {
     
     // MARK: -
     
-    public static var errorDomain: String {
+    static var errorDomain: String {
         return .coreErrorDomain
     }
     
     // MARK: -
     
-    public var errorCode: Int {
+    var errorCode: Int {
         switch self {
         case .invalidFileExtension:
             return 0
         }
     }
     
-    public var errorUserInfo: [String : Any] {
+    var errorUserInfo: [String : Any] {
         let localizedDescription: String
         switch self {
         case .invalidFileExtension:
