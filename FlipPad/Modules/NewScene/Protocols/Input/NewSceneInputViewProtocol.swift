@@ -5,7 +5,7 @@
 import Foundation
 import DifferenceKit
 
-protocol NewSceneInputViewProtocol: AnyObject {
+protocol NewSceneInputViewProtocol: UIAlertControllerProtocol {
     
     // MARK: -
     

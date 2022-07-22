@@ -24,13 +24,13 @@ public final class URLManager {
             .filter {
                 return $0.hasSuffix(dgc) || $0.hasSuffix(dcfb)
             }
-            .map {
-                return folder.appendingPathComponent($0)
+            .compactMap {
+                return URL(fileURLWithPath: folder.appendingPathComponent($0).path)
             }
             .sorted {
                 let a = (try? fileManager.attributesOfItem(atPath: $0.path)[.modificationDate]) as? Date ?? Date()
                 let b = (try? fileManager.attributesOfItem(atPath: $1.path)[.modificationDate]) as? Date ?? Date()
-                return a < b
+                return a > b
             }
     }
     
@@ -77,6 +77,12 @@ public final class URLManager {
     }
     
     public static func renameFile(at url: URL, with name: String) throws {
+        if name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            throw URLManagerError.nameIsEmpty
+        }
+        if url.deletingPathExtension().lastPathComponent == name {
+            throw URLManagerError.namesAreSame
+        }
         let data = try Data(contentsOf: url)
         let pathExtenson = url.pathExtension
         try data.write(

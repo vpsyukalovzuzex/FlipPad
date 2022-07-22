@@ -15,5 +15,9 @@ protocol BrowserInputInteractorProtocol: AnyObject {
     
     func start()
     
+    func renameDocument(at index: Int, with name: String) throws
+    
+    func duplicateDocument(at index: Int) throws
+    
     func deleteDocument(at index: Int) throws
 }

@@ -9,7 +9,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
                          BrowserInputInteractorProtocol {
     
     // MARK: -
-        
+    
     var documents = [Document]()
     
     // MARK: - BrowserInteractorProtocol
@@ -22,6 +22,22 @@ class BrowserInteractor: BrowserInteractorProtocol,
         update()
     }
     
+    func renameDocument(at index: Int, with name: String) throws {
+        guard let document = documents[safe: index] else {
+            return
+        }
+        try URLManager.renameFile(at: document.url, with: name)
+        update()
+    }
+    
+    func duplicateDocument(at index: Int) throws {
+        guard let document = documents[safe: index] else {
+            return
+        }
+        try URLManager.duplicateFile(at: document.url)
+        update()
+    }
+    
     func deleteDocument(at index: Int) throws {
         guard let document = documents[safe: index] else {
             return
@@ -30,10 +46,22 @@ class BrowserInteractor: BrowserInteractorProtocol,
         update()
     }
     
+    func exportDocument(at index: Int) throws {
+        // TODO: -
+    }
+    
     // MARK: -
     
     private func update() {
-        documents = URLManager.urls.compactMap { let d = try? Document(url: $0); d?.generateThumbnail { _ in self.update() }; return d }
+        documents = URLManager.urls.compactMap { try? Document(url: $0) }
+        for document in documents {
+            document.generateThumbnail { [weak self] _ in
+                guard let self = self else {
+                    return
+                }
+                self.presenter?.didUpdateDocuments(self.documents)
+            }
+        }
         presenter?.didUpdateDocuments(documents)
     }
 }

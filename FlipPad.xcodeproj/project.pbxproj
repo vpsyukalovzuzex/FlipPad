@@ -29,6 +29,7 @@
 		C7AD416B284F4C040093C462 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD416A284F4C040093C462 /* String+Common.swift */; };
 		C7AD416E284F50F60093C462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7AD4170284F50F60093C462 /* Localizable.strings */; };
 		C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */; };
+		C7B4D05E288A87C200021D17 /* UIAlertControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */; };
 		C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66ED92849F83200E4A858 /* AppDelegate.swift */; };
 		C7B66EE32849F83400E4A858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE22849F83400E4A858 /* Assets.xcassets */; };
 		C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */; };
@@ -79,6 +80,7 @@
 		C7AD416A284F4C040093C462 /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		C7AD416F284F50F60093C462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AD4171284F514C0093C462 /* UIDocumentPickerViewController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDocumentPickerViewController+Common.swift"; sourceTree = "<group>"; };
+		C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerProtocol.swift; sourceTree = "<group>"; };
 		C7B66ED62849F83200E4A858 /* FlipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B66ED92849F83200E4A858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B66EE22849F83400E4A858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +186,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C7B4D05F288A87E800021D17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4D05D288A87C200021D17 /* UIAlertControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C7B66ECD2849F83100E4A858 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +221,7 @@
 				C7B66F30284A01F600E4A858 /* Extensions */,
 				C7B66EEF284A011B00E4A858 /* Modules */,
 				C7B66F31284A022000E4A858 /* Others */,
+				C7B4D05F288A87E800021D17 /* Protocols */,
 				C7B66F32284A029900E4A858 /* Storyboards */,
 				C7B66F54284A301C00E4A858 /* Views */,
 			);
@@ -430,6 +441,7 @@
 			files = (
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
 				C7B66F57284A306300E4A858 /* XibView.swift in Sources */,
+				C7B4D05E288A87C200021D17 /* UIAlertControllerProtocol.swift in Sources */,
 				C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */,
 				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
 				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,

@@ -23,12 +23,10 @@ class DCFBFormat: FormatProtocol {
     
     var rows: Int {
         // TODO: -
-        return 20
         fatalError()
     }
     var columns: Int {
         // TODO: -
-        return 2
         fatalError()
     }
     

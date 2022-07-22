@@ -37,7 +37,6 @@ class BrowserPresenter: NSObject,
     }
     
     func didTapImport() {
-        // TODO: -
         view?.showDocumentPicker(with: [], mode: .import, delegate: self)
     }
     
@@ -48,19 +47,29 @@ class BrowserPresenter: NSObject,
         else {
             return
         }
-        // TODO: -
         view?.showEditAlert(
             title: String(format: "Rename \"%@\"".localized, document.file),
             message: "Enter a new name for this scene:".localized,
             text: nil,
             placeholder: "New scene name".localized
         ) { text in
-            // TODO: -
+            do {
+                try self.interactor?.renameDocument(at: row, with: text)
+            } catch {
+                self.view?.showErrorAlert(with: error)
+            }
         }
     }
     
     func didTapDuplicate() {
-        // TODO: -
+        guard let row = view?.selectedIndexPaths?.first?.row else {
+            return
+        }
+        do {
+            try interactor?.duplicateDocument(at: row)
+        } catch {
+            view?.showErrorAlert(with: error)
+        }
     }
     
     func didTapDelete() {
@@ -72,26 +81,27 @@ class BrowserPresenter: NSObject,
         }
         view?.showDeleteAlert(
             title: String(format: "Delete \"%@\"?".localized, document.file),
-            message: "Are you sure you want to delete this scene and all of its images?".localized
+            message: "Are you sure you want to delete this scene and all of it's images?".localized
         ) { [weak self] in
             guard let self = self else {
                 return
             }
             do {
                 try self.interactor?.deleteDocument(at: row)
-            } catch let error {
+            } catch {
                 self.view?.showErrorAlert(with: error)
             }
         }
     }
     
     func didTapExport() {
-        guard let row = view?.selectedIndexPaths?.first?.row else {
+        guard
+            let row = view?.selectedIndexPaths?.first?.row,
+            let document = interactor?.documents[safe: row]
+        else {
             return
         }
-        // TODO: -
-        let url = URL(string: "")!
-        view?.showDocumentPicker(with: url, mode: .exportToService, delegate: self)
+        view?.showDocumentPicker(with: document.url, mode: .exportToService, delegate: self)
     }
     
     func didTapSelect() {
