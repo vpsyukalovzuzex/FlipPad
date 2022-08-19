@@ -23,12 +23,12 @@ class ColorSelectionInteractor: ColorSelectionInteractorProtocol,
     }
     
     func setColor(_ color: Color) {
-        Settings.color = color
+        Settings.selectedColor = color
         update()
     }
     
     func setOpacity(_ opacity: Float) {
-        Settings.opacity = opacity
+        Settings.selectedColorOpacity = opacity
         update()
     }
     
@@ -46,7 +46,7 @@ class ColorSelectionInteractor: ColorSelectionInteractorProtocol,
     // MARK: -
     
     private func update() {
-        presenter?.didUpdateColor(Settings.color)
-        presenter?.didUpdateOpacity(Settings.opacity)
+        presenter?.didUpdateColor(Settings.selectedColor)
+        presenter?.didUpdateOpacity(Settings.selectedColorOpacity)
     }
 }

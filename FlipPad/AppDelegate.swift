@@ -18,11 +18,7 @@ import Core
         setup()
         window = UIWindow()
         window?.frame = UIScreen.main.bounds
-        // window?.rootViewController = BrowserRouter.create().viewController
-        // window?.rootViewController = PalletesRouter.create(defaultPalleteName: nil).viewController?.wrapInNavigationController()
-        // window?.rootViewController = SettingsRouter.create().viewController?.wrapInNavigationController()
-        // window?.rootViewController = DocumentSettingsRouter.create().viewController?.wrapInNavigationController()
-        window?.rootViewController = LightboxSettingsRouter.create().viewController
+        window?.rootViewController = BrowserRouter.create().viewController
         window?.makeKeyAndVisible()
         return true
     }

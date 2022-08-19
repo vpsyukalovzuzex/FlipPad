@@ -21,11 +21,11 @@ public final class Settings {
     @Store("resolution", 0)
     public static var resolution: Int
     
-    @Store("opacity", 1.0)
-    public static var opacity: Float
+    @Store("selectedColorOpacity", 1.0)
+    public static var selectedColorOpacity: Float
     
-    @Store("color", Color(r: 0, g: 0, b: 0, a: 255))
-    public static var color: Color
+    @Store("selectedColor", Color(r: 0, g: 0, b: 0, a: 255))
+    public static var selectedColor: Color
     
     @Store("isVerticalToolbars", false)
     public static var isVerticalToolbars: Bool
@@ -50,4 +50,22 @@ public final class Settings {
     
     @Store("isAlwaysDisplayBackground", true)
     public static var isAlwaysDisplayBackground: Bool
+    
+    @Store("minEraserSize", 1)
+    public static var minEraserSize: Int
+    
+    @Store("maxEraserSize", 10)
+    public static var maxEraserSize: Int
+    
+    @Store("eraserSize", 10)
+    public static var eraserSize: Int
+    
+    @Store("minEraserHardness", 1)
+    public static var minEraserHardness: Int
+    
+    @Store("maxEraserHardness", 10)
+    public static var maxEraserHardness: Int
+    
+    @Store("eraserHardness", 10)
+    public static var eraserHardness: Int
 }

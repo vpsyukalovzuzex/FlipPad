@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tools View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ToolsView" customModule="FlipPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="DraggableView" customModule="FlipPad" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGT-aK-umi" customClass="BlurView" customModule="FlipPad" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsQ-wa-dzc">
+                                        <rect key="frame" x="44" y="0.0" width="67" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dR-tc-99N">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="phE-mg-Y3w"/>
+                                <constraints>
+                                    <constraint firstItem="phE-mg-Y3w" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FsQ-wa-dzc" secondAttribute="trailing" id="2gq-aa-a8L"/>
+                                    <constraint firstItem="phE-mg-Y3w" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FsQ-wa-dzc" secondAttribute="bottom" id="H3a-gq-YKw"/>
+                                    <constraint firstItem="FsQ-wa-dzc" firstAttribute="top" secondItem="phE-mg-Y3w" secondAttribute="top" id="KTa-1D-oJZ"/>
+                                    <constraint firstItem="FsQ-wa-dzc" firstAttribute="leading" secondItem="phE-mg-Y3w" secondAttribute="leading" id="l81-cQ-eC5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZGT-aK-umi" secondAttribute="trailing" id="J3P-mI-h8l"/>
+                            <constraint firstItem="ZGT-aK-umi" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="SyK-ri-itm"/>
+                            <constraint firstItem="ZGT-aK-umi" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="fiv-TA-kdI"/>
+                            <constraint firstAttribute="bottom" secondItem="ZGT-aK-umi" secondAttribute="bottom" id="hCc-Xt-SCl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

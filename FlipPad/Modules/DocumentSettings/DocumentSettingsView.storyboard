@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="DocumentSettingsView" customModule="FlipPad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uNO-a8-Ntf">
-                                <rect key="frame" x="16" y="60" width="124.5" height="19.5"/>
+                                <rect key="frame" x="60" y="16" width="124.5" height="19.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvj-8J-BNx">
                                         <rect key="frame" x="0.0" y="0.0" width="80.5" height="19.5"/>
@@ -35,23 +35,23 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-5V-Cyb">
-                                <rect key="frame" x="0.0" y="95.5" width="414" height="1"/>
+                                <rect key="frame" x="60" y="51.5" width="792" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="wYP-aY-YKk"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="24T-yk-y04">
-                                <rect key="frame" x="16" y="112.5" width="382" height="65.5"/>
+                                <rect key="frame" x="60" y="68.5" width="776" height="65.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCv-Km-v9L">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="776" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="A71-Vg-EeS">
-                                        <rect key="frame" x="0.0" y="35.5" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="776" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="FPS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-f2-cWt">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
@@ -63,13 +63,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="Q9C-sd-IoJ">
-                                                <rect key="frame" x="46" y="0.0" width="290" height="31"/>
+                                                <rect key="frame" x="46" y="0.0" width="684" height="31"/>
                                                 <connections>
                                                     <action selector="fpsSliderAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="8nX-OL-nEX"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-hV-qjW">
-                                                <rect key="frame" x="350" y="0.0" width="32" height="30"/>
+                                                <rect key="frame" x="744" y="0.0" width="32" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="CSb-rF-CgO"/>
                                                 </constraints>
@@ -90,10 +90,10 @@
                             <constraint firstItem="24T-yk-y04" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="5u3-jM-6s2"/>
                             <constraint firstItem="24T-yk-y04" firstAttribute="top" secondItem="fPw-5V-Cyb" secondAttribute="bottom" constant="16" id="6rh-pL-0Db"/>
                             <constraint firstItem="uNO-a8-Ntf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="9e1-ee-6xi"/>
-                            <constraint firstItem="fPw-5V-Cyb" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="DiN-Bf-RGO"/>
+                            <constraint firstItem="fPw-5V-Cyb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="DiN-Bf-RGO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="24T-yk-y04" secondAttribute="trailing" constant="16" id="EzZ-Ef-jVg"/>
                             <constraint firstItem="fPw-5V-Cyb" firstAttribute="top" secondItem="uNO-a8-Ntf" secondAttribute="bottom" constant="16" id="NDv-Da-n4G"/>
-                            <constraint firstAttribute="trailing" secondItem="fPw-5V-Cyb" secondAttribute="trailing" id="sCa-bb-T9z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fPw-5V-Cyb" secondAttribute="trailing" id="sCa-bb-T9z"/>
                         </constraints>
                     </view>
                     <connections>

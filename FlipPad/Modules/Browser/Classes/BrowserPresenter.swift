@@ -128,6 +128,7 @@ class BrowserPresenter: NSObject,
         else {
             return
         }
+        print(document.name)
         // TODO: -
     }
     

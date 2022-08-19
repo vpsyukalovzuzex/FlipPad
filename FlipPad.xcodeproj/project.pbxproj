@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7371E6C28B4A4BC00920557 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E6B28B4A4BC00920557 /* DraggableView.swift */; };
+		C7371E8128B4A87700920557 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7128B4A87700920557 /* ToolsView.swift */; };
+		C7371E8228B4A87700920557 /* ToolsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7228B4A87700920557 /* ToolsInteractor.swift */; };
+		C7371E8328B4A87700920557 /* ToolsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7328B4A87700920557 /* ToolsRouter.swift */; };
+		C7371E8428B4A87700920557 /* ToolsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7428B4A87700920557 /* ToolsPresenter.swift */; };
+		C7371E8528B4A87700920557 /* ToolsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7628B4A87700920557 /* ToolsPresenterProtocol.swift */; };
+		C7371E8628B4A87700920557 /* ToolsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7728B4A87700920557 /* ToolsViewProtocol.swift */; };
+		C7371E8728B4A87700920557 /* ToolsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7928B4A87700920557 /* ToolsInputViewProtocol.swift */; };
+		C7371E8828B4A87700920557 /* ToolsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7A28B4A87700920557 /* ToolsInputRouterProtocol.swift */; };
+		C7371E8928B4A87700920557 /* ToolsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7B28B4A87700920557 /* ToolsInputInteractorProtocol.swift */; };
+		C7371E8A28B4A87700920557 /* ToolsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7D28B4A87700920557 /* ToolsOutputViewProtocol.swift */; };
+		C7371E8B28B4A87700920557 /* ToolsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7E28B4A87700920557 /* ToolsOutputInteractorProtocol.swift */; };
+		C7371E8C28B4A87700920557 /* ToolsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E7F28B4A87700920557 /* ToolsInteractorProtocol.swift */; };
+		C7371E8D28B4A87700920557 /* ToolsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E8028B4A87700920557 /* ToolsRouterProtocol.swift */; };
+		C7371E8F28B4A89B00920557 /* ToolsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7371E8E28B4A89B00920557 /* ToolsView.storyboard */; };
+		C7371E9228B4AD3800920557 /* LongPressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7371E9128B4AD3800920557 /* LongPressButton.swift */; };
 		C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */; };
 		C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */; };
 		C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */; };
@@ -74,6 +90,20 @@
 		C7A3ECAC28A2763100558940 /* ColorSelectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A3ECAB28A2763100558940 /* ColorSelectionView.storyboard */; };
 		C7A3ECFC28A2A2E400558940 /* FlexColorPicker in Frameworks */ = {isa = PBXBuildFile; productRef = C7A3ECFB28A2A2E400558940 /* FlexColorPicker */; };
 		C7A4DD8C28ABB6C0009A3B30 /* DoubleSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A4DD8B28ABB6C0009A3B30 /* DoubleSlider.xib */; };
+		C7AC1C8E28AFDD3F00B7BCCC /* EraserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C7E28AFDD3F00B7BCCC /* EraserSettingsView.swift */; };
+		C7AC1C8F28AFDD3F00B7BCCC /* EraserSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C7F28AFDD3F00B7BCCC /* EraserSettingsRouter.swift */; };
+		C7AC1C9028AFDD3F00B7BCCC /* EraserSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8028AFDD3F00B7BCCC /* EraserSettingsPresenter.swift */; };
+		C7AC1C9128AFDD3F00B7BCCC /* EraserSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8128AFDD3F00B7BCCC /* EraserSettingsInteractor.swift */; };
+		C7AC1C9228AFDD3F00B7BCCC /* EraserSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8328AFDD3F00B7BCCC /* EraserSettingsPresenterProtocol.swift */; };
+		C7AC1C9328AFDD3F00B7BCCC /* EraserSettingsInputRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8528AFDD3F00B7BCCC /* EraserSettingsInputRouterProtocol.swift */; };
+		C7AC1C9428AFDD3F00B7BCCC /* EraserSettingsInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8628AFDD3F00B7BCCC /* EraserSettingsInputViewProtocol.swift */; };
+		C7AC1C9528AFDD3F00B7BCCC /* EraserSettingsInputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8728AFDD3F00B7BCCC /* EraserSettingsInputInteractorProtocol.swift */; };
+		C7AC1C9628AFDD3F00B7BCCC /* EraserSettingsOutputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8928AFDD3F00B7BCCC /* EraserSettingsOutputViewProtocol.swift */; };
+		C7AC1C9728AFDD3F00B7BCCC /* EraserSettingsOutputInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8A28AFDD3F00B7BCCC /* EraserSettingsOutputInteractorProtocol.swift */; };
+		C7AC1C9828AFDD3F00B7BCCC /* EraserSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8B28AFDD3F00B7BCCC /* EraserSettingsInteractorProtocol.swift */; };
+		C7AC1C9928AFDD3F00B7BCCC /* EraserSettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8C28AFDD3F00B7BCCC /* EraserSettingsRouterProtocol.swift */; };
+		C7AC1C9A28AFDD3F00B7BCCC /* EraserSettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC1C8D28AFDD3F00B7BCCC /* EraserSettingsViewProtocol.swift */; };
+		C7AC1C9C28AFDD6700B7BCCC /* EraserSettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AC1C9B28AFDD6700B7BCCC /* EraserSettingsView.storyboard */; };
 		C7AD4169284F44FC0093C462 /* UIAlertController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */; };
 		C7AD416B284F4C040093C462 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD416A284F4C040093C462 /* String+Common.swift */; };
 		C7AD416E284F50F60093C462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7AD4170284F50F60093C462 /* Localizable.strings */; };
@@ -149,6 +179,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7371E6B28B4A4BC00920557 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		C7371E7128B4A87700920557 /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		C7371E7228B4A87700920557 /* ToolsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsInteractor.swift; sourceTree = "<group>"; };
+		C7371E7328B4A87700920557 /* ToolsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsRouter.swift; sourceTree = "<group>"; };
+		C7371E7428B4A87700920557 /* ToolsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsPresenter.swift; sourceTree = "<group>"; };
+		C7371E7628B4A87700920557 /* ToolsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7371E7728B4A87700920557 /* ToolsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsViewProtocol.swift; sourceTree = "<group>"; };
+		C7371E7928B4A87700920557 /* ToolsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7371E7A28B4A87700920557 /* ToolsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7371E7B28B4A87700920557 /* ToolsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7371E7D28B4A87700920557 /* ToolsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7371E7E28B4A87700920557 /* ToolsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7371E7F28B4A87700920557 /* ToolsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7371E8028B4A87700920557 /* ToolsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7371E8E28B4A89B00920557 /* ToolsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToolsView.storyboard; sourceTree = "<group>"; };
+		C7371E9128B4AD3800920557 /* LongPressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButton.swift; sourceTree = "<group>"; };
 		C74AF1A1284E0B5100FF6C31 /* NewSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneView.swift; sourceTree = "<group>"; };
 		C74AF1A2284E0B5100FF6C31 /* NewSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSceneRouter.swift; sourceTree = "<group>"; };
 		C74AF1A3284E0B5100FF6C31 /* NewScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScenePresenter.swift; sourceTree = "<group>"; };
@@ -215,6 +261,20 @@
 		C7A3EC9D28A273F400558940 /* ColorSelectionPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionPresenterProtocol.swift; sourceTree = "<group>"; };
 		C7A3ECAB28A2763100558940 /* ColorSelectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorSelectionView.storyboard; sourceTree = "<group>"; };
 		C7A4DD8B28ABB6C0009A3B30 /* DoubleSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoubleSlider.xib; sourceTree = "<group>"; };
+		C7AC1C7E28AFDD3F00B7BCCC /* EraserSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsView.swift; sourceTree = "<group>"; };
+		C7AC1C7F28AFDD3F00B7BCCC /* EraserSettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsRouter.swift; sourceTree = "<group>"; };
+		C7AC1C8028AFDD3F00B7BCCC /* EraserSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsPresenter.swift; sourceTree = "<group>"; };
+		C7AC1C8128AFDD3F00B7BCCC /* EraserSettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsInteractor.swift; sourceTree = "<group>"; };
+		C7AC1C8328AFDD3F00B7BCCC /* EraserSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8528AFDD3F00B7BCCC /* EraserSettingsInputRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsInputRouterProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8628AFDD3F00B7BCCC /* EraserSettingsInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsInputViewProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8728AFDD3F00B7BCCC /* EraserSettingsInputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsInputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8928AFDD3F00B7BCCC /* EraserSettingsOutputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsOutputViewProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8A28AFDD3F00B7BCCC /* EraserSettingsOutputInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsOutputInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8B28AFDD3F00B7BCCC /* EraserSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8C28AFDD3F00B7BCCC /* EraserSettingsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C8D28AFDD3F00B7BCCC /* EraserSettingsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserSettingsViewProtocol.swift; sourceTree = "<group>"; };
+		C7AC1C9B28AFDD6700B7BCCC /* EraserSettingsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EraserSettingsView.storyboard; sourceTree = "<group>"; };
 		C7AD4168284F44FC0093C462 /* UIAlertController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Common.swift"; sourceTree = "<group>"; };
 		C7AD416A284F4C040093C462 /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		C7AD416F284F50F60093C462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -306,6 +366,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7371E6F28B4A87700920557 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E8E28B4A89B00920557 /* ToolsView.storyboard */,
+				C7371E7028B4A87700920557 /* Classes */,
+				C7371E7528B4A87700920557 /* Protocols */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C7371E7028B4A87700920557 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E7128B4A87700920557 /* ToolsView.swift */,
+				C7371E7228B4A87700920557 /* ToolsInteractor.swift */,
+				C7371E7328B4A87700920557 /* ToolsRouter.swift */,
+				C7371E7428B4A87700920557 /* ToolsPresenter.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7371E7528B4A87700920557 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E7F28B4A87700920557 /* ToolsInteractorProtocol.swift */,
+				C7371E7628B4A87700920557 /* ToolsPresenterProtocol.swift */,
+				C7371E8028B4A87700920557 /* ToolsRouterProtocol.swift */,
+				C7371E7728B4A87700920557 /* ToolsViewProtocol.swift */,
+				C7371E7828B4A87700920557 /* Input */,
+				C7371E7C28B4A87700920557 /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7371E7828B4A87700920557 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E7B28B4A87700920557 /* ToolsInputInteractorProtocol.swift */,
+				C7371E7A28B4A87700920557 /* ToolsInputRouterProtocol.swift */,
+				C7371E7928B4A87700920557 /* ToolsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7371E7C28B4A87700920557 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E7E28B4A87700920557 /* ToolsOutputInteractorProtocol.swift */,
+				C7371E7D28B4A87700920557 /* ToolsOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		C7371E9028B4AD0700920557 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C7371E9128B4AD3800920557 /* LongPressButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		C74AF19F284E0B5100FF6C31 /* NewScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B66F5D284A3A1300E4A858 /* BlurView.swift */,
+				C7371E6B28B4A4BC00920557 /* DraggableView.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -553,6 +675,59 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
+		C7AC1C7C28AFDD3F00B7BCCC /* EraserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC1C9B28AFDD6700B7BCCC /* EraserSettingsView.storyboard */,
+				C7AC1C7D28AFDD3F00B7BCCC /* Classes */,
+				C7AC1C8228AFDD3F00B7BCCC /* Protocols */,
+			);
+			path = EraserSettings;
+			sourceTree = "<group>";
+		};
+		C7AC1C7D28AFDD3F00B7BCCC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC1C8128AFDD3F00B7BCCC /* EraserSettingsInteractor.swift */,
+				C7AC1C8028AFDD3F00B7BCCC /* EraserSettingsPresenter.swift */,
+				C7AC1C7F28AFDD3F00B7BCCC /* EraserSettingsRouter.swift */,
+				C7AC1C7E28AFDD3F00B7BCCC /* EraserSettingsView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7AC1C8228AFDD3F00B7BCCC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC1C8B28AFDD3F00B7BCCC /* EraserSettingsInteractorProtocol.swift */,
+				C7AC1C8328AFDD3F00B7BCCC /* EraserSettingsPresenterProtocol.swift */,
+				C7AC1C8C28AFDD3F00B7BCCC /* EraserSettingsRouterProtocol.swift */,
+				C7AC1C8D28AFDD3F00B7BCCC /* EraserSettingsViewProtocol.swift */,
+				C7AC1C8428AFDD3F00B7BCCC /* Input */,
+				C7AC1C8828AFDD3F00B7BCCC /* Output */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7AC1C8428AFDD3F00B7BCCC /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC1C8728AFDD3F00B7BCCC /* EraserSettingsInputInteractorProtocol.swift */,
+				C7AC1C8528AFDD3F00B7BCCC /* EraserSettingsInputRouterProtocol.swift */,
+				C7AC1C8628AFDD3F00B7BCCC /* EraserSettingsInputViewProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C7AC1C8828AFDD3F00B7BCCC /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC1C8A28AFDD3F00B7BCCC /* EraserSettingsOutputInteractorProtocol.swift */,
+				C7AC1C8928AFDD3F00B7BCCC /* EraserSettingsOutputViewProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
 		C7AF4EE828AB9B4A001377BE /* LightboxSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -648,6 +823,7 @@
 				C7B66ED92849F83200E4A858 /* AppDelegate.swift */,
 				C7B66F5F284A44B900E4A858 /* Constants.swift */,
 				C7B66EE22849F83400E4A858 /* Assets.xcassets */,
+				C7371E9028B4AD0700920557 /* Controls */,
 				C7B66F30284A01F600E4A858 /* Extensions */,
 				C7B66EEF284A011B00E4A858 /* Modules */,
 				C7B66F31284A022000E4A858 /* Others */,
@@ -665,10 +841,12 @@
 				C7679E8328A127D300B1DB90 /* Colors */,
 				C7A3EC8C28A273F400558940 /* ColorSelection */,
 				C7D36E2028AA892C004B6799 /* DocumentSettings */,
+				C7AC1C7C28AFDD3F00B7BCCC /* EraserSettings */,
 				C7AF4EE828AB9B4A001377BE /* LightboxSettings */,
 				C74AF19F284E0B5100FF6C31 /* NewScene */,
 				C7679EAB28A1488100B1DB90 /* Palletes */,
 				C7D36DFD28AA7458004B6799 /* Settings */,
+				C7371E6F28B4A87700920557 /* Tools */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -970,6 +1148,7 @@
 			files = (
 				C7AF4F0828AB9B6C001377BE /* LightboxSettingsView.storyboard in Resources */,
 				C7AD416E284F50F60093C462 /* Localizable.strings in Resources */,
+				C7AC1C9C28AFDD6700B7BCCC /* EraserSettingsView.storyboard in Resources */,
 				C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */,
 				C7679EA428A127FD00B1DB90 /* ColorsView.storyboard in Resources */,
 				C7A3EC8928A2681400558940 /* Empty.dgcplt in Resources */,
@@ -980,6 +1159,7 @@
 				C7A353E5284F7661002ABB64 /* Animation Tutorial.dcfb in Resources */,
 				C7A3EC8828A2681400558940 /* Default.dgcplt in Resources */,
 				C7679ECB28A148C600B1DB90 /* PalletesView.storyboard in Resources */,
+				C7371E8F28B4A89B00920557 /* ToolsView.storyboard in Resources */,
 				C7D36E1D28AA7465004B6799 /* SettingsView.storyboard in Resources */,
 				C7B66F4F284A048600E4A858 /* BrowserView.storyboard in Resources */,
 				C7D36E4028AA898A004B6799 /* DocumentSettingsView.storyboard in Resources */,
@@ -994,10 +1174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7371E8628B4A87700920557 /* ToolsViewProtocol.swift in Sources */,
 				C7B66EDA2849F83200E4A858 /* AppDelegate.swift in Sources */,
 				C7AF4F0328AB9B4A001377BE /* LightboxSettingsOutputViewProtocol.swift in Sources */,
 				C7AF4EFB28AB9B4A001377BE /* LightboxSettingsPresenter.swift in Sources */,
+				C7371E8C28B4A87700920557 /* ToolsInteractorProtocol.swift in Sources */,
 				C7B66F57284A306300E4A858 /* XibView.swift in Sources */,
+				C7371E8B28B4A87700920557 /* ToolsOutputInteractorProtocol.swift in Sources */,
 				C7B4D05E288A87C200021D17 /* UIAlertControllerProtocol.swift in Sources */,
 				C7679EC628A1488100B1DB90 /* PalletesOutputInteractorProtocol.swift in Sources */,
 				C7A3ECA628A273F400558940 /* ColorSelectionOutputViewProtocol.swift in Sources */,
@@ -1006,21 +1189,27 @@
 				C7D36E3E28AA892C004B6799 /* DocumentSettingsRouterProtocol.swift in Sources */,
 				C74AF1B3284E0B5100FF6C31 /* NewScenePresenter.swift in Sources */,
 				C7D36E3528AA892C004B6799 /* DocumentSettingsRouter.swift in Sources */,
+				C7371E8828B4A87700920557 /* ToolsInputRouterProtocol.swift in Sources */,
 				C7679EC828A1488100B1DB90 /* PalletesInteractorProtocol.swift in Sources */,
 				C7D36E3A28AA892C004B6799 /* DocumentSettingsOutputViewProtocol.swift in Sources */,
 				C7D36E1128AA7458004B6799 /* SettingsInteractor.swift in Sources */,
 				C7D36E1528AA7458004B6799 /* SettingsInputViewProtocol.swift in Sources */,
 				C7B66F45284A02FA00E4A858 /* UIViewController+Common.swift in Sources */,
+				C7AC1C9228AFDD3F00B7BCCC /* EraserSettingsPresenterProtocol.swift in Sources */,
+				C7371E8D28B4A87700920557 /* ToolsRouterProtocol.swift in Sources */,
+				C7371E8228B4A87700920557 /* ToolsInteractor.swift in Sources */,
 				C7B66F23284A01AB00E4A858 /* BrowserInteractor.swift in Sources */,
 				C74AF1B8284E0B5100FF6C31 /* NewSceneInputRouterProtocol.swift in Sources */,
 				C7AF4F0128AB9B4A001377BE /* LightboxSettingsInputInteractorProtocol.swift in Sources */,
 				C74AF1BA284E0B5100FF6C31 /* NewScenePresenterProtocol.swift in Sources */,
 				C74AF1BC284E0B5100FF6C31 /* NewSceneOutputViewProtocol.swift in Sources */,
+				C7371E8428B4A87700920557 /* ToolsPresenter.swift in Sources */,
 				C7679E9F28A127D300B1DB90 /* ColorsInteractorProtocol.swift in Sources */,
 				C7A3ECAA28A273F400558940 /* ColorSelectionPresenterProtocol.swift in Sources */,
 				C7679EC928A1488100B1DB90 /* PalletesRouterProtocol.swift in Sources */,
 				C7679E9C28A127D300B1DB90 /* ColorsInputRouterProtocol.swift in Sources */,
 				C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */,
+				C7371E8A28B4A87700920557 /* ToolsOutputViewProtocol.swift in Sources */,
 				C7A3EC9E28A273F400558940 /* ColorSelectionInteractor.swift in Sources */,
 				C7B66F25284A01AB00E4A858 /* BrowserPresenter.swift in Sources */,
 				C7D36E1328AA7458004B6799 /* SettingsInteractorProtocol.swift in Sources */,
@@ -1030,18 +1219,28 @@
 				C7D36E3828AA892C004B6799 /* DocumentSettingsInputInteractorProtocol.swift in Sources */,
 				C7B66F26284A01AB00E4A858 /* BrowserRouter.swift in Sources */,
 				C7A3ECA928A273F400558940 /* ColorSelectionRouterProtocol.swift in Sources */,
+				C7371E8328B4A87700920557 /* ToolsRouter.swift in Sources */,
 				C7D36E3428AA892C004B6799 /* DocumentSettingsView.swift in Sources */,
+				C7371E8128B4A87700920557 /* ToolsView.swift in Sources */,
 				C7D36E0F28AA7458004B6799 /* SettingsView.swift in Sources */,
 				C7A3ECA428A273F400558940 /* ColorSelectionInputInteractorProtocol.swift in Sources */,
+				C7AC1C9128AFDD3F00B7BCCC /* EraserSettingsInteractor.swift in Sources */,
 				C7B66F24284A01AB00E4A858 /* BrowserView.swift in Sources */,
+				C7AC1C8F28AFDD3F00B7BCCC /* EraserSettingsRouter.swift in Sources */,
 				C7679EC128A1488100B1DB90 /* PalletesViewProtocol.swift in Sources */,
 				C7AD416B284F4C040093C462 /* String+Common.swift in Sources */,
 				C7679E9628A127D300B1DB90 /* ColorsInteractor.swift in Sources */,
+				C7371E9228B4AD3800920557 /* LongPressButton.swift in Sources */,
 				C7D36E1628AA7458004B6799 /* SettingsInputRouterProtocol.swift in Sources */,
 				C7AF4EFD28AB9B4A001377BE /* LightboxSettingsRouter.swift in Sources */,
+				C7371E8728B4A87700920557 /* ToolsInputViewProtocol.swift in Sources */,
+				C7AC1C9428AFDD3F00B7BCCC /* EraserSettingsInputViewProtocol.swift in Sources */,
 				C7AD4172284F514C0093C462 /* UIDocumentPickerViewController+Common.swift in Sources */,
+				C7AC1C9A28AFDD3F00B7BCCC /* EraserSettingsViewProtocol.swift in Sources */,
+				C7AC1C9628AFDD3F00B7BCCC /* EraserSettingsOutputViewProtocol.swift in Sources */,
 				C74AF1B7284E0B5100FF6C31 /* NewSceneInputViewProtocol.swift in Sources */,
 				C7679EC528A1488100B1DB90 /* PalletesOutputViewProtocol.swift in Sources */,
+				C7371E8928B4A87700920557 /* ToolsInputInteractorProtocol.swift in Sources */,
 				C7A3ECA728A273F400558940 /* ColorSelectionViewProtocol.swift in Sources */,
 				C74AF1B9284E0B5100FF6C31 /* NewSceneInputInteractorProtocol.swift in Sources */,
 				C74AF1BD284E0B5100FF6C31 /* NewSceneRouterProtocol.swift in Sources */,
@@ -1050,15 +1249,19 @@
 				C7AF4EFF28AB9B4A001377BE /* LightboxSettingsInputViewProtocol.swift in Sources */,
 				C7B66F2B284A01AB00E4A858 /* BrowserInteractorProtocol.swift in Sources */,
 				C7A3ECA028A273F400558940 /* ColorSelectionView.swift in Sources */,
+				C7AC1C9528AFDD3F00B7BCCC /* EraserSettingsInputInteractorProtocol.swift in Sources */,
 				C7D36E3928AA892C004B6799 /* DocumentSettingsPresenterProtocol.swift in Sources */,
 				C7D36E3D28AA892C004B6799 /* DocumentSettingsViewProtocol.swift in Sources */,
 				C7D36E3328AA892C004B6799 /* DocumentSettingsPresenter.swift in Sources */,
 				C7679EC328A1488100B1DB90 /* PalletesInputInteractorProtocol.swift in Sources */,
 				C7679E9B28A127D300B1DB90 /* ColorsInputInteractorProtocol.swift in Sources */,
 				C7D36E1828AA7458004B6799 /* SettingsRouterProtocol.swift in Sources */,
+				C7AC1C9028AFDD3F00B7BCCC /* EraserSettingsPresenter.swift in Sources */,
+				C7371E6C28B4A4BC00920557 /* DraggableView.swift in Sources */,
 				C7B66F2F284A01AB00E4A858 /* BrowserPresenterProtocol.swift in Sources */,
 				C7B66F27284A01AB00E4A858 /* BrowserRouterProtocol.swift in Sources */,
 				C7D36E3228AA892C004B6799 /* DocumentSettingsInteractor.swift in Sources */,
+				C7AC1C8E28AFDD3F00B7BCCC /* EraserSettingsView.swift in Sources */,
 				C7679EBE28A1488100B1DB90 /* PalletesView.swift in Sources */,
 				C7679E9A28A127D300B1DB90 /* ColorsInputViewProtocol.swift in Sources */,
 				C7B66F2E284A01AB00E4A858 /* BrowserViewProtocol.swift in Sources */,
@@ -1074,9 +1277,11 @@
 				C7679EC228A1488100B1DB90 /* PalletesInputViewProtocol.swift in Sources */,
 				C74AF1B4284E0B5100FF6C31 /* NewSceneInteractor.swift in Sources */,
 				C7AF4F1028ABACE7001377BE /* DoubleSlider.swift in Sources */,
+				C7AC1C9328AFDD3F00B7BCCC /* EraserSettingsInputRouterProtocol.swift in Sources */,
 				C7B66F28284A01AB00E4A858 /* BrowserInputRouterProtocol.swift in Sources */,
 				C74AF1BB284E0B5100FF6C31 /* NewSceneOutputInteractorProtocol.swift in Sources */,
 				C7679EBD28A1488100B1DB90 /* PalletesRouter.swift in Sources */,
+				C7371E8528B4A87700920557 /* ToolsPresenterProtocol.swift in Sources */,
 				C7679EA128A127D300B1DB90 /* ColorsViewProtocol.swift in Sources */,
 				C7D36E1B28AA7458004B6799 /* SettingsViewProtocol.swift in Sources */,
 				C7D36E1928AA7458004B6799 /* SettingsOutputInteractorProtocol.swift in Sources */,
@@ -1084,6 +1289,7 @@
 				C7679EA628A128A100B1DB90 /* ColorsCollectionViewCell.swift in Sources */,
 				C7A3ECA128A273F400558940 /* ColorSelectionRouter.swift in Sources */,
 				C74AF1B1284E0B5100FF6C31 /* NewSceneView.swift in Sources */,
+				C7AC1C9728AFDD3F00B7BCCC /* EraserSettingsOutputInteractorProtocol.swift in Sources */,
 				C7679E9928A127D300B1DB90 /* ColorsRouterProtocol.swift in Sources */,
 				C74AF1B2284E0B5100FF6C31 /* NewSceneRouter.swift in Sources */,
 				C7B66F2A284A01AB00E4A858 /* BrowserInputViewProtocol.swift in Sources */,
@@ -1097,6 +1303,7 @@
 				C7A3EC9F28A273F400558940 /* ColorSelectionPresenter.swift in Sources */,
 				C7A3ECA328A273F400558940 /* ColorSelectionInputRouterProtocol.swift in Sources */,
 				C7679EBF28A1488100B1DB90 /* PalletesInteractor.swift in Sources */,
+				C7AC1C9828AFDD3F00B7BCCC /* EraserSettingsInteractorProtocol.swift in Sources */,
 				C7D36E1428AA7458004B6799 /* SettingsPresenterProtocol.swift in Sources */,
 				C7679EA028A127D300B1DB90 /* ColorsPresenterProtocol.swift in Sources */,
 				C7679E9728A127D300B1DB90 /* ColorsRouter.swift in Sources */,
@@ -1112,6 +1319,7 @@
 				C7679EC728A1488100B1DB90 /* PalletesPresenterProtocol.swift in Sources */,
 				C7B66F60284A44B900E4A858 /* Constants.swift in Sources */,
 				C7A3ECA828A273F400558940 /* ColorSelectionInteractorProtocol.swift in Sources */,
+				C7AC1C9928AFDD3F00B7BCCC /* EraserSettingsRouterProtocol.swift in Sources */,
 				C7AF4F0528AB9B4A001377BE /* LightboxSettingsRouterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
