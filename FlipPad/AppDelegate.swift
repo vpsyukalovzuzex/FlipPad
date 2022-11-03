@@ -3,7 +3,6 @@
 //
 
 import UIKit
-import Core
 
 @main class AppDelegate: UIResponder,
                          UIApplicationDelegate {
@@ -16,10 +15,6 @@ import Core
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setup()
-        window = UIWindow()
-        window?.frame = UIScreen.main.bounds
-        window?.rootViewController = BrowserRouter.create().viewController
-        window?.makeKeyAndVisible()
         return true
     }
     
@@ -34,19 +29,5 @@ import Core
             }
         }
 #endif
-        let defaultDocuments = [
-            "Animation Tutorial",
-            "How To"
-        ]
-        let defaultPalletes = [
-            "Default"
-        ]
-        let document = FileExtension.dcfb.rawValue
-        let pallete = FileExtension.dgcplt.rawValue
-        let documentsUrls = defaultDocuments.compactMap { Bundle.main.url(forResource: $0, withExtension: document) }
-        let palletesUrls = defaultPalletes.compactMap { Bundle.main.url(forResource: $0, withExtension: pallete) }
-        try? URLManager.createDefaultFolderIfNeeded()
-        try? URLManager.createDefaultDocumentsIfNeeded(from: documentsUrls)
-        try? URLManager.createDefaultPalletesIfNeeded(from: palletesUrls)
     }
 }

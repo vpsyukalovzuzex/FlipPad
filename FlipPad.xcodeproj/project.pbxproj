@@ -146,6 +146,8 @@
 		C7B66F57284A306300E4A858 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F56284A306300E4A858 /* XibView.swift */; };
 		C7B66F5E284A3A1300E4A858 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5D284A3A1300E4A858 /* BlurView.swift */; };
 		C7B66F60284A44B900E4A858 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B66F5F284A44B900E4A858 /* Constants.swift */; };
+		C7B696002913F3CA00E1BB24 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B695FF2913F3CA00E1BB24 /* MainViewController.storyboard */; };
+		C7B696022913F3FF00E1BB24 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B696012913F3FF00E1BB24 /* MainViewController.swift */; };
 		C7BCFF7E284DEA82000A7061 /* BrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */; };
 		C7C6D157284DF5A100A3DB95 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7C6D156284DF5A100A3DB95 /* DifferenceKit */; };
 		C7D36E0F28AA7458004B6799 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D36DFF28AA7458004B6799 /* SettingsView.swift */; };
@@ -320,6 +322,8 @@
 		C7B66F56284A306300E4A858 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		C7B66F5D284A3A1300E4A858 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		C7B66F5F284A44B900E4A858 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7B695FF2913F3CA00E1BB24 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		C7B696012913F3FF00E1BB24 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C7BCFF7D284DEA82000A7061 /* BrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7D36DFF28AA7458004B6799 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C7D36E0028AA7458004B6799 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
@@ -921,6 +925,7 @@
 			children = (
 				C7B66EED2849F84A00E4A858 /* FlipPad.entitlements */,
 				C7B66EE72849F83400E4A858 /* Info.plist */,
+				C7B696012913F3FF00E1BB24 /* MainViewController.swift */,
 				C7C5F4CB2850A0D100BDDF38 /* DefaultFiles */,
 				C7AD4170284F50F60093C462 /* Localizable.strings */,
 			);
@@ -930,6 +935,7 @@
 		C7B66F32284A029900E4A858 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				C7B695FF2913F3CA00E1BB24 /* MainViewController.storyboard */,
 				C7B66EE42849F83400E4A858 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -1151,6 +1157,7 @@
 				C7AC1C9C28AFDD6700B7BCCC /* EraserSettingsView.storyboard in Resources */,
 				C7A353E4284F7661002ABB64 /* How To.dcfb in Resources */,
 				C7679EA428A127FD00B1DB90 /* ColorsView.storyboard in Resources */,
+				C7B696002913F3CA00E1BB24 /* MainViewController.storyboard in Resources */,
 				C7A3EC8928A2681400558940 /* Empty.dgcplt in Resources */,
 				C7A3ECAC28A2763100558940 /* ColorSelectionView.storyboard in Resources */,
 				C7B66EE62849F83400E4A858 /* LaunchScreen.storyboard in Resources */,
@@ -1269,6 +1276,7 @@
 				C7AF4EFE28AB9B4A001377BE /* LightboxSettingsViewProtocol.swift in Sources */,
 				C7AF4F0628AB9B4A001377BE /* LightboxSettingsInteractorProtocol.swift in Sources */,
 				C7D36E3628AA892C004B6799 /* DocumentSettingsInputViewProtocol.swift in Sources */,
+				C7B696022913F3FF00E1BB24 /* MainViewController.swift in Sources */,
 				C7A3ECA228A273F400558940 /* ColorSelectionInputViewProtocol.swift in Sources */,
 				C7679E9828A127D300B1DB90 /* ColorsView.swift in Sources */,
 				C74AF1C1284E12EE00FF6C31 /* NewSceneCollectionCell.swift in Sources */,
@@ -1475,6 +1483,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1510,6 +1519,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

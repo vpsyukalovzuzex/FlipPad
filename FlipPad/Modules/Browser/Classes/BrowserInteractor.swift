@@ -12,6 +12,10 @@ class BrowserInteractor: BrowserInteractorProtocol,
     
     var documents = [Document]()
     
+    // MARK: -
+    
+    private var filesObserver = FilesObserver(url: URLManager.folder)
+    
     // MARK: - BrowserInteractorProtocol
     
     weak var presenter: BrowserOutputInteractorProtocol?
@@ -20,6 +24,9 @@ class BrowserInteractor: BrowserInteractorProtocol,
     
     func start() {
         update()
+        filesObserver.start { [weak self] in
+            self?.update()
+        }
     }
     
     func renameDocument(at index: Int, with name: String) throws {
@@ -68,5 +75,11 @@ class BrowserInteractor: BrowserInteractorProtocol,
             }
         }
         presenter?.didUpdateDocuments(documents)
+    }
+    
+    // MARK: -
+    
+    deinit {
+        filesObserver.stop()
     }
 }
