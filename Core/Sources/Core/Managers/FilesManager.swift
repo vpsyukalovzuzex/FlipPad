@@ -1,11 +1,11 @@
 //
-// URLManager.swift
+// FilesManager.swift
 //
 
 import Foundation
 import Support
 
-public final class URLManager {
+public final class FilesManager {
     
     // MARK: -
     

@@ -37,8 +37,8 @@ class MainViewController: UIViewController {
         let pallete = FileExtension.dgcplt.rawValue
         let documentsUrls = defaultDocuments.compactMap { Bundle.main.url(forResource: $0, withExtension: document) }
         let palletesUrls = defaultPalletes.compactMap { Bundle.main.url(forResource: $0, withExtension: pallete) }
-        try? URLManager.createDefaultFolderIfNeeded()
-        try? URLManager.createDefaultDocumentsIfNeeded(from: documentsUrls)
-        try? URLManager.createDefaultPalletesIfNeeded(from: palletesUrls)
+        try? FilesManager.createDefaultFolderIfNeeded()
+        try? FilesManager.createDefaultDocumentsIfNeeded(from: documentsUrls)
+        try? FilesManager.createDefaultPalletesIfNeeded(from: palletesUrls)
     }
 }

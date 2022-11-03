@@ -29,7 +29,7 @@ public final class PalletesManager {
     }
     
     public static func pallete(with name: String) -> Pallete? {
-        guard let url = URLManager.palletesUrls.filter({ $0.deletingPathExtension().lastPathComponent == name }).first else {
+        guard let url = FilesManager.palletesUrls.filter({ $0.deletingPathExtension().lastPathComponent == name }).first else {
             return nil
         }
         return try? Pallete(url: url)

@@ -14,7 +14,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
     
     // MARK: -
     
-    private var filesObserver = FilesObserver(url: URLManager.folder)
+    private var filesObserver = FilesObserver(url: FilesManager.folder)
     
     // MARK: - BrowserInteractorProtocol
     
@@ -33,7 +33,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
         guard let document = documents[safe: index] else {
             return
         }
-        try URLManager.renameFile(at: document.url, with: name)
+        try FilesManager.renameFile(at: document.url, with: name)
         update()
     }
     
@@ -41,7 +41,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
         guard let document = documents[safe: index] else {
             return
         }
-        try URLManager.duplicateFile(at: document.url)
+        try FilesManager.duplicateFile(at: document.url)
         update()
     }
     
@@ -49,7 +49,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
         guard let document = documents[safe: index] else {
             return
         }
-        try URLManager.deleteFiles(at: [document.url])
+        try FilesManager.deleteFiles(at: [document.url])
         update()
     }
     
@@ -65,7 +65,7 @@ class BrowserInteractor: BrowserInteractorProtocol,
     // MARK: -
     
     private func update() {
-        documents = URLManager.documentsUrls.compactMap { try? Document(url: $0) }
+        documents = FilesManager.documentsUrls.compactMap { try? Document(url: $0) }
         for document in documents {
             document.generateThumbnail { [weak self] _ in
                 guard let self = self else {

@@ -32,7 +32,7 @@ class PalletesInteractor: PalletesInteractorProtocol,
         guard let data = pallete.data else {
             return
         }
-        try URLManager.createNewFile(with: data, name: pallete.name, pathExtension: .dgcplt)
+        try FilesManager.createNewFile(with: data, name: pallete.name, pathExtension: .dgcplt)
         PalletesManager.setNeedsUpdate()
     }
     
@@ -40,7 +40,7 @@ class PalletesInteractor: PalletesInteractorProtocol,
         guard let pallete = palletes[safe: index] else {
             return
         }
-        try URLManager.deleteFiles(at: [pallete.url])
+        try FilesManager.deleteFiles(at: [pallete.url])
         PalletesManager.setNeedsUpdate()
     }
     
@@ -48,14 +48,14 @@ class PalletesInteractor: PalletesInteractorProtocol,
         guard let pallete = palletes[safe: index] else {
             return
         }
-        try URLManager.renameFile(at: pallete.url, with: name)
+        try FilesManager.renameFile(at: pallete.url, with: name)
         PalletesManager.setNeedsUpdate()
     }
     
     // MARK: -
     
     func didSetNeedsUpdatePalletes() {
-        palletes = URLManager.palletesUrls.compactMap { try? Pallete(url: $0) }
+        palletes = FilesManager.palletesUrls.compactMap { try? Pallete(url: $0) }
         presenter?.didUpdatePalletes(palletes)
         guard
             let defaultPalleteName = presenter?.defaultPalleteName,
