@@ -3,13 +3,14 @@
 //
 
 import UIKit
-import CoreGraphics
 
 class LongPressButton: UIControl {
     
     // MARK: -
     
-    var minimumPressDuration: CGFloat = 2.0
+    var minimumPressDuration: CGFloat = 0.8
+    
+    // MARK: -
     
     private(set) var isLongPress = false
     
@@ -36,13 +37,6 @@ class LongPressButton: UIControl {
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         isLongPress = false
         time = 0.0
-        // TODO: -
-        return true
-    }
-    
-    override func endEditing(_ force: Bool) -> Bool {
-        // TODO: -
-        
         return true
     }
     
@@ -53,14 +47,20 @@ class LongPressButton: UIControl {
             target: self,
             selector: #selector(displayLinkAction)
         )
+        displayLink?.add(to: .main, forMode: .common)
     }
     
     // MARK: -
     
     @objc private func displayLinkAction() {
-        if isTracking {
-            time += displayLink?.timestamp ?? 0.0
-            print(time)
+        guard isTracking else {
+            return
+        }
+        time += displayLink?.duration ?? 0.0
+        isLongPress = minimumPressDuration <= time
+        if minimumPressDuration <= time {
+            endTracking(nil, with: nil)
+            sendActions(for: .touchUpInside)
         }
     }
     
