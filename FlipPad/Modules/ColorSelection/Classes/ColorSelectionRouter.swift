@@ -5,8 +5,7 @@
 import UIKit
 import FlexColorPicker
 
-class ColorSelectionRouter: ColorSelectionRouterProtocol,
-                            ColorSelectionInputRouterProtocol {
+class ColorSelectionRouter: ColorSelectionInputRouterProtocol {
     
     // MARK: - ColorSelectionRouterProtocol
     

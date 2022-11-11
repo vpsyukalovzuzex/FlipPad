@@ -6,7 +6,6 @@ import UIKit
 import Support
 
 class LightboxSettingsView: UIViewController,
-                            LightboxSettingsViewProtocol,
                             LightboxSettingsInputViewProtocol {
     
     // MARK: -

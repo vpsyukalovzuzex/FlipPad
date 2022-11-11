@@ -4,8 +4,7 @@
 
 import UIKit
 
-class EraserSettingsRouter: EraserSettingsRouterProtocol,
-                            EraserSettingsInputRouterProtocol {
+class EraserSettingsRouter: EraserSettingsInputRouterProtocol {
     
     // MARK: - EraserSettingsRouterProtocol
     

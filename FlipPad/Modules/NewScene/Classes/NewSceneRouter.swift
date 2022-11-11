@@ -9,8 +9,7 @@ protocol NewSceneDelegate: AnyObject {
     func didTapContinue()
 }
 
-class NewSceneRouter: NewSceneRouterProtocol,
-                      NewSceneInputRouterProtocol {
+class NewSceneRouter: NewSceneInputRouterProtocol {
     
     // MARK: - NewSceneRouterProtocol
     

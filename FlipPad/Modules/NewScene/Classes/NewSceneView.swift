@@ -7,7 +7,6 @@ import Support
 import DifferenceKit
 
 class NewSceneView: UIViewController,
-                    NewSceneViewProtocol,
                     NewSceneInputViewProtocol,
                     UICollectionViewDataSource,
                     UICollectionViewDelegate {

@@ -5,7 +5,6 @@
 import UIKit
 
 class EraserSettingsView: UIViewController,
-                          EraserSettingsViewProtocol,
                           EraserSettingsInputViewProtocol {
     
     // MARK: -

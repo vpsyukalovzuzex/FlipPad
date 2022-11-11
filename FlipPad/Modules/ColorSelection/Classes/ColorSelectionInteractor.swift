@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class ColorSelectionInteractor: ColorSelectionInteractorProtocol,
-                                ColorSelectionInputInteractorProtocol {
+class ColorSelectionInteractor: ColorSelectionInputInteractorProtocol {
     
     // MARK: -
     

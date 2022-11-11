@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class EraserSettingsInteractor: EraserSettingsInteractorProtocol,
-                                EraserSettingsInputInteractorProtocol,
+class EraserSettingsInteractor: EraserSettingsInputInteractorProtocol,
                                 SettingsManagerDelegate {
     
     // MARK: - EraserSettingsInteractorProtocol

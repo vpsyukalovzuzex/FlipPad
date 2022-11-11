@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class PalletesInteractor: PalletesInteractorProtocol,
-                          PalletesInputInteractorProtocol,
+class PalletesInteractor: PalletesInputInteractorProtocol,
                           PalletesManagerDelegate {
     
     // MARK: - PalletesInteractorProtocol

@@ -8,7 +8,6 @@ import Core
 import Support
 
 class BrowserPresenter: NSObject,
-                        BrowserPresenterProtocol,
                         BrowserOutputViewProtocol,
                         BrowserOutputInteractorProtocol,
                         NewSceneDelegate,

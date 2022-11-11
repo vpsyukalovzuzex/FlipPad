@@ -4,8 +4,7 @@
 
 import Foundation
 
-class LightboxSettingsPresenter: LightboxSettingsPresenterProtocol,
-                                 LightboxSettingsOutputViewProtocol,
+class LightboxSettingsPresenter: LightboxSettingsOutputViewProtocol,
                                  LightboxSettingsOutputInteractorProtocol {
     
     // MARK: - LightboxSettingsPresenterProtocol

@@ -4,8 +4,7 @@
 
 import Foundation
 
-class SettingsPresenter: SettingsPresenterProtocol,
-                         SettingsOutputViewProtocol,
+class SettingsPresenter: SettingsOutputViewProtocol,
                          SettingsOutputInteractorProtocol {
     
     // MARK: - SettingsPresenterProtocol

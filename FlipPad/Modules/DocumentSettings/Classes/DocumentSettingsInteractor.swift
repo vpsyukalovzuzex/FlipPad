@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class DocumentSettingsInteractor: DocumentSettingsInteractorProtocol,
-                                  DocumentSettingsInputInteractorProtocol,
+class DocumentSettingsInteractor: DocumentSettingsInputInteractorProtocol,
                                   SettingsManagerDelegate {
     
     // MARK: - DocumentSettingsInteractorProtocol

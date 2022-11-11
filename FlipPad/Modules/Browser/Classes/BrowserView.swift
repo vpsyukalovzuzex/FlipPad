@@ -7,7 +7,6 @@ import Support
 import DifferenceKit
 
 class BrowserView: UIViewController,
-                   BrowserViewProtocol,
                    BrowserInputViewProtocol,
                    UICollectionViewDataSource,
                    UICollectionViewDelegate,

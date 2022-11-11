@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class PalletesPresenter: PalletesPresenterProtocol,
-                         PalletesOutputViewProtocol,
+class PalletesPresenter: PalletesOutputViewProtocol,
                          PalletesOutputInteractorProtocol {
     
     // MARK: - PalletesPresenterProtocol

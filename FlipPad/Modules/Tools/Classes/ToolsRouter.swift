@@ -4,8 +4,7 @@
 
 import UIKit
 
-class ToolsRouter: ToolsRouterProtocol,
-                   ToolsInputRouterProtocol {
+class ToolsRouter: ToolsInputRouterProtocol {
     
     // MARK: - ToolsRouterProtocol
     

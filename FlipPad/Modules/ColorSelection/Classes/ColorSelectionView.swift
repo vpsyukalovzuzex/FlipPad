@@ -6,7 +6,6 @@ import UIKit
 import Support
 
 class ColorSelectionView: UIViewController,
-                          ColorSelectionViewProtocol,
                           ColorSelectionInputViewProtocol {
     
     // MARK: -

@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class NewSceneInteractor: NewSceneInteractorProtocol,
-                          NewSceneInputInteractorProtocol,
+class NewSceneInteractor: NewSceneInputInteractorProtocol,
                           SettingsManagerDelegate {
     
     // MARK: - NewSceneInteractorProtocol

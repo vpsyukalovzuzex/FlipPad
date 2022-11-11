@@ -5,7 +5,6 @@
 import UIKit
 
 class ToolsView: UIViewController,
-                 ToolsViewProtocol,
                  ToolsInputViewProtocol {
     
     // MARK: - ToolsViewProtocol

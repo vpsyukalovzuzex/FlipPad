@@ -6,8 +6,7 @@ import Foundation
 import Support
 import Core
 
-class SettingsInteractor: SettingsInteractorProtocol,
-                          SettingsInputInteractorProtocol,
+class SettingsInteractor: SettingsInputInteractorProtocol,
                           SettingsManagerDelegate {
     
     // MARK: - SettingsInteractorProtocol

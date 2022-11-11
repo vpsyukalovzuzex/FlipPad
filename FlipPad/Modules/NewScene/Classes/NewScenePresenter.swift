@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class NewScenePresenter: NewScenePresenterProtocol,
-                         NewSceneOutputViewProtocol,
+class NewScenePresenter: NewSceneOutputViewProtocol,
                          NewSceneOutputInteractorProtocol {
     
     // MARK: -

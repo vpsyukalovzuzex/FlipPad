@@ -6,7 +6,6 @@ import UIKit
 import Support
 
 class SettingsView: UIViewController,
-                    SettingsViewProtocol,
                     SettingsInputViewProtocol {
     
     // MARK: -

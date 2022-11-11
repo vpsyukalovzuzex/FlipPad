@@ -6,7 +6,6 @@ import UIKit
 import DifferenceKit
 
 class ColorsView: UIViewController,
-                  ColorsViewProtocol,
                   ColorsInputViewProtocol,
                   UICollectionViewDataSource,
                   UICollectionViewDelegate,

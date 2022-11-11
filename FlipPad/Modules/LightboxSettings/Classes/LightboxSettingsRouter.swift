@@ -4,8 +4,7 @@
 
 import UIKit
 
-class LightboxSettingsRouter: LightboxSettingsRouterProtocol,
-                              LightboxSettingsInputRouterProtocol {
+class LightboxSettingsRouter: LightboxSettingsInputRouterProtocol {
     
     // MARK: - LightboxSettingsRouterProtocol
     

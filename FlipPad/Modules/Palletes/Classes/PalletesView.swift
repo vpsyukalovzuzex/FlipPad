@@ -6,7 +6,6 @@ import UIKit
 import DifferenceKit
 
 class PalletesView: UIViewController,
-                    PalletesViewProtocol,
                     PalletesInputViewProtocol,
                     UICollectionViewDataSource,
                     UICollectionViewDelegate,

@@ -4,8 +4,7 @@
 
 import UIKit
 
-class SettingsRouter: SettingsRouterProtocol,
-                      SettingsInputRouterProtocol {
+class SettingsRouter: SettingsInputRouterProtocol {
     
     // MARK: - SettingsRouterProtocol
     

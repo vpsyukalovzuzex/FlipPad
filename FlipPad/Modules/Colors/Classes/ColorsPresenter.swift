@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class ColorsPresenter: ColorsPresenterProtocol,
-                       ColorsOutputViewProtocol,
+class ColorsPresenter: ColorsOutputViewProtocol,
                        ColorsOutputInteractorProtocol {
     
     // MARK: -

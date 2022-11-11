@@ -6,8 +6,7 @@ import Foundation
 import Support
 import Core
 
-class ColorsInteractor: ColorsInteractorProtocol,
-                        ColorsInputInteractorProtocol,
+class ColorsInteractor: ColorsInputInteractorProtocol,
                         PalletesManagerDelegate {
     
     // MARK: - ColorsInteractorProtocol

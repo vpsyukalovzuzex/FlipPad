@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class DocumentSettingsPresenter: DocumentSettingsPresenterProtocol,
-                                 DocumentSettingsOutputViewProtocol,
+class DocumentSettingsPresenter: DocumentSettingsOutputViewProtocol,
                                  DocumentSettingsOutputInteractorProtocol {
     
     // MARK: - DocumentSettingsPresenterProtocol

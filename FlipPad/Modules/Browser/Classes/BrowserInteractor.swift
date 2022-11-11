@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class BrowserInteractor: BrowserInteractorProtocol,
-                         BrowserInputInteractorProtocol {
+class BrowserInteractor: BrowserInputInteractorProtocol {
     
     // MARK: -
     

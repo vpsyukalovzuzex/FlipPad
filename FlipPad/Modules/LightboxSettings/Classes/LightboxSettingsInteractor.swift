@@ -5,8 +5,7 @@
 import Foundation
 import Core
 
-class LightboxSettingsInteractor: LightboxSettingsInteractorProtocol,
-                                  LightboxSettingsInputInteractorProtocol,
+class LightboxSettingsInteractor: LightboxSettingsInputInteractorProtocol,
                                   SettingsManagerDelegate {
     
     // MARK: - LightboxSettingsInteractorProtocol

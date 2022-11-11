@@ -10,8 +10,7 @@ protocol ColorsDelegate: AnyObject {
     func didSelectColor(_ color: Color)
 }
 
-class ColorsRouter: ColorsRouterProtocol,
-                    ColorsInputRouterProtocol {
+class ColorsRouter: ColorsInputRouterProtocol {
     
     // MARK: - ColorsRouterProtocol
     

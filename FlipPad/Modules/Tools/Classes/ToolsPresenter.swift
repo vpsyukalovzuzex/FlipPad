@@ -4,8 +4,7 @@
 
 import Foundation
 
-class ToolsPresenter: ToolsPresenterProtocol,
-                      ToolsOutputViewProtocol,
+class ToolsPresenter: ToolsOutputViewProtocol,
                       ToolsOutputInteractorProtocol {
     
     // MARK: - ToolsPresenterProtocol

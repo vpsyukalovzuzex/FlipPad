@@ -5,8 +5,7 @@
 import UIKit
 import Core
 
-class PalletesRouter: PalletesRouterProtocol,
-                      PalletesInputRouterProtocol {
+class PalletesRouter: PalletesInputRouterProtocol {
     
     // MARK: - PalletesRouterProtocol
     

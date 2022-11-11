@@ -4,8 +4,7 @@
 
 import Foundation
 
-class EraserSettingsPresenter: EraserSettingsPresenterProtocol,
-                               EraserSettingsOutputViewProtocol,
+class EraserSettingsPresenter: EraserSettingsOutputViewProtocol,
                                EraserSettingsOutputInteractorProtocol {
     
     // MARK: - EraserSettingsPresenterProtocol

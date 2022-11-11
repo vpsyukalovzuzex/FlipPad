@@ -6,7 +6,6 @@ import UIKit
 import Support
 
 class DocumentSettingsView: UIViewController,
-                            DocumentSettingsViewProtocol,
                             DocumentSettingsInputViewProtocol {
     
     // MARK: -

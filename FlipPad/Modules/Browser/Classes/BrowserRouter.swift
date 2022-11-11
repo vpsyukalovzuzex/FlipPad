@@ -4,8 +4,7 @@
 
 import UIKit
 
-class BrowserRouter: BrowserRouterProtocol,
-                     BrowserInputRouterProtocol {
+class BrowserRouter: BrowserInputRouterProtocol {
     
     // MARK: - BrowserRouterProtocol
     

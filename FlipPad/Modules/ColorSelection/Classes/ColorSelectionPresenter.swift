@@ -7,8 +7,7 @@ import UIKit
 import Core
 import FlexColorPicker
 
-class ColorSelectionPresenter: ColorSelectionPresenterProtocol,
-                               ColorSelectionOutputViewProtocol,
+class ColorSelectionPresenter: ColorSelectionOutputViewProtocol,
                                ColorSelectionOutputInteractorProtocol,
                                ColorPickerDelegate {
     

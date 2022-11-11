@@ -4,8 +4,7 @@
 
 import Foundation
 
-class ToolsInteractor: ToolsInteractorProtocol,
-                       ToolsInputInteractorProtocol {
+class ToolsInteractor: ToolsInputInteractorProtocol {
     
     // MARK: - ToolsInteractorProtocol
     

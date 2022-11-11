@@ -4,8 +4,7 @@
 
 import UIKit
 
-class DocumentSettingsRouter: DocumentSettingsRouterProtocol,
-                              DocumentSettingsInputRouterProtocol {
+class DocumentSettingsRouter: DocumentSettingsInputRouterProtocol {
     
     // MARK: - DocumentSettingsRouterProtocol
     
